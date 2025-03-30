@@ -9,7 +9,7 @@
     {
       "title": "Secretariat",
       "members": [   
-        { "name": "Sarthak Jain", "designation": "Sarthak Jain", "image": "src/TeamImages/Sarthak Jain_Digital Marketing.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Sarthak Jain", "designation": "Secretary General", "image": "src/TeamImages/Sarthak Jain_Digital Marketing.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Aditya Sharma", "designation": "Deputy Secretary General", "image": "src/TeamImages/Aditya Sharma_outreach.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Radhika Rajawat", "designation": "OC President", "image": "src/TeamImages/RadhikaRajawat_guestandcollaboration.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Tejasvi ola", "designation": "Director General", "image": "src/TeamImages/Tejasvi_content.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
@@ -24,10 +24,10 @@
     {
       "title": "Technical Team",
       "members": [
-        { "name": "AntrikshBajak", "designation": "Technical Head", "image": "/src/TeamImages/Antriksh1.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
+        { "name": "AntrikshBajak", "designation": "Technical Head", "image": "/src/TeamImages/antriksh.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
         { "name": "Mansavi Aggarwal", "designation": "Technical Head", "image": "src/TeamImages/Mansavi_Aggarwal_Technical.png", "linkedin": "https://www.linkedin.com/in/bobsmith", "instagram": "https://www.instagram.com/bobsmith" },
-        { "name": "Avi Maheshwari", "designation": "USG Technical", "image": "src/TeamImages/Avi Maheshwari _Technical.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
-        { "name": "vishnu dixit", "designation": "USG Technical", "image": "/images/david.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
+        { "name": "Avi Maheshwari", "designation": "USG Technical", "image": "src/TeamImages/Avi Maheshwari USG.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
+        { "name": "vishnu dixit", "designation": "USG Technical", "image": "src/TeamImages/vishnu_technical.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
     ]
     },
     {
@@ -40,7 +40,7 @@
     {
       "title": "Digital Marketing Team",
       "members": [
-        { "name": "Archita Agrawal", "designation": "Marketing Head", "image": "src/TeamImages/ArchitaAgrawal_digital.jpg", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
+        { "name": "Archita Agrawal", "designation": "Marketing Head", "image": "src/TeamImages/Architaagrawal_digitalmarketing.jpg", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
         { "name": "Tanisha Jain", "designation": "Marketing Head", "image": "src/TeamImages/Tanisha Jain .jpg", "linkedin": "https://www.linkedin.com/in/gracelee", "instagram": "https://www.instagram.com/gracelee" },
         { "name": "Aditi koolwal", "designation": "USG Marketing ", "image": "src/TeamImages/Aditi Koolwal  (1).jpg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" }
       ]
