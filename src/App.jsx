@@ -22,6 +22,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/team" element={<Team />} />
           <Route path="/prepguide" element={<PreprationGuide />} />
+          
         </Routes>
       </BrowserRouter>
   )
