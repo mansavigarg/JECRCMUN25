@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import teamData from "/public/team.json";
+import teamData from "../team.json";
 import bannerImg from "../assets/banner2.jpg";
 import TeamSection from "../components/ui/TeamSection ";
 function Team() {
