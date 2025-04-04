@@ -7,6 +7,7 @@ import Zhs from "./pages/Zhs"
 import Registration from "./pages/Registration"
 import Team from "./pages/Team"
 import PreprationGuide from "./pages/PreprationGuide"
+import Sponsers from "./pages/Sponsers.jsx"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/team" element={<Team />} />
           <Route path="/prepguide" element={<PreprationGuide />} />
+          <Route path="/sponsers" element={<Sponsers />} />    
         </Routes>
       </BrowserRouter>
   )
