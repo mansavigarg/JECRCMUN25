@@ -7,7 +7,6 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaDiscord, FaYoutube } from "react-icons/fa";
 import Navbar from "../components/Navbar";
-import Footer from '../components/Footer'
 import OutreachSection from "../components/Outreach";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
