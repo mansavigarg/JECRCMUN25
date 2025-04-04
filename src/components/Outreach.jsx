@@ -19,10 +19,10 @@ const OutreachSection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setStartCount(true);
-          observer.disconnect(); // Stop observing once triggered
+          observer.disconnect();
         }
       },
-      { threshold: 0.4 } // Start when 40% of section is visible
+      { threshold: 0.3 }
     );
 
     if (sectionRef.current) {
@@ -36,25 +36,20 @@ const OutreachSection = () => {
     <section
       id="outreach-section"
       ref={sectionRef}
-      className="relative py-20 px-6 bg-white"
+      className="w-full bg-white py-16"
     >
-      {/* Subtle Background Overlay */}
-      <div className="absolute inset-0 bg-white/60 backdrop-blur-lg"></div>
-
-      <div className="relative max-w-6xl mx-auto text-center">
-        {/* Title */}
+      <div className="max-w-7xl mx-auto text-center px-4">
         <motion.h2
-          className="text-5xl font-bold text-gray-900 mb-12"
+          className="text-5xl font- text-[#991C1C] mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="text-red-700">Our</span> Outreach
+          <span className="text-black">Our</span> Outreach
         </motion.h2>
 
-        {/* Stats Grid */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8"
+          className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
@@ -62,12 +57,12 @@ const OutreachSection = () => {
           {stats.map((stat, index) => (
             <motion.div
               key={index}
-              className="p-6 bg-white/80 backdrop-blur-xl shadow-lg rounded-lg flex flex-col items-center"
+              className="p-6 bg-white shadow-lg rounded-xl flex flex-col items-center transition-transform transform hover:scale-105"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: index * 0.2 }}
             >
-              <h2 className={`text-4xl md:text-5xl font-bold ${stat.color}`}>
+              <h2 className={`text-4xl md:text-5xl font- ${stat.color}`}>
                 {startCount ? (
                   <CountUp start={0} end={stat.number} duration={3} separator="," />
                 ) : (
@@ -84,3 +79,4 @@ const OutreachSection = () => {
 };
 
 export default OutreachSection;
+
