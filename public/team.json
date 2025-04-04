@@ -1,0 +1,108 @@
+[{
+  "title": "Mentors",
+  "members": [
+    { "name": "Shri. Arpit Agarwal", "designation": "Director JECRC", "image": "public/TeamImages/arpit sir.webp", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
+    { "name": "Shri. Pramod kumar Tiwari", "designation": "Senior Advisor", "image": "public/TeamImages/pk tiwari.jpeg", "linkedin": "https://www.linkedin.com/in/gracelee", "instagram": "https://www.instagram.com/gracelee" },
+    { "name": "Dr Sonia Khubchandani", "designation": "Faculty Coordinator ", "image": "public/TeamImages/sonia.jpg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" }
+  ]
+},
+    {
+      "title": "Secretariat",
+      "members": [   
+        { "name": "Sarthak Jain", "designation": "Secretary General", "image": "public/TeamImages/Sarthak Jain_Digital Marketing.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Aditya Sharma", "designation": "Deputy Secretary General", "image": "public/TeamImages/Aditya Sharma_outreach.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Radhika Rajawat", "designation": "OC President", "image": "public/TeamImages/RadhikaRajawat_guestandcollaboration.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Tejasvi ola", "designation": "Director General", "image": "public/TeamImages/Tejasvi_content.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "khush goyal", "designation": "Joint Secretary", "image": "public/TeamImages/khush_gd.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Yash Rajarora", "designation": "Secretariat", "image": "public/TeamImages/yasharora_tech.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Yash Soni", "designation": "Secretariat", "image": "public/TeamImages/yashsoni_cine.jpg", "linkedin": "https://www.linkedin.com/in/yashsoni", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Supriya Khandelwal", "designation": "Secretariat", "image": "public/TeamImages/supriyakhandelwal_technical.jpg", "linkedin": "https://www.linkedin.com/in/supriyakhandelwal", "instagram": "https://www.instagram.com/supriyakhandelwal" },
+        { "name": "Sidhi Jain", "designation": "Secretariat", "image": "public/TeamImages/SiddhiJain_GD.jpg", "linkedin": "https://www.linkedin.com/in/sidhijain", "instagram": "https://www.instagram.com/sidhijain" },
+        { "name": "Saloni Jain", "designation": "Secretariat", "image": "public/TeamImages/Saloni Jain_Delegate Affair.jpeg", "linkedin": "https://www.linkedin.com/in/salonijain", "instagram": "https://www.instagram.com/salonijain" }
+      ]
+    },
+    {
+      "title": "Technical Team",
+      "members": [
+        { "name": "AntrikshBajak", "designation": "Technical Head", "image": "/public/TeamImages/antriksh.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
+        { "name": "Mansavi Aggarwal", "designation": "Technical Head", "image": "public/TeamImages/Mansavi_Aggarwal_Technical.png", "linkedin": "https://www.linkedin.com/in/bobsmith", "instagram": "https://www.instagram.com/bobsmith" },
+        { "name": "Avi Maheshwari", "designation": "USG Technical", "image": "public/TeamImages/Avi Maheshwari USG.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
+        { "name": "vishnu dixit", "designation": "USG Technical", "image": "public/TeamImages/vishnu_technical.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
+    ]
+    },
+    {
+      "title": "Sponsorship Team",
+      "members": [
+        { "name": "Manvi Vijay", "designation": "Sponsorship Head", "image": "public/TeamImages/manvi.jpg", "linkedin": "https://www.linkedin.com/in/danawhite", "instagram": "https://www.instagram.com/danawhite" },
+        { "name": "Yash Agarwal", "designation": "Sponsorship Head", "image": "public/TeamImages/Yash Agarwal outreach.jpg", "linkedin": "https://www.linkedin.com/in/eveblack", "instagram": "https://www.instagram.com/eveblack" }
+      ]
+    },
+    {
+      "title": "Digital Marketing Team",
+      "members": [
+        { "name": "Archita Agrawal", "designation": "Marketing Head", "image": "public/TeamImages/Architaagrawal_digitalmarketing.jpg", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
+        { "name": "Tanisha Jain", "designation": "Marketing Head", "image": "public/TeamImages/Tanisha Jain .jpg", "linkedin": "https://www.linkedin.com/in/gracelee", "instagram": "https://www.instagram.com/gracelee" },
+        { "name": "Aditi koolwal", "designation": "USG Marketing ", "image": "public/TeamImages/Aditi Koolwal  (1).jpg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" },
+        { "name": "Harshit Kumar Dhaka", "designation": "USG Marketing ", "image": "", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" },
+        { "name": "Prakhar Sharma", "designation": "USG Marketing", "image": "public/TeamImages/prakhar.jpg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" }
+
+
+      ]
+    },
+    {
+      "title": "Outreach Team",
+      "members": [
+        { "name": "Yash Vaishnav", "designation": "Outreach Head", "image": "public/TeamImages/yashvaishnav_outreach.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
+        { "name": "Yash Mittal", "designation": "Outreach Head", "image": "public/TeamImages/YashMittal.jpg", "linkedin": "https://www.linkedin.com/in/bobsmith", "instagram": "https://www.instagram.com/bobsmith" },
+        { "name": "Suryansh Singh", "designation": "USG Outreach", "image": "public/TeamImages/Suryansh Singh_Outreach.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
+        { "name": "Kunal Sain", "designation": "USG Outreach", "image": "public/TeamImages/Kunal Sain __ Outreach .jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
+    ]
+    },
+    {
+      "title": "Cinematography Team",
+      "members": [
+        { "name": "Tushar Agarwal", "designation": "Cinematography Head", "image": "public/TeamImages/Tushar Agarwal_VideoEditor.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
+        { "name": "Harshit Somawat", "designation": "Cinematography Head", "image": "public/TeamImages/harshit.jpg", "linkedin": "https://www.linkedin.com/in/bobsmith", "instagram": "https://www.instagram.com/bobsmith" },
+        { "name": "Avani Jain", "designation": "Cinematography Head", "image": "public/TeamImages/Avani jain _cinematography.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
+        { "name": "Gaurav nagar", "designation": "USG Cinematography", "image": "public/TeamImages/Gaurav nagar_media .jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "anushka Agarwal", "designation": "USG Cinematography", "image": "public/TeamImages/Anushka Agarwal_media.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Rishabh Khandelwal ", "designation": "USG Cinematography", "image": "", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Rakshit Gupta ", "designation": "USG Cinematography", "image": "", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Daksh Mehta  ", "designation": "USG Cinematography", "image": "", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+
+       { "name": "Aarushi Jain", "designation": "USG Cinematography", "image": "public/TeamImages/Aarushi Jain_media.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
+    ]
+    },
+    {
+      "title": "Graphic Designing Team",
+      "members": [
+        { "name": "Khushi Kabra", "designation": "Designing Head", "image": "public/TeamImages/khushi kabra_graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
+        { "name": "Vranda Toshniwal", "designation": "Designing Head", "image": "public/TeamImages/Vranda Toshniwal _Graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/gracelee", "instagram": "https://www.instagram.com/gracelee" },
+        { "name": "Mahi Jain", "designation": "Designing Head", "image": "public/TeamImages/MAHI JAIN_graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" },
+        { "name": "MUskan Tikkiwal", "designation": "USG Designing", "image": "public/TeamImages/muskan_gd (1).jpeg", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" }
+
+      ]
+    },
+    {
+      "title": "Content Writing",
+      "members": [
+        { "name": "Asmita Goyal", "designation": "Content Head", "image": "public/TeamImages/Asmita Goyal_Content.jpg", "linkedin": "https://www.linkedin.com/in/alicejohnson", "instagram": "https://www.instagram.com/alicejohnson" },
+        { "name": "Kartik Saxena", "designation": "Content Head", "image": "public/TeamImages/Kartik.jpg", "linkedin": "https://www.linkedin.com/in/bobsmith", "instagram": "https://www.instagram.com/bobsmith" },
+        { "name": "Rashi Gupta", "designation": "Content Head", "image": "public/TeamImages/Rashi Gupta_Content.jpg", "linkedin": "https://www.linkedin.com/in/charliebrown", "instagram": "https://www.instagram.com/charliebrown" },
+        { "name": "Akshat Vaishnava", "designation": "USG Content", "image": "public/TeamImages/AKSHAT VAISHNAVA.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Virendra Singh Rathore", "designation": "USG Content", "image": "public/TeamImages/Virendra Singh Rathore_Content.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+        { "name": "Yati Kumawat", "designation": "USG Content", "image": "public/TeamImages/Yati Kumawat_content.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+        { "name": "Tanvi Prakash Shrivastava", "designation": "USG Content", "image": "public/TeamImages/TanviPrakashShrivastava _Content.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" }
+
+    ]
+    },
+    {
+      "title": "Delegate Affairs Team",
+      "members": [
+        { "name": "Bhumi Jain", "designation": "DA Head", "image": "public/TeamImages/Bhumi Jain.jpg", "linkedin": "https://www.linkedin.com/in/frankgreen", "instagram": "https://www.instagram.com/frankgreen" },
+        { "name": "Kashish Ayani", "designation": "DA Head", "image": "public/TeamImages/kashish_DA.jpg", "linkedin": "https://www.linkedin.com/in/gracelee", "instagram": "https://www.instagram.com/gracelee" },
+        { "name": "Pranshu Jajoo", "designation": "USG DA", "image": "public/TeamImages/Pranshujajoo_outreach.jpg", "linkedin": "https://www.linkedin.com/in/davidlee", "instagram": "https://www.instagram.com/davidlee" },
+        { "name": "Nimanshi Singh", "designation": "USG DA", "image": "", "linkedin": "https://www.linkedin.com/in/hankblue", "instagram": "https://www.instagram.com/hankblue" }
+      ]
+    }
+  ]
