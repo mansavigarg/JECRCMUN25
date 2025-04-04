@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import teamData from "../team.json";
 import bannerImg from "../assets/banner2.jpg";
-import TeamSection from "../components/ui/TeamSection ";
+import TeamSection from "../components/ui/TeamSection.jsx";
 function Team() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
