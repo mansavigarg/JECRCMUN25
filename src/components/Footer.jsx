@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 const quickLinks = [
   {
     name: "MUN Conference",
-    path: "/aboutmun"
+    path: "/aboutmun",
   },
   {
     name: "ZHS",
-    path: "/aboutzhs"
+    path: "/aboutzhs",
   },
   {
     name: "Team",
-    path: "/team"
+    path: "/team",
   },
   {
     name: "Contact Us",
-    path: "/contact"
-  }
+    path: "/contact",
+  },
 ];
 
 export default function Footer() {
@@ -82,8 +82,12 @@ export default function Footer() {
                 <Phone className="h-6 w-6 md:h-8 md:w-8" />
               </div>
               <div>
-                <p className="font-semibold text-base md:text-xl">Sarthak Jain - 7728858711</p>
-                <p className="font-semibold text-base md:text-xl">Radhika Rajawat - 6378859309</p>
+                <p className="font-semibold text-base md:text-xl">
+                  Sarthak Jain - 7728858711
+                </p>
+                <p className="font-semibold text-base md:text-xl">
+                  Radhika Rajawat - 6378859309
+                </p>
                 <p className="text-sm md:text-base">For information</p>
               </div>
             </div>
