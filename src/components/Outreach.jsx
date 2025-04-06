@@ -64,7 +64,12 @@ const OutreachSection = () => {
             >
               <h2 className={`text-4xl md:text-5xl font- ${stat.color}`}>
                 {startCount ? (
-                  <CountUp start={0} end={stat.number} duration={3} separator="," />
+                  <CountUp
+                    start={0}
+                    end={stat.number}
+                    duration={3}
+                    separator=","
+                  />
                 ) : (
                   "0"
                 )}
@@ -79,4 +84,3 @@ const OutreachSection = () => {
 };
 
 export default OutreachSection;
-
