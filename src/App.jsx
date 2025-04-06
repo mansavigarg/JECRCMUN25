@@ -10,9 +10,7 @@ import PreprationGuide from "./pages/PreprationGuide"
 import Sponsers from "./pages/Sponsers.jsx"
 import Faqs from "./pages/Faqs.jsx"
 
-
 function App() {
-
   return (
       <BrowserRouter>
         <Routes>
@@ -31,4 +29,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Gallary from "../components/Gallary";
 import { testimonial } from "../assets";
 import Agenda from "../components/Agenda";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Zhs = () => {
   useEffect(() => {
@@ -34,7 +36,10 @@ const Zhs = () => {
 
   return (
     <div className="">
-      <div className="w-full py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+      <div>
+        <Navbar />
+      </div>
+      <div className="w-full py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 mt-12">
         {/* Background world map */}
         <img
           src={testimonial}
@@ -303,8 +308,12 @@ const Zhs = () => {
       </div>
 
       {/* Agenda */}
-      <div>
+      {/* <div>
         <Agenda />
+      </div> */}
+
+      <div>
+        <Footer />
       </div>
     </div>
   );
