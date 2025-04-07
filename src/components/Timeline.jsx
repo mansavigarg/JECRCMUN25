@@ -99,7 +99,7 @@ const MunTimeline = () => {
               key={day}
               className={`px-6 py-2 rounded-full border transition-all ${
                 activeDay === day
-                  ? "bg-gradient-to-r from-red-800 to-red-600 border-black"
+                  ? "bg-[#991C1C] border-black"
                   : "border-white/30 hover:border-white/50"
               }`}
               onClick={() => setActiveDay(day)}

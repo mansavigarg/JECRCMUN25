@@ -118,7 +118,7 @@ const ContactPage = () => {
               placeholder="Enter a message"
               className="p-3 border border-gray-300 rounded-md mb-4 bg-white h-32"
             ></textarea>
-            <button className=" text-white py-3 rounded-md hover:bg-orange-700 transition">
+            <button className=" text-white py-3 rounded-md bg-gradient-to-r from-red-800 to-red-600 transition">
               Send Message
             </button>
           </form>
