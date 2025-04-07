@@ -11,7 +11,7 @@ import {
   CircleUserRound,
   BookOpen,
 } from "lucide-react";
-import logo from "../assets/mun-orange.png";
+import logo from "../assets/logo.svg"
 import { Drawer, Collapse } from "@mui/material";
 import Button from "@mui/material/Button";
 
@@ -26,6 +26,7 @@ const Navbar = () => {
   const location = useLocation();
   const dropdownRef = useRef(null);
   const dropdownTimeoutRef = useRef(null);
+  const drawerRef = useRef(null);
 
   // Handle scroll events
   useEffect(() => {
@@ -52,13 +53,30 @@ const Navbar = () => {
   // Close mobile drawer when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (showDrawer && !event.target.closest(".drawer-content")) {
+      // Only process if drawer is open
+      if (showDrawer) return;
+
+      // Check if click is outside the drawer content
+      // Use the MUI Drawer Paper element which contains the actual drawer content
+      const drawerPaper = document.querySelector(".MuiDrawer-paper");
+
+      if (
+        drawerPaper &&
+        !drawerPaper.contains(event.target) &&
+        // Also make sure we're not clicking the menu button itself
+        !event.target.closest('button[aria-label="open drawer"]')
+      ) {
         setShowDrawer(false);
       }
     };
 
+    // Add the event listener to the document
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener when component unmounts or showDrawer changes
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [showDrawer]);
 
   const handleDrawerToggle = () => {
@@ -104,11 +122,11 @@ const Navbar = () => {
           to={`/`}
           className="flex justify-center items-center space-x-3 text-sm transition-transform duration-300 hover:scale-105"
         >
-          <div className="w-14 h-14 rounded-full">
+          <div className="w-14 h-14">
             <img
               src={logo}
               alt="MUN LOGO"
-              className="w-full h-full rounded-full"
+              className="w-full h-full"
             />
           </div>
         </Link>
@@ -181,7 +199,7 @@ const Navbar = () => {
           <Link
             to="/registration"
             className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
-              isActive("/about")
+              isActive("/registration")
                 ? "border-b-2 border-[#991C1C] text-[#991C1C]"
                 : ""
             } font-semibold px-2`}
@@ -199,20 +217,14 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          {/* <Link 
-            to="/prepguide" 
-            className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
-              isActive("/prepguide") ? "border-b-2 border-[#991C1C] text-[#991C1C]" : ""
-            } font-semibold px-2`}
-          >
-            Prep Guide
-          </Link> */}
         </div>
 
         {/* Register Button */}
-        <button className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105">
-          REGISTER NOW
-        </button>
+        <Link to="/registration">
+          <button className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105">
+            REGISTER NOW
+          </button>
+        </Link>
 
         {/* Hamburger Menu */}
         <div className="sm:hidden">
@@ -220,14 +232,25 @@ const Navbar = () => {
             variant="text"
             onClick={handleDrawerToggle}
             className="focus:outline-none"
+            aria-label="open drawer"
           >
             <MenuIcon className="h-6 w-6 text-[#991C1C]" />
           </Button>
         </div>
 
         {/* Mobile Drawer */}
-        <Drawer anchor="right" open={showDrawer} onClose={handleDrawerToggle}>
-          <div className="w-72 p-6 h-full flex flex-col space-y-3 drawer-content">
+        <Drawer
+          anchor="right"
+          open={showDrawer}
+          onClose={handleDrawerToggle}
+          ref={drawerRef}
+          SlideProps={{
+            // Improve accessibility and click detection
+            role: "dialog",
+            tabIndex: -1,
+          }}
+        >
+          <div className="w-72 p-6 h-full flex flex-col space-y-3">
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 rounded-full">
@@ -261,32 +284,6 @@ const Navbar = () => {
                 <div className="flex items-center gap-3">
                   <House className="h-5 w-5" />
                   <span>Home</span>
-                </div>
-              </Link>
-
-              <Link
-                to="/about"
-                onClick={handleDrawerToggle}
-                className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
-                  isActive("/about") ? "text-[#991C1C]" : ""
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Users className="h-5 w-5" />
-                  <span>About</span>
-                </div>
-              </Link>
-
-              <Link
-                to="/team"
-                onClick={handleDrawerToggle}
-                className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
-                  isActive("/team") ? "text-[#991C1C]" : ""
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <Users className="h-5 w-5" />
-                  <span>Team</span>
                 </div>
               </Link>
 
@@ -336,6 +333,19 @@ const Navbar = () => {
               </Collapse>
 
               <Link
+                to="/team"
+                onClick={handleDrawerToggle}
+                className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
+                  isActive("/team") ? "text-[#991C1C]" : ""
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <Users className="h-5 w-5" />
+                  <span>Team</span>
+                </div>
+              </Link>
+
+              <Link
                 to="/contact"
                 onClick={handleDrawerToggle}
                 className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
@@ -348,21 +358,12 @@ const Navbar = () => {
                 </div>
               </Link>
 
-              {/* <Link 
-                to="/prepguide" 
-                onClick={handleDrawerToggle} 
-                className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${isActive("/prepguide") ? "text-[#991C1C]" : ""}`}
-              >
-                <div className='flex items-center gap-3'>
-                  <BookOpen className='h-5 w-5'/>
-                  <span>Prep Guide</span>
-                </div>
-              </Link> */}
-
               {/* Mobile Register Button */}
-              <button className="mt-4 px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md">
-                REGISTER NOW
-              </button>
+              <Link to="/registration">
+                <button className="mt-4 w-full px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md">
+                  REGISTER NOW
+                </button>
+              </Link>
             </div>
           </div>
         </Drawer>

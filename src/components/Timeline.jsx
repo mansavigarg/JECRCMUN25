@@ -70,22 +70,27 @@ const MunTimeline = () => {
         event: "Gala Dinner",
         description: "Celebratory dinner and social event.",
       },
+    
     ],
   };
 
   return (
     <div className="text-black min-h-screen p-6 flex justify-center items-center">
-      <div className="relative bg-white/20 backdrop-blur-lg shadow-lg rounded-2xl p-8 max-w-4xl w-full border border-white/30">
-        <div className="text-center mb-10">
-          <motion.h1
-            className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600 inline-block mb-10"
+      <div className="relative bg-white/20 backdrop-blur-lg shadow-lg rounded-2xl p-8 w-full border border-white/30">
+        <div className="text-center">
+          <motion.h2
+            className="text-5xl md:text-5xl font text-black inline-block mb-10"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Conference Timelines
-          </motion.h1>
+             Conference <span className="text-[#991C1C] drop-shadow-lg">Timelines</span>
+          </motion.h2>
         </div>
+
+        
+
+
 
         {/* Day Tabs */}
         <div className="flex justify-center mb-8 space-x-4">
@@ -94,7 +99,7 @@ const MunTimeline = () => {
               key={day}
               className={`px-6 py-2 rounded-full border transition-all ${
                 activeDay === day
-                  ? "bg-[#991C1C] border-[#991C1C]"
+                  ? "bg-[#991C1C] border-black"
                   : "border-white/30 hover:border-white/50"
               }`}
               onClick={() => setActiveDay(day)}
@@ -106,11 +111,13 @@ const MunTimeline = () => {
           ))}
         </div>
 
+
+        <div className="flex justify-center  mt-20">
         {/* Timeline */}
         <div className="relative pl-12 md:pl-16 ml-4 md:ml-6">
           {/* Vertical Line */}
           <motion.div
-            className="absolute  md:left-16 top-0 bottom-0 w-0.5 bg-black/30"
+            className="absolute md:left-16 top-0 bottom-0 w-0.5 bg-black/30"
             initial={{ height: 0 }}
             animate={{ height: "100%" }}
             transition={{ duration: 1 }}
@@ -140,6 +147,7 @@ const MunTimeline = () => {
               </div>
             </motion.div>
           ))}
+        </div>
         </div>
       </div>
     </div>

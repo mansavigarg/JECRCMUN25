@@ -43,7 +43,7 @@ const ContactPage = () => {
       >
         <div className="text-center mb-6">
           <motion.h1
-            className="text-5xl md:text-7xl font-bold text-[#991c1c] mb-6 tracking-tight"
+            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -118,7 +118,7 @@ const ContactPage = () => {
               placeholder="Enter a message"
               className="p-3 border border-gray-300 rounded-md mb-4 bg-white h-32"
             ></textarea>
-            <button className="bg-orange-600 text-white py-3 rounded-md hover:bg-orange-700 transition">
+            <button className=" text-white py-3 rounded-md bg-gradient-to-r from-red-800 to-red-600 transition">
               Send Message
             </button>
           </form>
@@ -126,7 +126,7 @@ const ContactPage = () => {
           <div className="rounded-2xl">
             <iframe
               className="w-full h-100 md:w-100 md:h-full "
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5724749144663!2d75.80208807547272!3d26.81415537674808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d5af022dd5%3A0xb3b099f9fcf5af41!2sJECRC%20Foundation!5e0!3m2!1sen!2sin!4v1711912395765!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.825855186854!2d75.81833451496024!3d26.7818204831841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc977c6898ab9%3A0x8010b7bf0b1f29c9!2sJECRC%20Foundation!5e0!3m2!1sen!2sin!4v1579948771763!5m2!1sen!2sin"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

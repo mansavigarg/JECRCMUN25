@@ -7,6 +7,8 @@ import Agenda from "../components/Agenda";
 import CommonRegister from "../components/CommonRegister";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import Registration from "./Registration";
 
 const Mun = () => {
   useEffect(() => {
@@ -107,8 +109,8 @@ const Mun = () => {
                       Our Vision
                     </h3>
                     <p className="text-gray-700">
-                      To empower youth through inclusive dialogue for impactful
-                      change.
+                      To ignite youth empowerment through inclusive dialogue,
+                      driving tangible global change.
                     </p>
                   </div>
                 </div>
@@ -144,12 +146,11 @@ const Mun = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-red-900 mb-2">
-                      A Mesmerizing Experience
+                      Beyond the Classroom
                     </h3>
                     <p className="text-gray-700">
-                      JECRC MUN takes you out from the world of textbooks and
-                      lectures and encourages learning through hands-on
-                      experience.
+                      JECRC MUN provides an immersive experience, fostering
+                      practical learning beyond traditional academic boundaries.
                     </p>
                   </div>
                 </div>
@@ -191,11 +192,10 @@ const Mun = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-red-900 mb-2">
-                      Exchange Of Ideas
+                      Where Ideas Meet
                     </h3>
                     <p className="text-gray-700">
-                      Where minds meet, ideas collide, and diplomacy ignites at
-                      the heart of every MUN event.
+                      A hub for intellectual exchange and diplomatic engagement.
                     </p>
                   </div>
                 </div>
@@ -212,32 +212,30 @@ const Mun = () => {
               <div className="text-gray-700 space-y-5">
                 <div className="scroll-animate transition-all duration-700">
                   <p className="text-lg leading-relaxed">
-                    JECRC Model United Nations (MUN) in Jaipur stands as a
-                    dynamic platform merging intellect and diplomacy, nurturing
-                    tomorrow's leaders. Staying true to the UN's spirit, we
-                    facilitate constructive dialogue on diverse, complex issues,
-                    fostering responsibility among young adults.
+                    Pioneering the MUN culture in Jaipur, JECRC MUN was
+                    established in 2012 with a visionary mission to cultivate
+                    future leaders through diplomatic dialogue. As the city's
+                    first academic institution to host a MUN conference, we
+                    embraced the profound responsibility of creating a platform
+                    where young minds could hone their skills in international
+                    relations, public speaking, and critical thinking. Under the
+                    esteemed guidance of Shri Kulbhushan Kothari, our founding
+                    patron, we have since transformed this ambition into a
+                    remarkable legacy.
                   </p>
                 </div>
 
                 <div className="scroll-animate transition-all duration-700 delay-200">
                   <p className="text-lg leading-relaxed">
-                    Located in Rajasthan's vibrant capital, we hold the
-                    distinction of being the largest MUN in the state, with a
-                    rich history dating back to its inception. Through our
-                    flagship JECRC MUN conference, strategic partnerships, and
-                    collaborative efforts, we inspire, challenge, and equip
-                    youth with a deeper global understanding.
-                  </p>
-                </div>
-
-                <div className="scroll-animate transition-all duration-700 delay-400">
-                  <p className="text-lg leading-relaxed">
-                    Since our establishment in 2012, we've embarked on a journey
-                    of growth, continually elevating our standards and impacting
-                    thousands annually. Attendees affirm our MUN's
-                    transformative impact, enhancing personal growth over two
-                    days of discussion.
+                    Over thirteen transformative years, JECRC MUN has grown
+                    exponentially, emerging as one of Rajasthan's largest and
+                    most prestigious debating forums. Having empowered over
+                    3,500 delegates across 13 successful editions, our
+                    conference has consistently pushed boundaries - even
+                    adapting seamlessly to virtual platforms during the pandemic
+                    to keep the spirit of diplomacy alive. This resilience
+                    underscores our commitment to fostering intellectual growth
+                    regardless of circumstances.
                   </p>
                 </div>
 
@@ -249,13 +247,15 @@ const Mun = () => {
                   </blockquote>
 
                   <div className="mt-8 flex justify-center">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-8 py-3 bg-gradient-to-r from-red-800 to-red-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    >
-                      Join Us Today!
-                    </motion.button>
+                    <Link to="/registration">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-8 py-3 bg-gradient-to-r from-red-800 to-red-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                      >
+                        Register Now!
+                      </motion.button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -270,7 +270,7 @@ const Mun = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">10+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">13+</div>
               <div className="text-gray-600">Years of Excellence</div>
             </motion.div>
 
@@ -280,7 +280,7 @@ const Mun = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">5,000+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">3,000+</div>
               <div className="text-gray-600">Students Impacted</div>
             </motion.div>
 
@@ -290,8 +290,8 @@ const Mun = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">20+</div>
-              <div className="text-gray-600">Countries Represented</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">7+</div>
+              <div className="text-gray-600">Committees Represented</div>
             </motion.div>
           </div>
         </div>

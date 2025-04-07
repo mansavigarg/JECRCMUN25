@@ -1,5 +1,25 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, ChevronUp, HelpCircle, Users, Calendar, Globe, MessageCircle } from 'lucide-react';
+import { 
+  ChevronDown, 
+  ChevronUp, 
+  Users, 
+  GraduationCap, 
+  Building, 
+  Globe, 
+  ClipboardList, 
+  PiggyBank, 
+  UserPlus, 
+  Flag, 
+  BookOpen, 
+  CircleUser, 
+  Clock, 
+  Award, 
+  Car, 
+  Coffee, 
+  FileText, 
+  Languages, 
+  MessageCircle 
+} from 'lucide-react';
 
 const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -7,29 +27,89 @@ const FAQPage = () => {
   
   const faqData = [
     {
-      question: "What does the G20 stand for?",
-      answer: "The G20 stands for 'Group of Twenty,' which is a forum of 19 countries plus the European Union that together represent the world's major developed and emerging economies. The G20 members account for more than 80% of the world's GDP, 75% of global trade, and 60% of the world's population.",
+      question: "Who can participate in JECRC MUN?",
+      answer: "High school and college students interested in debating, diplomacy, or global affairs.",
       icon: <Users size={24} className="text-[#991C1C]" />
     },
     {
-      question: "What is the G20 Summit?",
-      answer: "The G20 Summit is an annual international forum that brings together the leaders of the world's major economies to discuss global economic issues, financial stability, climate change, sustainable development, and other pressing international challenges. The presidency of the G20 rotates among its members each year.",
+      question: "Do I need prior MUN experience?",
+      answer: "No! Both beginners and experienced delegates are welcome.",
+      icon: <GraduationCap size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "What committees will be simulated?",
+      answer: "We have 8 exciting committees! Check the Agenda section on our website for details.",
+      icon: <Building size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Can I participate in a bilingual committee?",
+      answer: "Yes! Three of our committees are bilingual. Check the Agenda for details.",
+      icon: <Languages size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "How do I register?",
+      answer: "Register online at [...LINK...] Hurry up before the slots fill up!",
+      icon: <ClipboardList size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "What is the registration fee?",
+      answer: "The standard registration fee is ₹3000, which includes participation, study materials, meals, and a certificate. However, we have early bird offers available: Priority Round 1 (till 15th April): ₹2500/- Priority Round 2: ₹2750/- Grab your slot early to enjoy the discounted rates!",
+      icon: <PiggyBank size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Can I register as a team?",
+      answer: "No. Delegates represent individual countries or personalities.",
+      icon: <UserPlus size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Can I request a specific country or portfolio?",
+      answer: "Yes, but allocations are based on availability and first-come, first-served registration.",
+      icon: <Flag size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Will there be any training sessions for beginners?",
+      answer: "Yes! We'll conduct pre-conference training sessions to help first-timers understand MUN procedures.",
+      icon: <BookOpen size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "How are country and committee allocations done?",
+      answer: "First come, first served! Early registration increases your chances of getting your preferred portfolio.",
       icon: <Globe size={24} className="text-[#991C1C]" />
     },
     {
-      question: "Why was the G20 Leaders' Summit established?",
-      answer: "The G20 Leaders' Summit was established in 2008 in response to the global financial crisis. While the G20 had existed at the ministerial level since 1999, the severity of the financial crisis prompted the elevation of the forum to the leaders' level to better coordinate global economic policies and prevent future financial crises.",
-      icon: <HelpCircle size={24} className="text-[#991C1C]" />
+      question: "Will I get a study guide?",
+      answer: "Yes! Every delegate receives a detailed study guide for preparation.",
+      icon: <FileText size={24} className="text-[#991C1C]" />
     },
     {
-      question: "Which countries and international organisations participate in the G20?",
-      answer: "The G20 consists of Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Mexico, Russia, Saudi Arabia, South Africa, South Korea, Turkey, the United Kingdom, the United States, and the European Union. Additionally, international organizations such as the IMF, World Bank, UN, WHO, WTO, ILO, and OECD regularly participate as observers.",
-      icon: <Globe size={24} className="text-[#991C1C]" />
+      question: "What is the dress code?",
+      answer: "Day 1: Western Formal (suits, blazers, dress shirts, skirts, etc.) Day 2: Indian Formals (kurta, suits, etc.)",
+      icon: <CircleUser size={24} className="text-[#991C1C]" />
     },
     {
-      question: "How often are G20 meetings held?",
-      answer: "The G20 holds annual Leaders' Summits, as well as ministerial meetings, working groups, and other events throughout the year. The frequency of meetings increases during the host country's presidency year.",
-      icon: <Calendar size={24} className="text-[#991C1C]" />
+      question: "Will it be a late-night event?",
+      answer: "The event will conclude by 10 PM on Day 1 and by evening on Day 2.",
+      icon: <Clock size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Are there awards or incentives?",
+      answer: "Yes! Categories include: 🏆 Best Delegate, 🥈 High Commendation, 🏅 Special Mention",
+      icon: <Award size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Will transportation be provided?",
+      answer: "Yes, within Jaipur. Details will be shared before the event.",
+      icon: <Car size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Will meals be provided?",
+      answer: "Yes, meals and refreshments are included in the fee.",
+      icon: <Coffee size={24} className="text-[#991C1C]" />
+    },
+    {
+      question: "Will I get a certificate?",
+      answer: "Yes! All participants receive an official JECRC MUN Participation Certificate.",
+      icon: <FileText size={24} className="text-[#991C1C]" />
     }
   ];
   
@@ -43,15 +123,15 @@ const FAQPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header with  graphics */}
+      {/* Header with enhanced graphics */}
       <header className="relative bg-gradient-to-r from-[#991C1C] to-[#7a1717] text-white py-16 px-4 overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">FAQs</h1>
-          <div className="flex justify-center items-center gap-2 text-sm opacity-80">           
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">Frequently Asked Questions</h1>
+          <p className="text-lg text-center font-medium">JECRC MUN 2025</p>
+          <div className="flex justify-center items-center gap-2 text-sm opacity-80"></div>
         </div>
 
-        {/*  decorative elements */}
+        {/* Enhanced decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-8 left-8 opacity-10">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
@@ -75,8 +155,22 @@ const FAQPage = () => {
         </div>
       </header>
 
+      {/* World map pattern - decorative element */}
+      <div className="h-16 bg-gray-100 flex items-center justify-center overflow-hidden relative">
+        <div className="absolute inset-0 opacity-10">
+          <svg viewBox="0 0 1000 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,100 Q250,20 500,100 T1000,100" stroke="#991C1C" strokeWidth="4" fill="none" />
+            <path d="M0,80 Q250,0 500,80 T1000,80" stroke="#060807" strokeWidth="3" fill="none" />
+            <path d="M0,60 Q250,-20 500,60 T1000,60" stroke="#991C1C" strokeWidth="2" fill="none" />
+          </svg>
+        </div>
+        <div className="text-lg font-medium text-[#060807] z-10 flex items-center gap-2">
+          <Globe size={20} className="text-[#991C1C]" />
+          <span>Find answers to all your queries about JECRC MUN 2025</span>
+        </div>
+      </div>
 
-      {/* FAQ Content*/}
+      {/* FAQ Content with enhanced design */}
       <main className="max-w-4xl mx-auto py-12 px-4">
         {/* Decorative background elements */}
         <div className="absolute left-0 right-0 top-1/3 -z-10 opacity-5">
@@ -160,9 +254,9 @@ const FAQPage = () => {
             <div className="rounded-full bg-[#991C1C] p-3 text-white">
               <MessageCircle size={24} />
             </div>
-            <h1 className="text-3xl font-bold text-[#060807]">Still Confused?</h1>
+            <h1 className="text-3xl font-bold text-[#060807]">Still Have Questions?</h1>
           </div>
-          <button className="px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-700 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <button className="px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-700 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Contact Us
           </button>
         </div>
