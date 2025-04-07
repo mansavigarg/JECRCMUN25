@@ -88,9 +88,8 @@ const CountdownTimer = () => {
           >
             JECRC MUN 2025
           </motion.h1>
-          <p className="text-xl md:text-2xl text-black max-w-3xl mx-auto font-medium">
-            Join Rajasthan's largest MUN conference and be part of a
-            transformative experience.
+          <p className="text-xl md:text-xl text-black max-w-3xl mx-auto font-medium">
+          Rajasthan’s largest MUN Conference with a network surpassing 25 lac, engaging 350 institutes and welcoming over 3500 delegates to the ground of diplomacy.
           </p>
         </motion.div>
 
