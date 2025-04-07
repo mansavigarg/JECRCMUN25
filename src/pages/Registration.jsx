@@ -6,66 +6,6 @@ import Footer from "../components/Footer";
 const Registration = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const roles = [
-    {
-      title: "Delegate",
-      fee: "₹3000",
-      tagline: "Perfect for first-time",
-      details: [
-        "Priority Round 1: ₹2500 (till 15th April)",
-        "Priority Round 2: ₹2750",
-      ],
-      committees: [
-        "UNSC",
-        "ECOFIN",
-        "UNHCR",
-        "COPUOS",
-        "AIPPM",
-        "SICCC",
-        "CBFC",
-        "IP",
-      ],
-    },
-    {
-      title: "Observer",
-      fee: "₹2500",
-      tagline: "Most popular choice",
-      details: [
-        "Priority Round 1: ₹2000 (till 15th April)",
-        "Priority Round 2: ₹2250",
-      ],
-      committees: [
-        "UNSC",
-        "ECOFIN",
-        "UNHCR",
-        "COPUOS",
-        "AIPPM",
-        "SICCC",
-        "CBFC",
-        "IP",
-      ],
-    },
-    {
-      title: "Faculty Advisor",
-      fee: "₹1500",
-      tagline: "For educational staff",
-      details: [
-        "Early Bird: ₹1200 (till 10th April)",
-        "Priority Round 2: ₹2250",
-      ],
-      committees: [
-        "UNSC",
-        "ECOFIN",
-        "UNHCR",
-        "COPUOS",
-        "AIPPM",
-        "SICCC",
-        "CBFC",
-        "IP",
-      ],
-    },
-  ];
-
   // Framer motion variants
   const backgroundElementVariants = {
     animate: (i) => ({
@@ -160,84 +100,260 @@ const Registration = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
-            {roles.map((role, index) => (
-              <motion.div
-                key={index}
-                className="w-full max-w-md"
-                initial="default"
-                animate={activeIndex === index ? "active" : "default"}
-                variants={cardVariants}
-                onHoverStart={() => setActiveIndex(index)}
-                onHoverEnd={() => setActiveIndex(null)}
-                layout
+            {/* Executive Board Card */}
+            <motion.div
+              className="w-full max-w-md"
+              initial="default"
+              animate={activeIndex === 0 ? "active" : "default"}
+              variants={cardVariants}
+              onHoverStart={() => setActiveIndex(0)}
+              onHoverEnd={() => setActiveIndex(null)}
+              layout
+            >
+              <div
+                className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
+                  activeIndex === 0 ? "shadow-[#991c1c]" : ""
+                }`}
               >
-                <div
-                  className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
-                    activeIndex === index ? "shadow-[#991c1c]" : ""
-                  }`}
-                >
-                  {/* Card Header */}
-                  <div
-                    className={`p-8 ${
-                      index === 0
-                        ? "bg-gradient-to-r from-[#991c1c] to-[#7a1717]"
-                        : index === 1
-                        ? "bg-gradient-to-r from-[#7a1717] to-[#b02626]"
-                        : "bg-gradient-to-r from-[#b02626] to-[#991c1c]"
-                    }`}
-                  >
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                          {role.tagline}
-                        </span>
-                        <h3 className="text-2xl font-bold text-white">
-                          {role.title}
-                        </h3>
-                      </div>
-                      <div className="text-right">
-                        <p className="text-white/80 text-sm">Starting from</p>
-                        <p className="text-4xl font-extrabold text-white">
-                          {role.fee}
-                        </p>
-                      </div>
+                {/* Card Header */}
+                <div className="p-8 bg-gradient-to-r from-[#991c1c] to-[#7a1717]">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
+                        JECRC MUN 2025
+                      </span>
+                      <h3 className="text-2xl font-bold text-white">
+                        Executive Board
+                      </h3>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-white/80 text-sm">
+                        {/* Delegation Fee */}
+                      </p>
+                      <p className="text-4xl font-extrabold text-white">
+                        {/* ₹3000 */}
+                      </p>
                     </div>
                   </div>
+                </div>
 
-                  {/* Card Content */}
-                  <div className="p-8">
-                    <div className="mb-6">
-                      {role.details.map((detail, idx) => (
-                        <div key={idx} className="flex items-center mb-3">
-                          <div
-                            className={`w-2 h-2 rounded-full mr-2 ${
-                              index === 0
-                                ? "bg-[#991c1c]"
-                                : index === 1
-                                ? "bg-[#991c1c]"
-                                : "bg-[#991c1c]"
-                            }`}
-                          ></div>
-                          <p className="text-gray-700">{detail}</p>
+                {/* Card Content */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    {/* Executive Board has no special details in the original code */}
+                  </div>
+
+                  <div className="border-gray-200 pt-6 mb-6">
+                    <h4 className="font-semibold text-gray-900 mb-3">
+                      Committees Access:
+                    </h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {[
+                        "UNSC",
+                        "ECOFIN",
+                        "UNHCR",
+                        "COPUOS",
+                        "AIPPM",
+                        "SICCC",
+                        "CBFC",
+                        "IP",
+                      ].map((committee, idx) => (
+                        <div key={idx} className="flex items-center">
+                          <svg
+                            className="w-4 h-4 mr-2 text-[#991c1c]"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span className="text-gray-700 text-sm">
+                            {committee}
+                          </span>
                         </div>
                       ))}
                     </div>
+                  </div>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSciZD1UVgm9Nuk2C-BeJ9iEFsiY0k8L0W1lkchmhKMAXqLxhA/viewform">
+                    <motion.button
+                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      variants={buttonVariants}
+                      initial="initial"
+                      whileHover="hover"
+                    >
+                      Register Now
+                    </motion.button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
 
-                    <div className="border-t border-gray-200 pt-6 mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-3">
-                        Committees Access:
-                      </h4>
-                      <div className="grid grid-cols-2 gap-2">
-                        {role.committees.map((committee, idx) => (
+            {/* Delegate Card */}
+            <motion.div
+              className="w-full max-w-md"
+              initial="default"
+              animate={activeIndex === 1 ? "active" : "default"}
+              variants={cardVariants}
+              onHoverStart={() => setActiveIndex(1)}
+              onHoverEnd={() => setActiveIndex(null)}
+              layout
+            >
+              <div
+                className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
+                  activeIndex === 1 ? "shadow-[#991c1c]" : ""
+                }`}
+              >
+                {/* Card Header */}
+                <div className="p-8 bg-gradient-to-r from-[#7a1717] to-[#b02626]">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
+                        JECRC MUN 2025
+                      </span>
+                      <h3 className="text-2xl font-bold text-white">
+                        Delegate
+                      </h3>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-white/80 text-sm">Delegation Fee</p>
+                      <p className="text-4xl font-extrabold text-white">
+                        ₹3000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="flex items-center mb-3">
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <p className="text-gray-700">
+                        Priority Round 1 till 15th April: ₹ 2500/-
+                      </p>
+                    </div>
+                    <div className="flex items-center mb-3">
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <p className="text-gray-700">
+                        Priority Round 2: ₹ 2750/-
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-gray-200 pt-6 mb-6">
+                    <h4 className="font-semibold text-gray-900 mb-3">
+                      Committees Access:
+                    </h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {[
+                        "UNSC",
+                        "ECOFIN",
+                        "UNHCR",
+                        "COPUOS",
+                        "AIPPM",
+                        "SICCC",
+                        "CBFC",
+                        "IP",
+                      ].map((committee, idx) => (
+                        <div key={idx} className="flex items-center">
+                          <svg
+                            className="w-4 h-4 mr-2 text-[#991c1c]"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span className="text-gray-700 text-sm">
+                            {committee}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <a href="https://docs.google.com/forms/d/1C91naJzBI6XcewO0djrsnhsrDeb0TzalyMVWu12VOjY/viewform?edit_requested=true">
+                    <motion.button
+                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      variants={buttonVariants}
+                      initial="initial"
+                      whileHover="hover"
+                    >
+                      Register Now
+                    </motion.button>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* International Press Card */}
+            <motion.div
+              className="w-full max-w-md"
+              initial="default"
+              animate={activeIndex === 2 ? "active" : "default"}
+              variants={cardVariants}
+              onHoverStart={() => setActiveIndex(2)}
+              onHoverEnd={() => setActiveIndex(null)}
+              layout
+            >
+              <div
+                className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
+                  activeIndex === 2 ? "shadow-[#991c1c]" : ""
+                }`}
+              >
+                {/* Card Header */}
+                <div className="p-4 bg-gradient-to-r from-[#b02626] to-[#991c1c]">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
+                        JECRC MUN 2025
+                      </span>
+                      <h3 className="text-2xl font-bold text-white">
+                        International <br />
+                        Press
+                      </h3>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-white/80 text-sm">Delegation Fee</p>
+                      <p className="text-4xl font-extrabold text-white">
+                        ₹3000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <div className="flex items-center mb-3">
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <p className="text-gray-700">
+                        Priority Round 1 till 15th April: ₹ 2500/-
+                      </p>
+                    </div>
+                    <div className="flex items-center mb-3">
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <p className="text-gray-700">
+                        Priority Round 2: ₹ 2750/-
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-gray-200 pt-6 mb-6">
+                    <h4 className="font-semibold text-gray-900 mb-3">
+                      International Press:
+                    </h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {["Reporter", "Photographer", "Caricaturist"].map(
+                        (committee, idx) => (
                           <div key={idx} className="flex items-center">
                             <svg
-                              className={`w-4 h-4 mr-2 ${
-                                index === 0
-                                  ? "text-[#991c1c]"
-                                  : index === 1
-                                  ? "text-[#991c1c]"
-                                  : "text-[#991c1c]"
-                              }`}
+                              className="w-4 h-4 mr-2 text-[#991c1c]"
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
@@ -251,32 +367,23 @@ const Registration = () => {
                               {committee}
                             </span>
                           </div>
-                        ))}
-                      </div>
+                        )
+                      )}
                     </div>
-
+                  </div>
+                  <a href="https://docs.google.com/forms/d/1ejeSyU65Cfc6Z5y-_haE2dhneVbzebc5rOwSsV8ZhnI/viewform?edit_requested=true">
                     <motion.button
-                      className={`w-full py-3 px-6 rounded-lg font-bold text-white ${
-                        index === 0
-                          ? "bg-[#b02626] hover:bg-[#991c1c]"
-                          : index === 1
-                          ? "bg-[#b02626] hover:bg-[#991c1c]"
-                          : "bg-[#b02626] hover:bg-[#991c1c]"
-                      }`}
+                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
                       variants={buttonVariants}
                       initial="initial"
                       whileHover="hover"
                     >
                       Register Now
                     </motion.button>
-
-                    <p className="text-center text-gray-500 text-sm mt-4">
-                      Registration closes April 20th
-                    </p>
-                  </div>
+                  </a>
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
           </div>
 
           {/* Bottom Wave */}

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Gallary from "../components/Gallary";
+import GallaryZhs from "../components/GallaryZhs";
 import { testimonial } from "../assets";
 import Agenda from "../components/Agenda";
 import Navbar from "../components/Navbar";
@@ -61,7 +62,7 @@ const Zhs = () => {
             className="text-center mb-12"
           >
             <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600 mb-4 inline-block">
-              MUN Conference
+              ZERO HOUR SUMMIT
             </h1>
             {/* Line with no annimation */}
             {/* <div className="w-24 h-1 bg-orange-500 mx-auto mb-4"></div> */}
@@ -113,8 +114,8 @@ const Zhs = () => {
                       Our Vision
                     </h3>
                     <p className="text-gray-700">
-                      To empower youth through inclusive dialogue for impactful
-                      change.
+                      To inspire students at JECRC Foundation to engage in
+                      public speaking and cultivate diplomatic skills.
                     </p>
                   </div>
                 </div>
@@ -150,12 +151,11 @@ const Zhs = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-red-900 mb-2">
-                      A Mesmerizing Experience
+                      A launching pad
                     </h3>
                     <p className="text-gray-700">
-                      JECRC MUN takes you out from the world of textbooks and
-                      lectures and encourages learning through hands-on
-                      experience.
+                      ZHS introduces young students on our campus to debates and
+                      diplomacy, fostering hands-on learning experiences.
                     </p>
                   </div>
                 </div>
@@ -197,11 +197,11 @@ const Zhs = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-red-900 mb-2">
-                      Exchange Of Ideas
+                      A precursor to the flagship JECRC MUN
                     </h3>
                     <p className="text-gray-700">
-                      Where minds meet, ideas collide, and diplomacy ignites at
-                      the heart of every MUN event.
+                      ZHS eases the jitters of direct participation in a
+                      national MUN, acting as a comforting buffer.
                     </p>
                   </div>
                 </div>
@@ -218,40 +218,41 @@ const Zhs = () => {
               <div className="text-gray-700 space-y-5">
                 <div className="scroll-animate transition-all duration-700">
                   <p className="text-lg leading-relaxed">
-                    JECRC Model United Nations (MUN) in Jaipur stands as a
-                    dynamic platform merging intellect and diplomacy, nurturing
-                    tomorrow's leaders. Staying true to the UN's spirit, we
-                    facilitate constructive dialogue on diverse, complex issues,
-                    fostering responsibility among young adults.
+                    Zero Hour Summit (ZHS) is a debating competition exclusively
+                    for JECRC Foundation students, organized by the JECRC Model
+                    United Nations Society. This intellectual platform is
+                    designed to spark interest in debating while developing
+                    students' understanding of contemporary global issues.
                   </p>
                 </div>
 
                 <div className="scroll-animate transition-all duration-700 delay-200">
                   <p className="text-lg leading-relaxed">
-                    Located in Rajasthan's vibrant capital, we hold the
-                    distinction of being the largest MUN in the state, with a
-                    rich history dating back to its inception. Through our
-                    flagship JECRC MUN conference, strategic partnerships, and
-                    collaborative efforts, we inspire, challenge, and equip
-                    youth with a deeper global understanding.
+                    The event features five specialized committees covering
+                    diverse topics, creating space for stimulating discourse and
+                    cultivating passion for international affairs. As a
+                    precursor to the larger JECRC MUN conference held in
+                    subsequent semesters, ZHS provides participants with
+                    valuable exposure to diplomatic processes.
                   </p>
                 </div>
 
                 <div className="scroll-animate transition-all duration-700 delay-400">
                   <p className="text-lg leading-relaxed">
-                    Since our establishment in 2012, we've embarked on a journey
-                    of growth, continually elevating our standards and impacting
-                    thousands annually. Attendees affirm our MUN's
-                    transformative impact, enhancing personal growth over two
-                    days of discussion.
+                    ZHS serves as a transformative experience that refines
+                    cognitive abilities, enhances oratorical skills, and
+                    develops leadership qualities. As Edmund Burke noted, "All
+                    that is necessary for the triumph of evil is for good men to
+                    do nothing" - a sentiment that underscores ZHS's commitment
+                    to progress through healthy debate.
                   </p>
                 </div>
 
                 <div className="mt-8 scroll-animate transition-all duration-700 delay-600">
                   <blockquote className="pl-4 border-l-4 border-orange-500 italic text-gray-600">
-                    JECRC MUN is a celebration of ideas and a platform for
-                    personal and academic growth, where students refine skills
-                    to contribute to a better world.
+                    Following three successful previous editions, the fourth
+                    chapter of this enriching series is scheduled for November
+                    2024.
                   </blockquote>
 
                   <div className="mt-8 flex justify-center">
@@ -260,7 +261,7 @@ const Zhs = () => {
                       whileTap={{ scale: 0.95 }}
                       className="px-8 py-3 bg-gradient-to-r from-red-800 to-red-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                     >
-                      Join Us Today!
+                      Register Now!
                     </motion.button>
                   </div>
                 </div>
@@ -276,7 +277,7 @@ const Zhs = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">10+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">13+</div>
               <div className="text-gray-600">Years of Excellence</div>
             </motion.div>
 
@@ -286,7 +287,7 @@ const Zhs = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">5,000+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">3,000+</div>
               <div className="text-gray-600">Students Impacted</div>
             </motion.div>
 
@@ -296,15 +297,15 @@ const Zhs = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">20+</div>
-              <div className="text-gray-600">Countries Represented</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">7+</div>
+              <div className="text-gray-600">Committees Represented</div>
             </motion.div>
           </div>
         </div>
       </div>
       {/* Gallary Section */}
       <div>
-        <Gallary />
+        <GallaryZhs />
       </div>
 
       {/* Agenda */}
