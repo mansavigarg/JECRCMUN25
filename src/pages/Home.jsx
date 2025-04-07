@@ -28,56 +28,56 @@ const agendas = [
     subtitle: "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
     image: "./unhcr.webp",
-    bgColor: "bg-red-600",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Deliberation on the ongoing crisis in Syria",
     subtitle: "Evaluating the current regime versus the opposition for long-term stability and peace.",
     tag: "UNSC",
     image: "/unsc.webp",
-    bgColor: "bg-yellow-600",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "The Global Economic Impact of U.S. Unilateral Trade Policies",
     subtitle: "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
     tag: "ECOFIN",
     image: "/ecofinn.webp",
-    bgColor: "bg-orange-600",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Governing Space Colonization and Resource Utilization in the New Space Race",
     subtitle: "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
     tag: "COPUOS",
     image: "/cop.webp",
-    bgColor: "bg-blue-600",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Balancing religious gatherings with civic responsibilities",
     subtitle: "Reconciling faithful devotion with societal welfare.",
     tag: "AIPPM",
     image: "/aippm.webp",
-    bgColor: "bg-gray-500",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Analyzing the events of the 2002 Godhra incident",
     subtitle: "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
     tag: "SICCC",
     image: "/bg12.jpg",
-    bgColor: "bg-purple-600",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Assessing the influence of nepotism and creative stagnation in Bollywood",
     subtitle: "A star-kid monopoly or a broader industry challenge?",
     tag: "CBFC",
-    image: "/bg12.jpg",
-    bgColor: "bg-green-600",
+    image: "/cbfc.webp",
+    bgColor: "bg-[#991C1C]",
   },
   {
     title: "Media Roles in Documenting and Analyzing Committee Proceedings",
     subtitle: "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative",
     tag: "IP",
     image: "/ip4.webp",
-    bgColor: "bg-pink-600",
+    bgColor: "bg-[#991C1C]",
   },
 ];
 
@@ -124,17 +124,17 @@ const testimonials = [
   {
     name: "Vishakha Mulani",
     text: "Participating in JECRC MUN was a whirlwind of political problem-solving and strategic diplomacy. Representing a country rather than myself added complexity, pushing me to find common ground amidst diverse perspectives.",
-    image: "/images/vishakha.jpg",
+    image: "/vishakha.webp",
   },
   {
-    name: "Rohan Sharma",
+    name: "Akshat Jain",
     text: "JECRC MUN helped me build confidence, diplomacy, and networking skills. The experience was eye-opening and helped me grow immensely.",
-    image: "/images/rohan.jpg",
+    image: "/akshat.webp",
   },
   {
-    name: "Ananya Gupta",
+    name: "Pratham Khandelwal",
     text: "A phenomenal experience! The debates, networking, and competitive environment helped me sharpen my critical thinking skills.",
-    image: "/images/ananya.jpg",
+    image: "/pratham.webp",
   },
 ];
 
@@ -472,7 +472,7 @@ const Home = () => {
         <div className="md:w-6/12 grid grid-cols-2 gap-4 mt-12 md:mt-0 animate-fadeIn">
           <div className="relative group">
             <img
-              src="/bg4.jpg"
+              src="/src/assets/mun/mun5.webp"
               alt="Speaker at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
@@ -484,7 +484,7 @@ const Home = () => {
           </div>
           <div className="relative group">
             <img
-              src="/bg5.jpg"
+              src="/src/assets/mun/mun3.webp"
               alt="Delegates at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
@@ -496,7 +496,7 @@ const Home = () => {
           </div>
           <div className="relative group col-span-2">
             <img
-              src="/bg6.jpg"
+              src="/src/assets/mun/mun4.webp"
               alt="Conference at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
