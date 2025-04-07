@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronRight, Calendar, Globe, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function CommonRegister() {
   const [isVisible, setIsVisible] = useState(false);
@@ -119,7 +120,7 @@ export default function CommonRegister() {
             <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-500 px-6 py-2 rounded-full text-sm md:text-base font-medium inline-flex items-center shadow-sm relative overflow-hidden group">
               <span className="absolute inset-0 bg-gradient-to-r from-orange-200 to-orange-100 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 relative z-10"></span>
-              <span className="relative z-10">Join Jecrc MUN 2024</span>
+              <span className="relative z-10">Join JECRC MUN 2025</span>
             </span>
           </div>
 
@@ -141,7 +142,7 @@ export default function CommonRegister() {
                     isVisible ? "translate-y-0" : "translate-y-full"
                   }`}
                 >
-                  13th Edition Of
+                  14th Edition Of
                 </span>
               </div>
               <div className="overflow-hidden relative">
@@ -169,20 +170,21 @@ export default function CommonRegister() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            Join a global community, uniting over
+            Join a Legacy of Global Changemakers –
             <span
               className="font-semibold text-red-800 relative inline-block mx-1"
               onMouseEnter={() => setIsTextHovered(true)}
               onMouseLeave={() => setIsTextHovered(false)}
             >
-              3000 delegates
+              3500 Delegates
               <span
                 className={`absolute -bottom-0.5 left-0 w-full h-0.5 bg-red-800 transition-transform duration-300 ${
                   isTextHovered ? "scale-x-100" : "scale-x-0"
                 }`}
               ></span>
             </span>
-            till date, driven by a shared vision of progress and change.
+            United in Pursuit of Diplomatic Excellence and Transformative
+            Leadership.
           </p>
 
           {/* Animated CTA button with fixed hover animation */}
@@ -194,31 +196,33 @@ export default function CommonRegister() {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              <button
-                className="bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative group overflow-hidden"
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
-              >
-                {/* Complete hover overlay that fully animates */}
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <Link to="/registration">
+                <button
+                  className="bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative group overflow-hidden"
+                  onMouseEnter={() => setIsButtonHovered(true)}
+                  onMouseLeave={() => setIsButtonHovered(false)}
+                >
+                  {/* Complete hover overlay that fully animates */}
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
 
-                {/* Button content */}
-                <span className="relative z-10">Register Now</span>
-                <ChevronRight
-                  size={20}
-                  className="relative z-10 transition-transform duration-300 group-hover:translate-x-1"
-                />
+                  {/* Button content */}
+                  <span className="relative z-10">Register Now</span>
+                  <ChevronRight
+                    size={20}
+                    className="relative z-10 transition-transform duration-300 group-hover:translate-x-1"
+                  />
 
-                {/* Decorative elements */}
-                <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-800 rounded-full opacity-70"></span>
+                  {/* Decorative elements */}
+                  <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-800 rounded-full opacity-70"></span>
 
-                {/* Ripple effect on hover */}
-                <span
-                  className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white opacity-20 transition-all duration-700 ease-out ${
-                    isButtonHovered ? "w-32 h-32" : "w-0 h-0"
-                  }`}
-                ></span>
-              </button>
+                  {/* Ripple effect on hover */}
+                  <span
+                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white opacity-20 transition-all duration-700 ease-out ${
+                      isButtonHovered ? "w-32 h-32" : "w-0 h-0"
+                    }`}
+                  ></span>
+                </button>
+              </Link>
             </div>
           </a>
 
@@ -232,15 +236,15 @@ export default function CommonRegister() {
           >
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <Calendar size={16} className="text-red-800 mr-2" />
-              <span className="text-gray-700">13 Years of Excellence</span>
+              <span className="text-gray-700">13+ Years of Excellence</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <Users size={16} className="text-orange-500 mr-2" />
-              <span className="text-gray-700">3000+ Global Delegates</span>
+              <span className="text-gray-700">3500+ Delegates</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <Globe size={16} className="text-red-800 mr-2" />
-              <span className="text-gray-700">10+ Committees</span>
+              <span className="text-gray-700">7+ Committees</span>
             </div>
           </div>
         </div>
