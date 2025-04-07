@@ -18,6 +18,7 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import CountdownTimer from "../components/CountdownTimer";
 import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
+import AfterMovie from "../components/Aftermovie.jsx";
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
@@ -607,6 +608,10 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <section>
+
+        <AfterMovie/>
+      </section>
       <section className="py-24 bg-gradient-to-b from-white to-white text-black relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           {/* Section Title */}
@@ -676,6 +681,8 @@ const Home = () => {
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         ></motion.div>
       </section>
+
+      
       <div>
         <Footer />
       </div>
