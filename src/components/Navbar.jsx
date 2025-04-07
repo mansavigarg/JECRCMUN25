@@ -11,7 +11,7 @@ import {
   CircleUserRound,
   BookOpen,
 } from "lucide-react";
-import logo from "../assets/mun-orange.png";
+import logo from "../assets/logo.svg"
 import { Drawer, Collapse } from "@mui/material";
 import Button from "@mui/material/Button";
 
@@ -104,11 +104,11 @@ const Navbar = () => {
           to={`/`}
           className="flex justify-center items-center space-x-3 text-sm transition-transform duration-300 hover:scale-105"
         >
-          <div className="w-14 h-14 rounded-full">
+          <div className="w-14 h-14">
             <img
               src={logo}
               alt="MUN LOGO"
-              className="w-full h-full rounded-full"
+              className="w-full h-full"
             />
           </div>
         </Link>

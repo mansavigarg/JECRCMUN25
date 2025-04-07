@@ -18,51 +18,66 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import CountdownTimer from "../components/CountdownTimer";
 import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
+import MunTimeline from "../components/Timeline.jsx"
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
 const agendas = [
   {
-    title: "Addressing Discrimination Against Refugees",
-    subtitle: "With Special Emphasis On The Syrian Refugee Crisis",
+    title: "Addressing the global humanitarian crisis",
+    subtitle: "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
-    image: "/bg8.jpg",
+    image: "./unhcr.webp",
     bgColor: "bg-red-600",
   },
   {
-    title: "Governance & Environmental Conservation In Ladakh",
-    subtitle: "Demands For Statehood, Tribal Status & Protection",
-    tag: "LOK SABHA",
-    image: "/bg9.jpg",
+    title: "Deliberation on the ongoing crisis in Syria",
+    subtitle: "Evaluating the current regime versus the opposition for long-term stability and peace.",
+    tag: "UNSC",
+    image: "/unsc.webp",
     bgColor: "bg-yellow-600",
   },
   {
-    title: "De-Dollarization & Global Financial Stability",
-    subtitle: "Impact of Reducing Reliance on US Dollar",
-    tag: "IMF",
-    image: "/bg10.jpg",
+    title: "The Global Economic Impact of U.S. Unilateral Trade Policies",
+    subtitle: "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
+    tag: "ECOFIN",
+    image: "/ecofinn.webp",
     bgColor: "bg-orange-600",
   },
   {
-    title: "Ceasefire in Gaza & Hostage Crisis",
-    subtitle: "Ensuring Permanent Ceasefire & Addressing Hostages",
-    tag: "UNSC",
-    image: "/bg11.jpg",
+    title: "Governing Space Colonization and Resource Utilization in the New Space Race",
+    subtitle: "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
+    tag: "COPUOS",
+    image: "/cop.webp",
     bgColor: "bg-blue-600",
   },
   {
-    title: "The Suez Canal Crisis (1956)",
-    subtitle: "Historical Committee Discussion",
-    tag: "HCC",
-    image: "/bg13.jpg",
+    title: "Balancing religious gatherings with civic responsibilities",
+    subtitle: "Reconciling faithful devotion with societal welfare.",
+    tag: "AIPPM",
+    image: "/aippm.webp",
     bgColor: "bg-gray-500",
   },
   {
-    title: "International Press",
-    subtitle: "Reporter | Photographer | Caricaturist",
-    tag: "IP",
+    title: "Analyzing the events of the 2002 Godhra incident",
+    subtitle: "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
+    tag: "SICCC",
     image: "/bg12.jpg",
     bgColor: "bg-purple-600",
+  },
+  {
+    title: "Assessing the influence of nepotism and creative stagnation in Bollywood",
+    subtitle: "A star-kid monopoly or a broader industry challenge?",
+    tag: "CBFC",
+    image: "/bg12.jpg",
+    bgColor: "bg-green-600",
+  },
+  {
+    title: "Media Roles in Documenting and Analyzing Committee Proceedings",
+    subtitle: "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative",
+    tag: "IP",
+    image: "/ip4.webp",
+    bgColor: "bg-pink-600",
   },
 ];
 
@@ -391,19 +406,13 @@ const Home = () => {
                 <span className="text-black">Join MUN?</span>
               </h2>
 
-              <div className="text-base md:text-lg text-gray-700 space-y-4 leading-relaxed">
+              <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed">
                 <p>
-                  Explore Rajasthan's largest MUN conference, engaging 350+
-                  institutes and welcoming over 3000 delegates to date. JECRC
-                  MUN offers a platform for students to develop crucial skills
-                  through diplomatic simulations, negotiation, public speaking,
-                  and research.
+                Participating in JECRC MUN offers a unique opportunity for students to develop crucial skills and broaden their horizons. Through diplomatic simulations, delegates hone negotiation, public speaking, and research abilities while gaining insight into pressing global issues. Engaging with peers from diverse backgrounds fosters cultural awareness and empathy, while leadership roles nurture decision-making and conflict resolution skills. 
                 </p>
                 <p>
-                  Interacting with peers from diverse backgrounds enhances
-                  cultural awareness and leadership skills. Gain exposure to
-                  professionals in international relations and diplomacy, paving
-                  the way for academic and career growth.
+                Moreover, we provide a platform for networking with professionals in international relations and diplomacy, paving the way for future academic and career opportunities. By joining JECRC MUN, students embark on a transformative journey towards personal growth, intellectual development, and global citizenship.
+
                 </p>
               </div>
             </motion.div>
@@ -547,13 +556,17 @@ const Home = () => {
                 <p className="text-gray-500 text-sm mt-2">{agenda.subtitle}</p>
 
                 {/* Button */}
-                <button className="mt-4 px-5 py-2 bg-[#991C1C] text-white font-medium rounded-lg hover:bg-red-800 transition">
+                <button className="bottom-0 mt-4 px-5 py-2 bg-[#991C1C] text-white font-medium rounded-lg hover:bg-red-800 transition">
                   Background Guide →
                 </button>
               </div>
             </motion.div>
           ))}
         </div>
+      </section>
+
+      <section>
+        <MunTimeline/>
       </section>
 
       <section className="relative bg-white py-24 px-6 flex flex-col items-center overflow-hidden">
