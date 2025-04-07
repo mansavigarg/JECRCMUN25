@@ -19,35 +19,40 @@ import CountdownTimer from "../components/CountdownTimer";
 import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
-import MunTimeline from "../components/Timeline.jsx"
+import MunTimeline from "../components/Timeline.jsx";
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
 const agendas = [
   {
     title: "Addressing the global humanitarian crisis",
-    subtitle: "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
+    subtitle:
+      "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
     image: "./unhcr.webp",
     bgColor: "bg-[#991C1C]",
   },
   {
     title: "Deliberation on the ongoing crisis in Syria",
-    subtitle: "Evaluating the current regime versus the opposition for long-term stability and peace.",
+    subtitle:
+      "Evaluating the current regime versus the opposition for long-term stability and peace.",
     tag: "UNSC",
     image: "/unsc.webp",
     bgColor: "bg-[#991C1C]",
   },
   {
     title: "The Global Economic Impact of U.S. Unilateral Trade Policies",
-    subtitle: "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
+    subtitle:
+      "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
     tag: "ECOFIN",
     image: "/ecofinn.webp",
     bgColor: "bg-[#991C1C]",
   },
   {
-    title: "Governing Space Colonization and Resource Utilization in the New Space Race",
-    subtitle: "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
+    title:
+      "Governing Space Colonization and Resource Utilization in the New Space Race",
+    subtitle:
+      "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
     tag: "COPUOS",
     image: "/cop.webp",
     bgColor: "bg-[#991C1C]",
@@ -61,13 +66,15 @@ const agendas = [
   },
   {
     title: "Analyzing the events of the 2002 Godhra incident",
-    subtitle: "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
+    subtitle:
+      "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
     tag: "SICCC",
     image: "/bg12.jpg",
     bgColor: "bg-[#991C1C]",
   },
   {
-    title: "Assessing the influence of nepotism and creative stagnation in Bollywood",
+    title:
+      "Assessing the influence of nepotism and creative stagnation in Bollywood",
     subtitle: "A star-kid monopoly or a broader industry challenge?",
     tag: "CBFC",
     image: "/cbfc.webp",
@@ -75,7 +82,8 @@ const agendas = [
   },
   {
     title: "Media Roles in Documenting and Analyzing Committee Proceedings",
-    subtitle: "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative",
+    subtitle:
+      "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative",
     tag: "IP",
     image: "/ip4.webp",
     bgColor: "bg-[#991C1C]",
@@ -409,11 +417,22 @@ const Home = () => {
 
               <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed">
                 <p>
-                Participating in JECRC MUN offers a unique opportunity for students to develop crucial skills and broaden their horizons. Through diplomatic simulations, delegates hone negotiation, public speaking, and research abilities while gaining insight into pressing global issues. Engaging with peers from diverse backgrounds fosters cultural awareness and empathy, while leadership roles nurture decision-making and conflict resolution skills. 
+                  Participating in JECRC MUN offers a unique opportunity for
+                  students to develop crucial skills and broaden their horizons.
+                  Through diplomatic simulations, delegates hone negotiation,
+                  public speaking, and research abilities while gaining insight
+                  into pressing global issues. Engaging with peers from diverse
+                  backgrounds fosters cultural awareness and empathy, while
+                  leadership roles nurture decision-making and conflict
+                  resolution skills.
                 </p>
                 <p>
-                Moreover, we provide a platform for networking with professionals in international relations and diplomacy, paving the way for future academic and career opportunities. By joining JECRC MUN, students embark on a transformative journey towards personal growth, intellectual development, and global citizenship.
-
+                  Moreover, we provide a platform for networking with
+                  professionals in international relations and diplomacy, paving
+                  the way for future academic and career opportunities. By
+                  joining JECRC MUN, students embark on a transformative journey
+                  towards personal growth, intellectual development, and global
+                  citizenship.
                 </p>
               </div>
             </motion.div>
@@ -567,7 +586,7 @@ const Home = () => {
       </section>
 
       <section>
-        <MunTimeline/>
+        <MunTimeline />
       </section>
 
       <section className="relative bg-white py-24 px-6 flex flex-col items-center overflow-hidden">
@@ -622,8 +641,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-
-        <AfterMovie/>
+        <AfterMovie />
       </section>
       <section className="py-24 bg-gradient-to-b from-white to-white text-black relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
@@ -695,7 +713,6 @@ const Home = () => {
         ></motion.div>
       </section>
 
-      
       <div>
         <Footer />
       </div>
