@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Clock, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -13,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("April 25, 2025 00:00:00").getTime();
+    const targetDate = new Date("April 26, 2025 00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -69,29 +70,33 @@ const CountdownTimer = () => {
 
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
+
+        <div className="text-center mb-16">
           <motion.h1
-            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-3 text-red-800"
-            animate={{
-              textShadow: [
-                "0px 0px 0px rgba(153,27,27,0)",
-                "0px 0px 15px rgba(153,27,27,0.3)",
-                "0px 0px 0px rgba(153,27,27,0)",
-              ],
-            }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            className="text-5xl md:text-7xl font-extrabold tracking-tight text-[#991c1c] mb-6"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
             JECRC MUN 2025
           </motion.h1>
-          <p className="text-xl md:text-xl text-black max-w-3xl mx-auto font-medium">
-          Rajasthan’s largest MUN Conference with a network surpassing 25 lac, engaging 350 institutes and welcoming over 3500 delegates to the ground of diplomacy.
-          </p>
-        </motion.div>
+          <motion.div
+            className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
+            initial={{ width: 0 }}
+            animate={{ width: 96 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          ></motion.div>
+          <motion.p
+            className="text-xl md:text-xl text-black max-w-3xl mx-auto font-medium"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            Rajasthan’s largest MUN Conference with a network surpassing 25 lac,
+            engaging 350 institutes and welcoming over 3500 delegates to the
+            ground of diplomacy.
+          </motion.p>
+        </div>
 
         {/* Countdown Container - Single Row */}
         <motion.div
@@ -185,36 +190,38 @@ const CountdownTimer = () => {
           ))}
         </motion.div>
 
-        {/* Register Button */}
-        <motion.div
-          className="mt-12 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          <motion.button
-            className="bg-red-800 text-white px-10 py-4 rounded-xl font-bold text-xl tracking-wide shadow-lg flex items-center justify-center mx-auto gap-3"
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: "#991b1b",
-              boxShadow: "0 10px 25px -5px rgba(153, 27, 27, 0.4)",
-            }}
-            whileTap={{ scale: 0.98 }}
+        <Link to="/registration">
+          {/* Register Button */}
+          <motion.div
+            className="mt-12 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <motion.span
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
+            <motion.button
+              className="bg-red-800 text-white px-10 py-4 rounded-xl font-bold text-xl tracking-wide shadow-lg flex items-center justify-center mx-auto gap-3"
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#991b1b",
+                boxShadow: "0 10px 25px -5px rgba(153, 27, 27, 0.4)",
+              }}
+              whileTap={{ scale: 0.98 }}
             >
-              REGISTER NOW
-            </motion.span>
-            <motion.div
-              animate={{ x: [0, 5, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}
-            >
-              <ChevronRight size={20} />
-            </motion.div>
-          </motion.button>
-        </motion.div>
+              <motion.span
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              >
+                REGISTER NOW
+              </motion.span>
+              <motion.div
+                animate={{ x: [0, 5, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }}
+              >
+                <ChevronRight size={20} />
+              </motion.div>
+            </motion.button>
+          </motion.div>
+        </Link>
 
         {/* Animated footer line */}
         <motion.div
