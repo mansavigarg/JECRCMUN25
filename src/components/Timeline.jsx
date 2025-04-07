@@ -70,7 +70,6 @@ const MunTimeline = () => {
         event: "Gala Dinner",
         description: "Celebratory dinner and social event.",
       },
-    
     ],
   };
 
@@ -84,13 +83,10 @@ const MunTimeline = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-             Conference <span className="text-[#991C1C] drop-shadow-lg">Timelines</span>
+            Conference{" "}
+            <span className="text-[#991C1C] drop-shadow-lg">Timelines</span>
           </motion.h2>
         </div>
-
-        
-
-
 
         {/* Day Tabs */}
         <div className="flex justify-center mb-8 space-x-4">
@@ -111,43 +107,42 @@ const MunTimeline = () => {
           ))}
         </div>
 
-
         <div className="flex justify-center  mt-20">
-        {/* Timeline */}
-        <div className="relative pl-12 md:pl-16 ml-4 md:ml-6">
-          {/* Vertical Line */}
-          <motion.div
-            className="absolute md:left-16 top-0 bottom-0 w-0.5 bg-black/30"
-            initial={{ height: 0 }}
-            animate={{ height: "100%" }}
-            transition={{ duration: 1 }}
-          ></motion.div>
-
-          {/* Timeline Events */}
-          {timelineData[activeDay].map((item, index) => (
+          {/* Timeline */}
+          <div className="relative pl-12 md:pl-16 ml-4 md:ml-6">
+            {/* Vertical Line */}
             <motion.div
-              key={index}
-              className="relative mb-14"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-            >
-              {/* Timeline Dot */}
-              <div className="absolute left-0 w-5 h-5 bg-[#991C1C] border-4 border-[#060807] rounded-full -translate-x-2.5"></div>
+              className="absolute md:left-16 top-0 bottom-0 w-0.5 bg-black/30"
+              initial={{ height: 0 }}
+              animate={{ height: "100%" }}
+              transition={{ duration: 1 }}
+            ></motion.div>
 
-              {/* Content */}
-              <div className="pl-6 md:pl-10">
-                <div className="text-lg border w-25 flex justify-center bg-red-100 rounded-full p-1  md:text-xl text-black font-medium mb-2 semibold">
-                  {item.time}
+            {/* Timeline Events */}
+            {timelineData[activeDay].map((item, index) => (
+              <motion.div
+                key={index}
+                className="relative mb-14"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+              >
+                {/* Timeline Dot */}
+                <div className="absolute left-0 w-5 h-5 bg-[#991C1C] border-4 border-[#060807] rounded-full -translate-x-2.5"></div>
+
+                {/* Content */}
+                <div className="pl-6 md:pl-10">
+                  <div className="text-lg border w-25 flex justify-center bg-red-100 rounded-full p-1  md:text-xl text-black font-medium mb-2 semibold">
+                    {item.time}
+                  </div>
+                  <div className="text-xl md:text-2xl font-bold mb-2">
+                    {item.event}
+                  </div>
+                  <p className="text-black-300">{item.description}</p>
                 </div>
-                <div className="text-xl md:text-2xl font-bold mb-2">
-                  {item.event}
-                </div>
-                <p className="text-black-300">{item.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
