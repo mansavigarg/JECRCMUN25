@@ -13,7 +13,6 @@ import Navbar from "../components/Navbar";
 import OutreachSection from "../components/Outreach";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import CountdownTimer from "../components/CountdownTimer";
-import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
@@ -92,7 +91,7 @@ const speakers = [
   {
     id: 1,
     name: "Shri. Deepak Vohra",
-    role: "Special Advisor of India to Various Countries",
+    role: "Special Advisor of India to Various Countries",
     image: "/Deepakvora.jpg",
   },
   {
@@ -231,34 +230,63 @@ const Home = () => {
         <Navbar />
       </div>
 
-      {/* <HeroSlider /> */}
-      {/* Image Slider */}
+      {/* New Hero Section with Text Box */}
       <div className="relative w-full h-screen">
-        <Swiper
-          spaceBetween={0}
-          centeredSlides={true}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          speed={1200}
-          pagination={{ clickable: true }}
-          modules={[Autoplay, EffectFade, Pagination]}
-          className="w-full h-full"
+        {/* Background Image with Gradient Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: "url('/bg2.jpg')", 
+          }}
         >
-          {images.map((img, idx) => (
-            <SwiperSlide key={idx} className="relative">
-              <div
-                className="w-full h-screen bg-cover bg-center relative before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/30 before:to-black/50"
-                style={{ backgroundImage: `url('${img}')` }}
-              >
-                {/* Content overlay can go here */}
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#991C1C]/80 to-white/50"></div>
+        </div>
 
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 pointer-events-none"></div>
+        {/* Content Container */}
+        <div className="relative h-full flex items-center justify-center px-4">
+          {/* Center Text Box */}
+          <motion.div 
+            className="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-8 md:p-12 max-w-3xl text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* Logo Text */}
+            <div className="mb-6">
+              <h1 className="text-5xl md:text-7xl font-bold">
+                <span className="text-[#991C1C]">JECRC</span>
+                <span className="text-black block mt-2">MUN</span>
+                <span className="text-[#991C1C] block mt-2">2025</span>
+              </h1>
+              <h2 className="text-2xl md:text-4xl font-semibold mt-4">
+                <span className="text-black">14</span>
+                <span className="text-[#991C1C]">th</span>
+                <span className="text-black"> EDITION</span>
+              </h2>
+            </div>
+
+
+
+            {/* Date and Venue */}
+            <div className="mb-8">
+              <p className="text-xl font-semibold text-[#991C1C]">26-27th April</p>
+              <p className="text-lg text-gray-700">JECRC Foundation, Jaipur</p>
+            </div>
+
+            {/* Register Now Button */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link to="/register">
+                <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
+                  Register Now
+                </button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
 
         {/* Sidebar Social Media Icons - Hidden on small screens */}
         <div className="absolute left-4 md:left-5 top-1/2 space-y-3 md:space-y-4 z-10 hidden sm:block">
@@ -304,16 +332,15 @@ const Home = () => {
         {/* Right-Side Vertical Buttons - Now absolute instead of fixed */}
         <div className="absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 md:space-y-6 z-50">
           {/* FAQs Button */}
-
           <Link to="/faqs">
-  <motion.button
-    className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-    whileHover={{ scale: 1.15, y: -3 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    FAQs
-  </motion.button>
-</Link>
+            <motion.button
+              className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              FAQs
+            </motion.button>
+          </Link>
 
           {/* Calendar Button */}
           <motion.button
@@ -329,13 +356,11 @@ const Home = () => {
           </motion.button>
         </div>
       </div>
-
+    
       {/* Counter by Mansavi */}
       <div>
         <CountdownTimer />
       </div>
-
-      {/* Hero section counter by vishnu */}
 
       {/* About MUN Section */}
       <section className="relative bg-white py-14 md:py-20 px-6 md:px-12">
