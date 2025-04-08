@@ -105,7 +105,10 @@ const FAQPage = () => {
     {
       question: "Are there awards or incentives?",
       answer:
-        "Yes! Categories include: 🏆 Best Delegate, 🥈 High Commendation, 🏅 Special Mention",
+        `Yes! Categories include:  
+        🏆 Best Delegate, 
+        🥈 High Commendation, 
+        🏅 Special Mention`,
       icon: <Award size={24} className="text-[#991C1C]" />,
     },
     {

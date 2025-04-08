@@ -93,7 +93,7 @@ const MunTimeline = () => {
           {["day1", "day2"].map((day) => (
             <motion.button
               key={day}
-              className={`px-6 py-2 rounded-full border transition-all ${
+              className={`px-6 py-2 rounded-full font-bold border transition-all ${
                 activeDay === day
                   ? "bg-[#991C1C] border-black"
                   : "border-white/30 hover:border-white/50"
@@ -128,7 +128,7 @@ const MunTimeline = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-0 w-5 h-5 bg-[#991C1C] border-4 border-[#060807] rounded-full -translate-x-2.5"></div>
+                <div className="absolute left-0 w-5 h-5 bg-[#991C1C] rounded-full -translate-x-2.5"></div>
 
                 {/* Content */}
                 <div className="pl-6 md:pl-10">
