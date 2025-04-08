@@ -280,7 +280,7 @@ const Mun = () => {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">3,000+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">3,500</div>
               <div className="text-gray-600">Students Impacted</div>
             </motion.div>
 
@@ -290,7 +290,7 @@ const Mun = () => {
               transition={{ duration: 0.5, delay: 0.9 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">7+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">10+</div>
               <div className="text-gray-600">Committees Represented</div>
             </motion.div>
           </div>

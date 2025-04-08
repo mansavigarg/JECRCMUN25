@@ -90,12 +90,12 @@ const Registration = () => {
               transition={{ duration: 1, delay: 0.5 }}
             ></motion.div>
             <motion.p
-              className="text-xl text-[#000000] max-w-2xl mx-auto"
+              className="text-2xl font-medium text-[#000000] max-w-2xl mx-auto capitalize"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Select the registration option that best fits your participation
+              Select the role that best fits your profile
             </motion.p>
           </div>
 
@@ -145,7 +145,7 @@ const Registration = () => {
 
                   <div className="border-gray-200 pt-6 mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
-                      Committees Access:
+                      Committees :
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
                       {[
@@ -231,13 +231,13 @@ const Registration = () => {
                   <div className="mb-6">
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 font-bold">
                         Priority Round 1 till 15th April: ₹ 2500/-
                       </p>
                     </div>
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 font-bold">
                         Priority Round 2: ₹ 2750/-
                       </p>
                     </div>
@@ -245,7 +245,7 @@ const Registration = () => {
 
                   <div className="border-t border-gray-200 pt-6 mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
-                      Committees Access:
+                      Committees :
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
                       {[
@@ -256,7 +256,6 @@ const Registration = () => {
                         "AIPPM",
                         "SICCC",
                         "CBFC",
-                        "IP",
                       ].map((committee, idx) => (
                         <div key={idx} className="flex items-center">
                           <svg
@@ -332,13 +331,13 @@ const Registration = () => {
                   <div className="mb-6">
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 font-bold">
                         Priority Round 1 till 15th April: ₹ 2500/-
                       </p>
                     </div>
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700">
+                      <p className="text-gray-700 font-bold">
                         Priority Round 2: ₹ 2750/-
                       </p>
                     </div>

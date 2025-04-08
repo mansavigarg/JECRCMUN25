@@ -20,6 +20,7 @@ import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
+import { Link } from "react-router-dom";
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
@@ -412,7 +413,7 @@ const Home = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
                 <span className="text-[#991C1C]">Why Should You</span>
                 <br />
-                <span className="text-black">Join MUN?</span>
+                <span className="text-black">Join JECRC MUN?</span>
               </h2>
 
               <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed">
@@ -431,8 +432,7 @@ const Home = () => {
                   professionals in international relations and diplomacy, paving
                   the way for future academic and career opportunities. By
                   joining JECRC MUN, students embark on a transformative journey
-                  towards personal growth, intellectual development, and global
-                  citizenship.
+                  towards personal growth and intellectual development.
                 </p>
               </div>
             </motion.div>
@@ -478,14 +478,16 @@ const Home = () => {
           </motion.p>
 
           {/* Call-to-Action Button */}
-          <motion.button
-            className="mt-6 px-6 py-3 bg-red-700 text-white font-medium rounded-lg shadow-md hover:bg-red-800 hover:scale-105 transform transition-all duration-300 ease-in-out"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            Learn More
-          </motion.button>
+          <Link to="/aboutmun">
+            <motion.button
+              className="mt-6 px-6 py-3 bg-red-700 text-white font-medium rounded-lg shadow-md hover:bg-red-800 hover:scale-105 transform transition-all duration-300 ease-in-out"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              Learn More
+            </motion.button>
+          </Link>
         </div>
 
         {/* Right Image Section */}
@@ -570,7 +572,7 @@ const Home = () => {
                 </span>
 
                 {/* Title & Description */}
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-gray-900 capitalize">
                   {agenda.title}
                 </h3>
                 <p className="text-gray-500 text-sm mt-2">{agenda.subtitle}</p>

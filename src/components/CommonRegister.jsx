@@ -117,7 +117,7 @@ export default function CommonRegister() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-500 px-6 py-2 rounded-full text-sm md:text-base font-medium inline-flex items-center shadow-sm relative overflow-hidden group">
+            <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-500 px-9 py-3 rounded-full text-sm md:text-xl font-medium inline-flex items-center shadow-sm relative overflow-hidden group">
               <span className="absolute inset-0 bg-gradient-to-r from-orange-200 to-orange-100 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
               <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 relative z-10"></span>
               <span className="relative z-10">Join JECRC MUN 2025</span>
@@ -170,13 +170,13 @@ export default function CommonRegister() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            Join a Legacy of Global Changemakers –
+            Join a Legacy of Global Changemakers – More Than
             <span
               className="font-semibold text-red-800 relative inline-block mx-1"
               onMouseEnter={() => setIsTextHovered(true)}
               onMouseLeave={() => setIsTextHovered(false)}
             >
-              3500 Delegates
+              300 Delegates
               <span
                 className={`absolute -bottom-0.5 left-0 w-full h-0.5 bg-red-800 transition-transform duration-300 ${
                   isTextHovered ? "scale-x-100" : "scale-x-0"
@@ -244,7 +244,7 @@ export default function CommonRegister() {
             </div>
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <Globe size={16} className="text-red-800 mr-2" />
-              <span className="text-gray-700">7+ Committees</span>
+              <span className="text-gray-700">10+ Committees</span>
             </div>
           </div>
         </div>
