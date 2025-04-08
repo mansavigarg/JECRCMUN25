@@ -160,7 +160,7 @@ const AfterMovie = () => {
         </div>
 
         {/* Top section with join text */}
-        <motion.div
+        {/* <motion.div
           variants={itemVariants}
           className="text-center mb-4 sm:mb-6"
         >
@@ -169,7 +169,7 @@ const AfterMovie = () => {
               <span className="w-2 h-2 bg-red-600 rounded-full mr-2 relative z-10"></span>
               <span className="relative z-10">Join JECRC MUN 2025</span>
             </span>
-        </motion.div>
+        </motion.div> */}
 
         {/* Tabs - Updated with Vichar Vimarsh */}
         <motion.div

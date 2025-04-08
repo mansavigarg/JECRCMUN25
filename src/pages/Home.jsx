@@ -260,7 +260,7 @@ const Home = () => {
                 <span className="text-[#991C1C] block mt-2">2025</span>
               </h1>
               <h2 className="text-2xl md:text-4xl font-semibold mt-4">
-                <span className="text-black">14</span>
+                <span className="text-[#991C1C]">14</span>
                 <span className="text-[#991C1C]">th</span>
                 <span className="text-black"> EDITION</span>
               </h2>
@@ -279,7 +279,7 @@ const Home = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link to="/register">
+              <Link to="/registration">
                 <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
                   Register Now
                 </button>
@@ -610,9 +610,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section id='timeline'>
+      {/* <section id='timeline'>
         <MunTimeline />
-      </section>
+      </section> */}
 
       <section className="relative bg-white py-24 px-6 flex flex-col items-center overflow-hidden">
         {/* Background Circle Design */}

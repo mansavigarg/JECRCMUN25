@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 const stats = [
-  { number: 2500000, label: "Massive Outreach", color: "text-red-700" },
+  { number: 2500000, label: "Massive Outreach", color: "text-red-700", format: "lac" },
   { number: 3500, label: "Delegates", color: "text-black" },
   { number: 100, label: "International Delegates", color: "text-blue-700" },
   { number: 350, label: "Participating Institutes", color: "text-yellow-600" },
@@ -64,12 +64,24 @@ const OutreachSection = () => {
             >
               <h2 className={`text-4xl md:text-5xl font- ${stat.color}`}>
                 {startCount ? (
-                  <CountUp
-                    start={0}
-                    end={stat.number}
-                    duration={3}
-                    separator=","
-                  />
+                  stat.format === "lac" ? (
+                    <>
+                      <CountUp
+                        start={0}
+                        end={stat.number / 100000}
+                        duration={3}
+                        decimals={0}
+                      />
+                      <span>Lac</span>
+                    </>
+                  ) : (
+                    <CountUp
+                      start={0}
+                      end={stat.number}
+                      duration={3}
+                      separator=","
+                    />
+                  )
                 ) : (
                   "0"
                 )}
