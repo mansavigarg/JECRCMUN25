@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("April 26, 2025 00:00:00").getTime();
+    const targetDate = new Date("April 26, 2025 09:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -87,13 +87,13 @@ const CountdownTimer = () => {
             transition={{ duration: 1, delay: 0.5 }}
           ></motion.div>
           <motion.p
-            className="text-xl md:text-xl text-black max-w-3xl mx-auto font-medium"
+            className="text-xl md:text-xl text-black max-w-3xl mx-auto font-medium capitalize"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             Rajasthan’s largest MUN Conference with a network surpassing 25 lac,
-            engaging 350 institutes and welcoming over 3500 delegates to the
+            engaging 350+ institutes and welcoming over 3500 delegates to the
             ground of diplomacy.
           </motion.p>
         </div>

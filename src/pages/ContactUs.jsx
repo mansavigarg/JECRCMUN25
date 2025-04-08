@@ -15,13 +15,13 @@ const items = [
   },
   {
     title: "Registration Info",
-    desc1: "Sapan Mittal - 8764364947 ",
+    desc1: "Sarthak Jain: +917728858711",
     desc2: "Email Address: mun@jecrc.ac.in",
     icon: Phone,
   },
   {
     title: "MUN Conference Schedule",
-    desc1: "11th - 12th May",
+    desc1: "26th - 27th April",
     desc2: "from 7:30 AM to 6 PM.",
     icon: Mail,
   },
@@ -43,12 +43,12 @@ const ContactPage = () => {
       >
         <div className="text-center mb-6">
           <motion.h1
-            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600"
+            className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            How Can We HELP?
+            How Can We Help?
           </motion.h1>
           <motion.div
             className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"

@@ -164,12 +164,11 @@ const AfterMovie = () => {
           variants={itemVariants}
           className="text-center mb-4 sm:mb-6"
         >
-          <span
-            className="font-semibold text-sm sm:text-base"
-            style={{ color: colors.primary }}
-          >
-            Join JECRC MUN 2025
-          </span>
+            <span className=" px-6 py-2 rounded-full text-sm md:text-base font-medium inline-flex items-center shadow-lg border relative overflow-hidden group">
+              <span className="absolute inset-0  transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+              <span className="w-2 h-2 bg-red-600 rounded-full mr-2 relative z-10"></span>
+              <span className="relative z-10">Join JECRC MUN 2025</span>
+            </span>
         </motion.div>
 
         {/* Tabs - Updated with Vichar Vimarsh */}
@@ -182,7 +181,7 @@ const AfterMovie = () => {
               <motion.button
                 key={eventKey}
                 onClick={() => handleTabChange(eventKey)}
-                className={`relative px-3 py-1 text-xs sm:text-sm font-medium rounded-full transition-all
+                className={`relative px-6 py-2 text-xs sm:text-sm font-bold rounded-full transition-all
                   ${activeTab === eventKey ? "text-white" : "text-gray-700"}`}
                 variants={tabVariants}
                 animate={activeTab === eventKey ? "active" : "inactive"}
@@ -228,7 +227,7 @@ const AfterMovie = () => {
                 {events[activeTab].title}
               </h2>
               <p
-                className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-1 sm:mt-2"
+                className="text-lg capitalize sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-1 sm:mt-2"
                 style={{ color: colors.primary }}
               >
                 {events[activeTab].subtitle}
