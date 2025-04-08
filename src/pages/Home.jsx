@@ -91,9 +91,9 @@ const agendas = [
 const speakers = [
   {
     id: 1,
-    name: "Shivshankar Menon",
-    role: "Former National Security Advisor",
-    image: "/ssm.webp",
+    name: "Shri. Deepak Vohra",
+    role: "Special Advisor of India to Various Countries",
+    image: "/Deepakvora.jpg",
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ const speakers = [
   {
     id: 4,
     name: "Mr. Murthy",
-    role: "Global Head Academic, Microsoft",
+    role: "Global Head Academic, Infosys",
     image: "/mm.jpg",
   },
   {
@@ -121,9 +121,9 @@ const speakers = [
   },
   {
     id: 6,
-    name: "Dr.Munish Jindal",
+    name: "Ms. Pinky Bahroos",
     role: "Founder & CEO of Hover Robotix",
-    image: "/mj.jpeg",
+    image: "/PinkiBahroos.jpg",
   },
 ];
 

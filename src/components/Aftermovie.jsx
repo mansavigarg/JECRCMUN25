@@ -22,17 +22,17 @@ const AfterMovie = () => {
   const events = {
     JECRCMUN2024: {
       title: "JECRC MUN 2024",
-      subtitle: "A preview of Diplomatic Excellence",
+      subtitle: "A Preview Of Diplomatic Excellence",
       tagline: "EMPOWERING DELIBERATIONS",
       description: "SHAPING THE WORLD",
       thumbnailAlt: "JECRC MUN 2024 Aftermovie Thumbnail",
       infoText:
-        "Join us for the most prestigious Model United Nations conference and be part of the global change-makers community.",
+        "Join us for the prestigious Model United Nations conference and be part of the global change-makers community.",
       videoSrc: "/video/munclips.mp4",
       thumbnailSrc: "/templates/ReelTemplate.png",
     },
     ZHS: {
-      title: "ZERO HOUR SUMMIT",
+      title: "ZERO HOUR SUMMIT 4.0",
       subtitle: "AFTERMOVIE",
       tagline: "GLOBAL PERSPECTIVES",
       description: "INNOVATIVE SOLUTIONS",
