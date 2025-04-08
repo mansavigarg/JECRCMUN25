@@ -1,6 +1,11 @@
-import logo from "../assets/mun-orange.png";
+import logo from "../assets/logo.svg";
 import { ChevronRight, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
 
 const quickLinks = [
   {
@@ -29,25 +34,19 @@ export default function Footer() {
           {/* Left Section */}
           <div className="mb-4 sm:mb-0">
             <div className="bg-white inline-block p-1 rounded mb-3">
-              <img src={logo} alt="JECRC MUN" className="h-8 md:h-10" />
+              <img src={logo} alt="JECRC MUN" className="h-15 md:h-20" />
             </div>
             <p className="text-sm md:text-base">
               JECRC MUN is a community established with the aim of creating a
               society for youth to discuss, debate, and deliberate present-day
               crises, contributing towards solutions for global imbalance.
             </p>
-            <div className="flex space-x-4 mt-3">
-              <a href="#" className="hover:opacity-75 transition-opacity">
-                <i className="fab fa-facebook-f text-lg md:text-xl"></i>
+            <div className="flex space-x-4 mt-3 rounded-full">
+              <a href="https://www.instagram.com/jecrcmun/" className="hover:opacity-75 transition-opacity">
+                <FaInstagram className="w-5 h-5"/>
               </a>
-              <a href="#" className="hover:opacity-75 transition-opacity">
-                <i className="fab fa-twitter text-lg md:text-xl"></i>
-              </a>
-              <a href="#" className="hover:opacity-75 transition-opacity">
-                <i className="fab fa-instagram text-lg md:text-xl"></i>
-              </a>
-              <a href="#" className="hover:opacity-75 transition-opacity">
-                <i className="fab fa-linkedin-in text-lg md:text-xl"></i>
+              <a href="https://www.linkedin.com/company/jecrc-mun/" className="hover:opacity-75 transition-opacity">
+                <FaLinkedinIn className="w-5 h-5"/>
               </a>
             </div>
           </div>
@@ -86,7 +85,7 @@ export default function Footer() {
                   Sarthak Jain - 7728858711
                 </p>
                 <p className="font-semibold text-base md:text-xl">
-                  Radhika Rajawat - 6378859309
+                  Aditya Sharma - 9829368698
                 </p>
                 <p className="text-sm md:text-base">For information</p>
               </div>

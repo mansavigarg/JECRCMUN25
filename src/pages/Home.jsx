@@ -6,11 +6,8 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import {
-  FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaDiscord,
-  FaYoutube,
 } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import OutreachSection from "../components/Outreach";
@@ -20,6 +17,7 @@ import HeroSlider from "../components/HeroSlider";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
+import { Link } from "react-router-dom";
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
@@ -263,13 +261,10 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 pointer-events-none"></div>
 
         {/* Sidebar Social Media Icons - Hidden on small screens */}
-        <div className="absolute left-4 md:left-5 top-1/3 space-y-3 md:space-y-4 z-10 hidden sm:block">
+        <div className="absolute left-4 md:left-5 top-1/2 space-y-3 md:space-y-4 z-10 hidden sm:block">
           {[
-            { Icon: FaFacebookF, url: "#" },
-            { Icon: FaInstagram, url: "#" },
-            { Icon: FaLinkedinIn, url: "#" },
-            { Icon: FaDiscord, url: "#" },
-            { Icon: FaYoutube, url: "#" },
+            { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
+            { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/jecrc-mun/" },
           ].map(({ Icon, url }, idx) => (
             <motion.a
               key={idx}
@@ -289,11 +284,8 @@ const Home = () => {
         {/* Mobile Social Icons Row - Now absolute instead of fixed */}
         <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-3 z-50 sm:hidden">
           {[
-            { Icon: FaFacebookF, url: "#" },
-            { Icon: FaInstagram, url: "#" },
-            { Icon: FaLinkedinIn, url: "#" },
-            { Icon: FaDiscord, url: "#" },
-            { Icon: FaYoutube, url: "#" },
+            { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
+            { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/jecrc-mun/" },
           ].map(({ Icon, url }, idx) => (
             <motion.a
               key={idx}
@@ -312,19 +304,26 @@ const Home = () => {
         {/* Right-Side Vertical Buttons - Now absolute instead of fixed */}
         <div className="absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 md:space-y-6 z-50">
           {/* FAQs Button */}
-          <motion.button
-            className="relative flex items-center justify-center px-3 py-2 md:px-5 md:py-4 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-full shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            FAQs
-          </motion.button>
+
+          <Link to="/faqs">
+  <motion.button
+    className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+    whileHover={{ scale: 1.15, y: -3 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    FAQs
+  </motion.button>
+</Link>
 
           {/* Calendar Button */}
           <motion.button
-            className="relative flex items-center justify-center px-3 py-2 md:px-5 md:py-4 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-full shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+            className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
             whileHover={{ scale: 1.15, y: -3 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const section = document.getElementById("timeline");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Calendar
           </motion.button>
@@ -585,7 +584,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section id='timeline'>
         <MunTimeline />
       </section>
 
