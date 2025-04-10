@@ -244,6 +244,7 @@ const Home = () => {
         </div>
 
         {/* Content Container */}
+
         <div className="flex items-start justify-center h-screen w-full px-4 pt-32">
   {/* Center Text Box - Fixed width of 500px and shifted down */}
   <motion.div 
@@ -272,6 +273,20 @@ const Home = () => {
       <p className="text-xl font-semibold text-[#991C1C]">26-27th April</p>
       <p className="text-lg text-gray-700">JECRC Foundation, Jaipur</p>
     </div>
+
+            {/* Register Now Button */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link to="/registration">
+                <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
+                  Register Now
+                </button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
 
     {/* Register Now Button */}
     <motion.div
@@ -612,9 +627,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section id='timeline'>
+      {/* <section id='timeline'>
         <MunTimeline />
-      </section>
+      </section> */}
 
       <section className="relative bg-white py-24 px-6 flex flex-col items-center overflow-hidden">
         {/* Background Circle Design */}
