@@ -20,6 +20,7 @@ import {
   Languages,
   MessageCircle,
 } from "lucide-react";
+import {Link} from "react-router-dom";
 
 const FAQPage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -340,9 +341,12 @@ const FAQPage = () => {
               Still Have Questions?
             </h1>
           </div>
+
+          <Link to="/contact">
           <button className="px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-700 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
     </div>

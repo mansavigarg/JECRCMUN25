@@ -1,10 +1,11 @@
-import React from "react";
+import {React, useState} from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import ContactUsCard from "../components/ContactUsCard";
 import worldImg from "../assets/testimonial-1.png";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import axios from "axios";
 
 const items = [
   {
@@ -27,7 +28,55 @@ const items = [
   },
 ];
 
+
 const ContactPage = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    institution: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await axios.post(
+        "https://sheetdb.io/api/v1/dn0y95uxqe0qs",
+        { data: formData },
+        {
+          headers: {
+            Authorization: "Bearer wi42j4v5uoma4bu4683ru5ckpx6j8fcs84wcynwz",
+          },
+        }
+      );
+
+      console.log("Form submitted:", res.data);
+      alert("Form submitted successfully. Thank you for your response!");
+
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        institution: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error submitting form. Please try again later.");
+    }
+  };
+  
+  
   return (
     <div>
       <div>
@@ -93,35 +142,58 @@ const ContactPage = () => {
           />
         </div>
         <div className="space-y-6 md:flex gap-6 w-full max-w-7xl">
-          <form className="rounded-2xl flex flex-col w-full">
-            <input
-              type="text"
-              placeholder="First Name"
-              className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
-            />
-            <input
-              type="text"
-              placeholder="Phone"
-              className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
-            />
-            <textarea
-              placeholder="Enter a message"
-              className="p-3 border border-gray-300 rounded-md mb-4 bg-white h-32"
-            ></textarea>
-            <button className=" text-white py-3 rounded-md bg-gradient-to-r from-red-800 to-red-600 transition">
-              Send Message
-            </button>
-          </form>
+
+
+        <form onSubmit={handleSubmit} className="rounded-2xl flex flex-col w-full">
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter your Full Name"
+        value={formData.name}
+        onChange={handleChange}
+        className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your Email"
+        value={formData.email}
+        onChange={handleChange}
+        className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
+        required
+      />
+      <input
+        type="text"
+        name="mobile"
+        placeholder="Enter your Phone Number"
+        value={formData.mobile}
+        onChange={handleChange}
+        className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
+      />
+      <input
+        type="text"
+        name="institution"
+        placeholder="Enter your Institution"
+        value={formData.institution}
+        onChange={handleChange}
+        className="p-3 border border-gray-300 rounded-md mb-4 bg-white"
+      />
+      <textarea
+        name="message"
+        placeholder="Enter a message"
+        value={formData.message}
+        onChange={handleChange}
+        className="p-3 border border-gray-300 rounded-md mb-4 bg-white h-32"
+      ></textarea>
+      <button
+        type="submit"
+        className="text-white py-3 rounded-md bg-gradient-to-r from-red-800 to-red-600 transition"
+      >
+        Send Message
+      </button>
+    </form>
+
 
           <div className="rounded-2xl">
             <iframe

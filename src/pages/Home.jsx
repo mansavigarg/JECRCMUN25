@@ -261,7 +261,7 @@ const Home = () => {
               </h1>
               <h2 className="text-2xl md:text-4xl font-semibold mt-4">
                 <span className="text-black">14</span>
-                <span className="text-[#991C1C]">th</span>
+                <span className="text-black">th</span>
                 <span className="text-black"> EDITION</span>
               </h2>
             </div>
@@ -338,11 +338,6 @@ const Home = () => {
               <Icon className="text-white text-sm" />
             </motion.a>
           ))}
-        </div>
-
-        {/* Right-Side Vertical Buttons - Now absolute instead of fixed */}
-        <div className="absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 md:space-y-6 z-50">
-          {/* FAQs Button */}
           <Link to="/faqs">
             <motion.button
               className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
@@ -353,7 +348,7 @@ const Home = () => {
             </motion.button>
           </Link>
 
-          {/* Calendar Button */}
+
           <motion.button
             className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
             whileHover={{ scale: 1.15, y: -3 }}
@@ -363,9 +358,37 @@ const Home = () => {
               section?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Calendar
+            Itinerary
           </motion.button>
+
         </div>
+
+        <div className="hidden md:flex absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex-col items-center space-y-4 md:space-y-6 z-50">
+  {/* FAQs Button */}
+  <Link to="/faqs">
+    <motion.button
+      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+      whileHover={{ scale: 1.15, y: -3 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      FAQs
+    </motion.button>
+  </Link>
+
+  {/* itinerary Button */}
+  <motion.button
+    className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+    whileHover={{ scale: 1.15, y: -3 }}
+    whileTap={{ scale: 0.95 }}
+    onClick={() => {
+      const section = document.getElementById("timeline");
+      section?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Itinerary
+  </motion.button>
+</div>
+
       </div>
 
       {/* Counter by Mansavi */}
@@ -530,7 +553,7 @@ const Home = () => {
         <div className="md:w-6/12 grid grid-cols-2 gap-4 mt-12 md:mt-0 animate-fadeIn">
           <div className="relative group">
             <img
-              src="/src/assets/mun/mun5.webp"
+              src={mun5}
               alt="Speaker at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
@@ -542,7 +565,7 @@ const Home = () => {
           </div>
           <div className="relative group">
             <img
-              src="/src/assets/mun/mun3.webp"
+              src={mun3}
               alt="Delegates at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
@@ -554,7 +577,7 @@ const Home = () => {
           </div>
           <div className="relative group col-span-2">
             <img
-              src="/src/assets/mun/mun4.webp"
+              src={mun4}
               alt="Conference at JECRC MUN"
               className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300"
             />
