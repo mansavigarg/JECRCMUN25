@@ -5,10 +5,7 @@ import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import {
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import OutreachSection from "../components/Outreach";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
@@ -17,6 +14,7 @@ import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
 import { Link } from "react-router-dom";
+import { mun4, mun5, mun3 } from "../assets/index.js"
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
@@ -233,10 +231,10 @@ const Home = () => {
       {/* New Hero Section with Text Box */}
       <div className="relative w-full h-screen">
         {/* Background Image with Gradient Overlay */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: "url('/bg2.jpg')", 
+          style={{
+            backgroundImage: "url('/bg2.jpg')",
           }}
         >
           {/* Gradient Overlay */}
@@ -246,39 +244,38 @@ const Home = () => {
         {/* Content Container */}
 
         <div className="flex items-start justify-center h-screen w-full px-4 pt-32">
-  {/* Center Text Box - Fixed width of 500px and shifted down */}
-  <motion.div 
-    className="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-8 w-full max-w-lg mx-auto text-center"
-    style={{ width: "450px" }}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-  >
-    {/* Logo Text */}
-    <div className="mb-10 mx-auto" style={{ maxWidth: "400px" }}>
-      <h1 className="text-5xl md:text-7xl font-bold">
-        <span className="text-[#991C1C]">JECRC</span>
-        <span className="text-black block mt-2">MUN</span>
-        <span className="text-[#991C1C] block mt-2">2025</span>
-      </h1>
-      <h2 className="text-2xl md:text-4xl font-semibold mt-4">
-        <span className="text-black">14</span>
-        <span className="text-[#991C1C]">th</span>
-        <span className="text-black"> EDITION</span>
-      </h2>
-    </div>
+          {/* Center Text Box - Fixed width of 500px and shifted down */}
+          <motion.div
+            className="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-8 w-full max-w-lg mx-auto text-center"
+            style={{ width: "450px" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* Logo Text */}
+            <div className="mb-10 mx-auto" style={{ maxWidth: "400px" }}>
+              <h1 className="text-5xl md:text-7xl font-bold">
+                <span className="text-[#991C1C]">JECRC</span>
+                <span className="text-black block mt-2">MUN</span>
+                <span className="text-[#991C1C] block mt-2">2025</span>
+              </h1>
+              <h2 className="text-2xl md:text-4xl font-semibold mt-4">
+                <span className="text-black">14</span>
+                <span className="text-[#991C1C]">th</span>
+                <span className="text-black"> EDITION</span>
+              </h2>
+            </div>
 
-    {/* Date and Venue */}
-    <div className="mb-8 mx-auto">
-      <p className="text-xl font-semibold text-[#991C1C]">26-27th April</p>
-      <p className="text-lg text-gray-700">JECRC Foundation, Jaipur</p>
-    </div>
+            {/* Date and Venue */}
+            <div className="mb-8 mx-auto">
+              <p className="text-xl font-semibold text-[#991C1C]">
+                26-27th April
+              </p>
+              <p className="text-lg text-gray-700">JECRC Foundation, Jaipur</p>
+            </div>
 
             {/* Register Now Button */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link to="/registration">
                 <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
                   Register Now
@@ -288,24 +285,22 @@ const Home = () => {
           </motion.div>
         </div>
 
-    {/* Register Now Button */}
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <Link to="/register">
-        <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
-          Register Now
-        </button>
-      </Link>
-    </motion.div>
-  </motion.div>
-</div>
+        {/* Register Now Button */}
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link to="/register">
+            <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
+              Register Now
+            </button>
+          </Link>
+        </motion.div>
         {/* Sidebar Social Media Icons - Hidden on small screens */}
         <div className="absolute left-4 md:left-5 top-1/2 space-y-3 md:space-y-4 z-10 hidden sm:block">
           {[
             { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
-            { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/jecrc-mun/" },
+            {
+              Icon: FaLinkedinIn,
+              url: "https://www.linkedin.com/company/jecrc-mun/",
+            },
           ].map(({ Icon, url }, idx) => (
             <motion.a
               key={idx}
@@ -326,7 +321,10 @@ const Home = () => {
         <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-3 z-50 sm:hidden">
           {[
             { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
-            { Icon: FaLinkedinIn, url: "https://www.linkedin.com/company/jecrc-mun/" },
+            {
+              Icon: FaLinkedinIn,
+              url: "https://www.linkedin.com/company/jecrc-mun/",
+            },
           ].map(({ Icon, url }, idx) => (
             <motion.a
               key={idx}
@@ -369,7 +367,7 @@ const Home = () => {
           </motion.button>
         </div>
       </div>
-    
+
       {/* Counter by Mansavi */}
       <div>
         <CountdownTimer />
@@ -483,51 +481,49 @@ const Home = () => {
         {/* Left Text Section */}
 
         <div className="md:w-5/12 text-left space-y-6">
-  {/* Heading with Mobile-Centered, Desktop-Left Text Alignment */}
-  <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">
-    <span className="text-[#991C1C]">About</span>
-    <br />
-    <span className="text-black">JECRC MUN</span>
-  </h2>
-
+          {/* Heading with Mobile-Centered, Desktop-Left Text Alignment */}
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">
+            <span className="text-[#991C1C]">About</span>
+            <br />
+            <span className="text-black">JECRC MUN</span>
+          </h2>
 
           {/* Description Paragraphs */}
           <motion.p
-  className="text-lg text-center md:text-left text-gray-700 leading-relaxed opacity-95"
-  initial={{ opacity: 0, y: 10 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.2 }}
->
-  JECRC MUN is a thriving community dedicated to empowering youth in
-  discussing, debating, and tackling global crises, fostering
-  groundbreaking solutions for international imbalances.
-</motion.p>
+            className="text-lg text-center md:text-left text-gray-700 leading-relaxed opacity-95"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            JECRC MUN is a thriving community dedicated to empowering youth in
+            discussing, debating, and tackling global crises, fostering
+            groundbreaking solutions for international imbalances.
+          </motion.p>
 
-<motion.p
-  className="text-lg text-center md:text-left text-gray-700 leading-relaxed opacity-95"
-  initial={{ opacity: 0, y: 10 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.4 }}
->
-  Established in 2012 by Shri Kulbhushan Kothari, JECRC pioneered
-  Model UN in Jaipur, becoming Rajasthan's second institution to
-  introduce this prestigious platform for leadership and diplomacy.
-</motion.p>
-
+          <motion.p
+            className="text-lg text-center md:text-left text-gray-700 leading-relaxed opacity-95"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            Established in 2012 by Shri Kulbhushan Kothari, JECRC pioneered
+            Model UN in Jaipur, becoming Rajasthan's second institution to
+            introduce this prestigious platform for leadership and diplomacy.
+          </motion.p>
 
           {/* Call-to-Action Button */}
           <div className="flex justify-center md:justify-start">
-  <Link to="/aboutmun">
-    <motion.button
-      className="mt-6 px-6 py-3 bg-red-700 text-white font-medium rounded-lg shadow-md hover:bg-red-800 hover:scale-105 transform transition-all duration-300 ease-in-out"
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, delay: 0.6 }}
-    >
-      Learn More
-    </motion.button>
-  </Link>
-</div>
+            <Link to="/aboutmun">
+              <motion.button
+                className="mt-6 px-6 py-3 bg-red-700 text-white font-medium rounded-lg shadow-md hover:bg-red-800 hover:scale-105 transform transition-all duration-300 ease-in-out"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                Learn More
+              </motion.button>
+            </Link>
+          </div>
         </div>
 
         {/* Right Image Section */}
@@ -700,45 +696,45 @@ const Home = () => {
 
           {/* Testimonials Grid */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-  {testimonials.map((testimonial, index) => (
-    <motion.div
-      key={index}
-      className="relative bg-white text-gray-700 rounded-2xl p-8 shadow-lg border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:border-red-500 flex flex-col h-full"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.6,
-        ease: "easeOut",
-        delay: index * 0.2,
-      }}
-    >
-      {/* Profile Image with Hover Effect */}
-      <motion.div
-        className="flex justify-center -mt-16 relative"
-        whileHover={{ scale: 1.1 }}
-      >
-        <img
-          src={testimonial.image}
-          alt={testimonial.name}
-          className="w-24 h-24 rounded-full border-4 border-white shadow-lg transition-all duration-500"
-        />
-      </motion.div>
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                className="relative bg-white text-gray-700 rounded-2xl p-8 shadow-lg border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:border-red-500 flex flex-col h-full"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.2,
+                }}
+              >
+                {/* Profile Image with Hover Effect */}
+                <motion.div
+                  className="flex justify-center -mt-16 relative"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-24 h-24 rounded-full border-4 border-white shadow-lg transition-all duration-500"
+                  />
+                </motion.div>
 
-      {/* Testimonial Text */}
-      <p className="text-lg italic leading-relaxed mt-6 flex-grow">
-        "{testimonial.text}"
-      </p>
+                {/* Testimonial Text */}
+                <p className="text-lg italic leading-relaxed mt-6 flex-grow">
+                  "{testimonial.text}"
+                </p>
 
-      {/* User Info - Fixed at Bottom */}
-      <div className="mt-auto pt-6">
-        <h3 className="text-xl font-semibold text-red-800">
-          {testimonial.name}
-        </h3>
-        <p className="text-gray-500 text-sm">{testimonial.role}</p>
-      </div>
-    </motion.div>
-  ))}
-</div>
+                {/* User Info - Fixed at Bottom */}
+                <div className="mt-auto pt-6">
+                  <h3 className="text-xl font-semibold text-red-800">
+                    {testimonial.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Floating Animation Elements */}
