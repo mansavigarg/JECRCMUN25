@@ -1,11 +1,7 @@
 import logo from "../assets/logo.svg";
 import { ChevronRight, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
-
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const quickLinks = [
   {
@@ -42,11 +38,17 @@ export default function Footer() {
               crises, contributing towards solutions for global imbalance.
             </p>
             <div className="flex space-x-4 mt-3 rounded-full">
-              <a href="https://www.instagram.com/jecrcmun/" className="hover:opacity-75 transition-opacity">
-                <FaInstagram className="w-5 h-5"/>
+              <a
+                href="https://www.instagram.com/jecrcmun/"
+                className="hover:opacity-75 transition-opacity"
+              >
+                <FaInstagram className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/company/jecrc-mun/" className="hover:opacity-75 transition-opacity">
-                <FaLinkedinIn className="w-5 h-5"/>
+              <a
+                href="https://www.linkedin.com/company/jecrc-mun/"
+                className="hover:opacity-75 transition-opacity"
+              >
+                <FaLinkedinIn className="w-5 h-5" />
               </a>
             </div>
           </div>
