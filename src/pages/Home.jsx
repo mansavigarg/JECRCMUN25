@@ -14,7 +14,7 @@ import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
 import { Link } from "react-router-dom";
-import { mun4, mun5, mun3 } from "../assets/index.js"
+import { mun4, mun5, mun3 } from "../assets/index.js";
 
 const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
@@ -348,7 +348,6 @@ const Home = () => {
             </motion.button>
           </Link>
 
-
           <motion.button
             className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
             whileHover={{ scale: 1.15, y: -3 }}
@@ -360,35 +359,33 @@ const Home = () => {
           >
             Itinerary
           </motion.button>
-
         </div>
 
         <div className="hidden md:flex absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex-col items-center space-y-4 md:space-y-6 z-50">
-  {/* FAQs Button */}
-  <Link to="/faqs">
-    <motion.button
-      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-      whileHover={{ scale: 1.15, y: -3 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      FAQs
-    </motion.button>
-  </Link>
+          {/* FAQs Button */}
+          <Link to="/faqs">
+            <motion.button
+              className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+              whileHover={{ scale: 1.15, y: -3 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              FAQs
+            </motion.button>
+          </Link>
 
-  {/* itinerary Button */}
-  <motion.button
-    className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-    whileHover={{ scale: 1.15, y: -3 }}
-    whileTap={{ scale: 0.95 }}
-    onClick={() => {
-      const section = document.getElementById("timeline");
-      section?.scrollIntoView({ behavior: "smooth" });
-    }}
-  >
-    Itinerary
-  </motion.button>
-</div>
-
+          {/* itinerary Button */}
+          <motion.button
+            className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+            whileHover={{ scale: 1.15, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const section = document.getElementById("timeline");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Itinerary
+          </motion.button>
+        </div>
       </div>
 
       {/* Counter by Mansavi */}

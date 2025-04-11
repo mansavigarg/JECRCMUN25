@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 const stats = [
-  { number: 2500000, label: "Massive Outreach", color: "text-red-700", format: "lac" },
+  {
+    number: 2500000,
+    label: "Massive Outreach",
+    color: "text-red-700",
+    format: "lac",
+  },
   { number: 3500, label: "Delegates", color: "text-black" },
   { number: 100, label: "International Delegates", color: "text-blue-700" },
   { number: 350, label: "Participating Institutes", color: "text-yellow-600" },

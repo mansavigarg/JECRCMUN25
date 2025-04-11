@@ -251,8 +251,8 @@ const Zhs = () => {
                 <div className="mt-8 scroll-animate transition-all duration-700 delay-600">
                   <blockquote className="pl-4 border-l-4 border-orange-500 italic text-gray-600">
                     Following three successful previous editions, the fourth
-                    chapter of this enriching series was a resounding success in November
-                    2024.
+                    chapter of this enriching series was a resounding success in
+                    November 2024.
                   </blockquote>
 
                   <div className="mt-8 flex justify-center">

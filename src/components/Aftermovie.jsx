@@ -236,81 +236,81 @@ const AfterMovie = () => {
 
             {/* Video container with border and enhanced shadow */}
             <motion.div
-  variants={itemVariants}
-  className="relative rounded-lg overflow-hidden mx-auto max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl"
-  style={{
-    boxShadow:
-      "0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08)",
-    border: `1px solid ${colors.border}`,
-  }}
-  whileHover={{ scale: 1.01 }}
-  transition={{ duration: 0.3 }}
->
-  {/* Conditional rendering: Video player or Thumbnail */}
-  <div className="relative aspect-video bg-gray-100">
-    {isPlaying ? (
-      <video
-        src={events[activeTab].videoSrc}
-        className="w-full h-full object-cover"
-        controls
-        autoPlay
-        onEnded={() => setIsPlaying(false)}
-      />
-    ) : (
-      <>
-        <img
-          src={events[activeTab].thumbnailSrc}
-          alt={events[activeTab].thumbnailAlt}
-          className="w-full h-full object-cover"
-        />
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-
-        {/* Play button */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <motion.div
-            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center cursor-pointer"
-            style={{
-              backgroundColor: colors.primary,
-              boxShadow:
-                "0 10px 15px -3px rgba(153, 28, 28, 0.3), 0 4px 6px -2px rgba(153, 28, 28, 0.15)",
-            }}
-            whileHover={{ scale: 1.1, backgroundColor: "#B22323" }}
-            whileTap={{ scale: 0.95 }}
-            transition={{
-              type: "spring",
-              stiffness: 400,
-              damping: 17,
-            }}
-            onClick={handlePlayVideo}
-          >
-            <svg
-              className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white ml-0.5 sm:ml-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+              variants={itemVariants}
+              className="relative rounded-lg overflow-hidden mx-auto max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl"
+              style={{
+                boxShadow:
+                  "0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08)",
+                border: `1px solid ${colors.border}`,
+              }}
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.3 }}
             >
-              <path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-            </svg>
-          </motion.div>
-        </div>
+              {/* Conditional rendering: Video player or Thumbnail */}
+              <div className="relative aspect-video bg-gray-100">
+                {isPlaying ? (
+                  <video
+                    src={events[activeTab].videoSrc}
+                    className="w-full h-full object-cover"
+                    controls
+                    autoPlay
+                    onEnded={() => setIsPlaying(false)}
+                  />
+                ) : (
+                  <>
+                    <img
+                      src={events[activeTab].thumbnailSrc}
+                      alt={events[activeTab].thumbnailAlt}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
-        {/* Bottom info bar */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between">
-            <div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold tracking-wide text-white">
-                {events[activeTab].tagline}
-              </h3>
-              <p className="text-sm lg:text-base text-white opacity-90 mt-1">
-                {events[activeTab].description}
-              </p>
-            </div>
-          </div>
-        </div>
-      </>
-    )}
-  </div>
-</motion.div>
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <motion.div
+                        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center cursor-pointer"
+                        style={{
+                          backgroundColor: colors.primary,
+                          boxShadow:
+                            "0 10px 15px -3px rgba(153, 28, 28, 0.3), 0 4px 6px -2px rgba(153, 28, 28, 0.15)",
+                        }}
+                        whileHover={{ scale: 1.1, backgroundColor: "#B22323" }}
+                        whileTap={{ scale: 0.95 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 17,
+                        }}
+                        onClick={handlePlayVideo}
+                      >
+                        <svg
+                          className="w-5 h-5 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white ml-0.5 sm:ml-1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                        </svg>
+                      </motion.div>
+                    </div>
+
+                    {/* Bottom info bar */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                      <div className="flex flex-col sm:flex-row sm:items-end justify-between">
+                        <div>
+                          <h3 className="text-base sm:text-lg lg:text-xl font-bold tracking-wide text-white">
+                            {events[activeTab].tagline}
+                          </h3>
+                          <p className="text-sm lg:text-base text-white opacity-90 mt-1">
+                            {events[activeTab].description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </motion.div>
 
             {/* Bottom section with extra info and button */}
             <Link to="/registration">
