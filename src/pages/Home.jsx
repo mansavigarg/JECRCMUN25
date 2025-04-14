@@ -230,166 +230,148 @@ const Home = () => {
 
       {/* New Hero Section with Text Box */}
       <div className="relative w-full h-screen">
-        {/* Background Image with Gradient Overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/bg2.jpg')",
-          }}
-        >
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#991C1C]/80 to-white/50"></div>
-        </div>
+  {/* Background Image with Gradient Overlay */}
+  <div className="absolute inset-0 overflow-hidden">
+    <video
+      className="absolute min-w-full min-h-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source src="/video/Short.mp4" type="video/mp4" />
+    </video>
+    <div className="absolute inset-0 bg-gradient-to-b from-[#991C1C]/90 to-white/20 z-10"></div>
+  </div>
 
-        {/* Content Container */}
+  {/* Content Container */}
+  <div className="flex flex-col items-center justify-center h-screen w-full px-2 sm:px-4 relative">
+    {/* Logo */}
+    <div className="flex items-center justify-center mb-4 z-20">
+      <img 
+        src="/JECRC.svg" 
+        alt="JECRC Logo" 
+        className="w-[50vw] xs:w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg opacity-100 transition-all duration-300 hover:opacity-100" 
+      />
+    </div>
+    
+    {/* Priority Round Text */}
+    {/* <div className="text-center mb-1 z-20">
+      <p className="text-white font-bold text-lg md:text-xl ">
+        <span className="bg-[#991C1C]/100 text-white px-4 py-1 rounded-md">
+          Priority Round 1 till 15th April: ₹ 2500/-
+        </span>
+      </p>
+    </div> */}
 
-        <div className="flex items-start justify-center h-screen w-full px-4 pt-32">
-          {/* Center Text Box - Fixed width of 500px and shifted down */}
-          <motion.div
-            className="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-8 w-full max-w-lg mx-auto text-center"
-            style={{ width: "450px" }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            {/* Logo Text */}
-            <div className="mb-10 mx-auto" style={{ maxWidth: "400px" }}>
-              <h1 className="text-5xl md:text-7xl font-bold">
-                <span className="text-[#991C1C]">JECRC</span>
-                <span className="text-black block mt-2">MUN</span>
-                <span className="text-[#991C1C] block mt-2">2025</span>
-              </h1>
-              <h2 className="text-2xl md:text-4xl font-semibold mt-4">
-                <span className="text-black">14</span>
-                <span className="text-black">th</span>
-                <span className="text-black"> EDITION</span>
-              </h2>
-            </div>
+    {/* Register Now Button */}
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-20">
+      <Link to="/registration">
+        <button className="bg-white text-[#991C1C] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300">
+          
+          Register Now
+        </button>
+      </Link>
+    </motion.div>
+  </div>
 
-            {/* Date and Venue */}
-            <div className="mb-8 mx-auto">
-              <p className="text-xl font-semibold text-[#991C1C]">
-                26-27th April
-              </p>
-              <p className="text-lg text-gray-700">JECRC Foundation, Jaipur</p>
-            </div>
+  {/* Sidebar Social Media Icons - Hidden on small screens */}
+  <div className="absolute left-4 md:left-5 top-1/2 space-y-3 md:space-y-4 z-10 hidden sm:block">
+    {[
+      { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
+      {
+        Icon: FaLinkedinIn,
+        url: "https://www.linkedin.com/company/jecrc-mun/",
+      },
+    ].map(({ Icon, url }, idx) => (
+      <motion.a
+        key={idx}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-3 md:p-4 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
+        whileHover={{ scale: 1.2, rotate: 5 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <Icon className="text-white text-lg md:text-xl" />
+      </motion.a>
+    ))}
+  </div>
 
-            {/* Register Now Button */}
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link to="/registration">
-                <button
-                  className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300"
-                  onClick={() => fbq("trackCustom", "RegisterButtonClick")}
-                >
-                  Register Now
-                </button>
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
+  {/* Mobile Social Icons Row */}
+  <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-3 z-50 sm:hidden">
+    {[
+      { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
+      {
+        Icon: FaLinkedinIn,
+        url: "https://www.linkedin.com/company/jecrc-mun/",
+      },
+    ].map(({ Icon, url }, idx) => (
+      <motion.a
+        key={idx}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <Icon className="text-white text-sm" />
+      </motion.a>
+    ))}
+    <Link to="/faqs">
+      <motion.button
+        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+        whileHover={{ scale: 1.15, y: -3 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        FAQs
+      </motion.button>
+    </Link>
 
-        {/* Register Now Button */}
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link to="/register">
-            <button className="bg-[#991C1C] text-white text-xl font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-[#7a1717] transition-all duration-300">
-              Register Now
-            </button>
-          </Link>
-        </motion.div>
-        {/* Sidebar Social Media Icons - Hidden on small screens */}
-        <div className="absolute left-4 md:left-5 top-1/2 space-y-3 md:space-y-4 z-10 hidden sm:block">
-          {[
-            { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
-            {
-              Icon: FaLinkedinIn,
-              url: "https://www.linkedin.com/company/jecrc-mun/",
-            },
-          ].map(({ Icon, url }, idx) => (
-            <motion.a
-              key={idx}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 md:p-4 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Icon className="text-white text-lg md:text-xl" />
-            </motion.a>
-          ))}
-        </div>
+    <motion.button
+      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+      whileHover={{ scale: 1.15, y: -3 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => {
+        const section = document.getElementById("timeline");
+        section?.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      Itinerary
+    </motion.button>
+  </div>
 
-        {/* Mobile Social Icons Row - Now absolute instead of fixed */}
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-3 z-50 sm:hidden">
-          {[
-            { Icon: FaInstagram, url: "https://www.instagram.com/jecrcmun/" },
-            {
-              Icon: FaLinkedinIn,
-              url: "https://www.linkedin.com/company/jecrc-mun/",
-            },
-          ].map(({ Icon, url }, idx) => (
-            <motion.a
-              key={idx}
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Icon className="text-white text-sm" />
-            </motion.a>
-          ))}
-          <Link to="/faqs">
-            <motion.button
-              className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-              whileHover={{ scale: 1.15, y: -3 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              FAQs
-            </motion.button>
-          </Link>
+  {/* Desktop FAQs and Itinerary Buttons */}
+  <div className="hidden md:flex absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex-col items-center space-y-4 md:space-y-6 z-50">
+    {/* FAQs Button */}
+    <Link to="/faqs">
+      <motion.button
+        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+        whileHover={{ scale: 1.15, y: -3 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        FAQs
+      </motion.button>
+    </Link>
 
-          {/* <motion.button
-            className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              const section = document.getElementById("timeline");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Itinerary
-          </motion.button> */}
-        </div>
-
-        <div className="hidden md:flex absolute right-4 md:right-5 top-1/2 transform -translate-y-1/2 flex-col items-center space-y-4 md:space-y-6 z-50">
-          {/* FAQs Button */}
-          <Link to="/faqs">
-            <motion.button
-              className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-              whileHover={{ scale: 1.15, y: -3 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              FAQs
-            </motion.button>
-          </Link>
-
-          {/* itinerary Button */}
-          {/* <motion.button
-            className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
-            whileHover={{ scale: 1.15, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              const section = document.getElementById("timeline");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Itinerary
-          </motion.button> */}
-        </div>
+    {/* itinerary Button */}
+    <motion.button
+      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+      whileHover={{ scale: 1.15, y: -3 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => {
+        const section = document.getElementById("timeline");
+        section?.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      Itinerary
+    </motion.button>
+  </div>
       </div>
+    
+  
 
       {/* Counter by Mansavi */}
       <div>
