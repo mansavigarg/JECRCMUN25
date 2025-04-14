@@ -217,7 +217,10 @@ const Navbar = () => {
 
         {/* Register Button */}
         <Link to="/registration">
-          <button className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105">
+          <button
+            className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105"
+            onClick={() => fbq("trackCustom", "RegisterButtonClick")}
+          >
             REGISTER NOW
           </button>
         </Link>
@@ -356,7 +359,10 @@ const Navbar = () => {
 
               {/* Mobile Register Button */}
               <Link to="/registration">
-                <button className="mt-4 w-full px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md">
+                <button
+                  className="mt-4 w-full px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md"
+                  onClick={() => fbq("trackCustom", "RegisterButtonClick")}
+                >
                   REGISTER NOW
                 </button>
               </Link>

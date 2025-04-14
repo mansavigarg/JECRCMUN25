@@ -200,6 +200,7 @@ const CountdownTimer = () => {
           >
             <motion.button
               className="bg-red-800 text-white px-10 py-4 rounded-xl font-bold text-xl tracking-wide shadow-lg flex items-center justify-center mx-auto gap-3"
+              onClick={() => fbq('trackCustom', 'RegisterButtonClick')}
               whileHover={{
                 scale: 1.05,
                 backgroundColor: "#991b1b",

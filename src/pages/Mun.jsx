@@ -252,6 +252,9 @@ const Mun = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="px-8 py-3 bg-gradient-to-r from-red-800 to-red-600 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                        onClick={() =>
+                          fbq("trackCustom", "RegisterButtonClick")
+                        }
                       >
                         Register Now!
                       </motion.button>

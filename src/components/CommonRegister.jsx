@@ -201,6 +201,7 @@ export default function CommonRegister() {
                   className="bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative group overflow-hidden"
                   onMouseEnter={() => setIsButtonHovered(true)}
                   onMouseLeave={() => setIsButtonHovered(false)}
+                  onClick={() => fbq("trackCustom", "RegisterButtonClick")}
                 >
                   {/* Complete hover overlay that fully animates */}
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -213,7 +214,7 @@ export default function CommonRegister() {
                   />
 
                   {/* Decorative elements */}
-                  <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-800 rounded-full opacity-70"></span>
+                  {/* <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-800 rounded-full opacity-70"></span> */}
 
                   {/* Ripple effect on hover */}
                   <span
