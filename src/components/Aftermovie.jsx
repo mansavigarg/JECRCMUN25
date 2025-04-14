@@ -313,36 +313,6 @@ const AfterMovie = () => {
             </motion.div>
 
             {/* Bottom section with extra info and button */}
-            <Link to="/registration">
-              <motion.div
-                variants={itemVariants}
-                className="mt-6 sm:mt-8 lg:mt-10 text-center"
-              >
-                <p className="text-xs sm:text-sm lg:text-base max-w-md sm:max-w-lg lg:max-w-xl mx-auto opacity-90">
-                  {events[activeTab].infoText}
-                </p>
-
-                <motion.div
-                  className="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center"
-                  variants={itemVariants}
-                >
-                  <motion.button
-                    variants={buttonVariants}
-                    initial="initial"
-                    whileHover="hover"
-                    whileTap="tap"
-                    className="w-full sm:w-auto px-8 sm:px-10 py-3 text-sm sm:text-base rounded-md font-medium text-white"
-                    style={{
-                      backgroundColor: colors.primary,
-                      boxShadow:
-                        "0 4px 6px -1px rgba(153, 28, 28, 0.3), 0 2px 4px -1px rgba(153, 28, 28, 0.15)",
-                    }}
-                  >
-                    Register for MUN 2025
-                  </motion.button>
-                </motion.div>
-              </motion.div>
-            </Link>
           </motion.div>
         </AnimatePresence>
       </motion.div>

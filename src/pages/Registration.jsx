@@ -180,6 +180,9 @@ const Registration = () => {
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSciZD1UVgm9Nuk2C-BeJ9iEFsiY0k8L0W1lkchmhKMAXqLxhA/viewform">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      onClick={() =>
+                        fbq("trackCustom", "RegisterButtonClick")
+                      }
                       variants={buttonVariants}
                       initial="initial"
                       whileHover="hover"
@@ -279,6 +282,9 @@ const Registration = () => {
                   <a href="https://docs.google.com/forms/d/1C91naJzBI6XcewO0djrsnhsrDeb0TzalyMVWu12VOjY/viewform?edit_requested=true">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      onClick={() =>
+                        fbq("trackCustom", "RegisterButtonClick")
+                      }
                       variants={buttonVariants}
                       initial="initial"
                       whileHover="hover"
@@ -373,6 +379,9 @@ const Registration = () => {
                   <a href="https://docs.google.com/forms/d/1ejeSyU65Cfc6Z5y-_haE2dhneVbzebc5rOwSsV8ZhnI/viewform?edit_requested=true">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      onClick={() =>
+                        fbq("trackCustom", "RegisterButtonClick")
+                      }
                       variants={buttonVariants}
                       initial="initial"
                       whileHover="hover"

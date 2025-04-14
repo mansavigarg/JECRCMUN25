@@ -136,7 +136,7 @@ const testimonials = [
     image: "/akshat.webp",
   },
   {
-    name: "Pratham Khandelwal",
+    name: "Pratham Kabra",
     text: "A phenomenal experience! The debates, networking, and competitive environment helped me sharpen my critical thinking skills.",
     image: "/pratham.webp",
   },

@@ -80,13 +80,13 @@ export default function Footer() {
             </p>
             <div className="mt-3 flex items-start gap-2">
               <div className="mt-1">
-                <Phone className="h-6 w-6 md:h-8 md:w-8" />
+                <Phone className="h-6 w-6 md:h-6 md:w-6" />
               </div>
               <div>
-                <p className="font-semibold text-base md:text-xl">
+                <p className="font-medium text-base md:text-lg">
                   Sarthak Jain - 7728858711
                 </p>
-                <p className="font-semibold text-base md:text-xl">
+                <p className="font-medium text-base md:text-lg">
                   Aditya Sharma - 9829368698
                 </p>
                 <p className="text-sm md:text-base">For information</p>
@@ -94,8 +94,8 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center mt-3 gap-2">
-              <Mail className="h-6 w-6 md:h-8 md:w-8" />
-              <p className="text-base md:text-xl font-semibold">
+              <Mail className="h-6 w-6 md:h-6 md:w-6" />
+              <p className="text-base md:text-lg font-medium">
                 mun@jecrc.ac.in
               </p>
             </div>
