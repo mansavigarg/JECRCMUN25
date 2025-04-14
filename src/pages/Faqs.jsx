@@ -195,7 +195,7 @@ const FAQPage = () => {
       </header>
 
       {/* World map pattern - decorative element */}
-      <div className="h-16 bg-gray-100 flex items-center justify-center overflow-hidden relative">
+      {/* <div className="h-16 bg-gray-100 flex items-center justify-center overflow-hidden relative">
         <div className="absolute inset-0 opacity-10">
           <svg
             viewBox="0 0 1000 120"
@@ -226,7 +226,7 @@ const FAQPage = () => {
           <Globe size={20} className="text-[#991C1C]" />
           <span>Find answers to all your queries about JECRC MUN 2025</span>
         </div>
-      </div>
+      </div> */}
 
       {/* FAQ Content with enhanced design */}
       <main className="max-w-4xl mx-auto py-12 px-4">

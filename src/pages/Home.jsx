@@ -267,7 +267,11 @@ const Home = () => {
     {/* Register Now Button */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-20">
       <Link to="/registration">
-        <button className="bg-white text-[#991C1C] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300">
+        <button className="bg-white text-[#991C1C] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300"
+        onClick={() =>
+          fbq("trackCustom", "RegisterButtonClick")
+        }
+        >
           
           Register Now
         </button>
@@ -330,7 +334,7 @@ const Home = () => {
       </motion.button>
     </Link>
 
-    <motion.button
+    {/* <motion.button
       className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
       whileHover={{ scale: 1.15, y: -3 }}
       whileTap={{ scale: 0.95 }}
@@ -340,7 +344,7 @@ const Home = () => {
       }}
     >
       Itinerary
-    </motion.button>
+    </motion.button> */}
   </div>
 
   {/* Desktop FAQs and Itinerary Buttons */}
@@ -357,7 +361,7 @@ const Home = () => {
     </Link>
 
     {/* itinerary Button */}
-    <motion.button
+    {/* <motion.button
       className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
       whileHover={{ scale: 1.15, y: -3 }}
       whileTap={{ scale: 0.95 }}
@@ -367,7 +371,7 @@ const Home = () => {
       }}
     >
       Itinerary
-    </motion.button>
+    </motion.button> */}
   </div>
       </div>
     
