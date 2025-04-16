@@ -54,7 +54,7 @@ const agendas = [
   },
   {
     title: "Balancing religious gatherings with civic responsibilities",
-    subtitle: "Reconciling faithful devotion with societal welfare.",
+    subtitle: "Seeking harmony between steadfast faithful devotion and the responsibility to promote the welfare of society.",
     tag: "AIPPM",
     image: "/aippm.webp",
     bgColor: "bg-[#991C1C]",
@@ -76,9 +76,9 @@ const agendas = [
     bgColor: "bg-[#991C1C]",
   },
   {
-    title: "Media Roles in Documenting and Analyzing Committee Proceedings",
+    title: "Media Roles in Documenting and Analyzing Committee Proceedings.",
     subtitle:
-      "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative",
+      "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative.",
     tag: "IP",
     image: "/ip4.webp",
     bgColor: "bg-[#991C1C]",
@@ -611,7 +611,7 @@ const Home = () => {
               <div className="p-6">
                 {/* Tag */}
                 <span
-                  className={`absolute top-4 right-4 text-xs font-semibold text-white px-3 py-1 rounded-full ${agenda.bgColor}`}
+                  className={`absolute top-3 right-3 font-semibold text-white px-3 py-1 rounded-xl ${agenda.bgColor}`}
                 >
                   {agenda.tag}
                 </span>
