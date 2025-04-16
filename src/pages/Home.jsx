@@ -24,7 +24,7 @@ const agendas = [
     subtitle:
       "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
-    image: "./unhcr.webp",
+    image: "./unhcr.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -32,7 +32,7 @@ const agendas = [
     subtitle:
       "Evaluating the current regime versus the opposition for long-term stability and peace.",
     tag: "UNSC",
-    image: "/unsc.webp",
+    image: "/unsc.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -40,7 +40,7 @@ const agendas = [
     subtitle:
       "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
     tag: "ECOFIN",
-    image: "/ecofinn.webp",
+    image: "/ecofin.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -49,14 +49,14 @@ const agendas = [
     subtitle:
       "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
     tag: "COPUOS",
-    image: "/cop.webp",
+    image: "/copous.png",
     bgColor: "bg-[#991C1C]",
   },
   {
     title: "Balancing religious gatherings with civic responsibilities",
     subtitle: "Seeking harmony between steadfast faithful devotion and the responsibility to promote the welfare of society.",
     tag: "AIPPM",
-    image: "/aippm.webp",
+    image: "/aippm.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -64,7 +64,7 @@ const agendas = [
     subtitle:
       "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
     tag: "SICCC",
-    image: "/bg12.jpg",
+    image: "/siccc.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -72,7 +72,7 @@ const agendas = [
       "Assessing the influence of nepotism and creative stagnation in Bollywood",
     subtitle: "A star-kid monopoly or a broader industry challenge?",
     tag: "CBFC",
-    image: "/cbfc.webp",
+    image: "/cbfc.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -80,7 +80,7 @@ const agendas = [
     subtitle:
       "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative.",
     tag: "IP",
-    image: "/ip4.webp",
+    image: "/IP.png",
     bgColor: "bg-[#991C1C]",
   },
 ];
@@ -239,7 +239,7 @@ const Home = () => {
       loop
       playsInline
     >
-      <source src="/video/Short.mp4" type="video/mp4" />
+      <source src="/video/Short.webm" type="video/webm" />
     </video>
     <div className="absolute inset-0 bg-gradient-to-b from-[#991C1C]/90 to-white/20 z-10"></div>
   </div>
