@@ -610,11 +610,11 @@ const Home = () => {
 
               <div className="p-6">
                 {/* Tag */}
-                <span
+                {/* <span
                   className={`absolute top-3 right-3 font-semibold text-white px-3 py-1 rounded-xl ${agenda.bgColor}`}
                 >
                   {agenda.tag}
-                </span>
+                </span> */}
 
                 {/* Title & Description */}
                 <h3 className="text-xl font-semibold text-gray-900 capitalize">
