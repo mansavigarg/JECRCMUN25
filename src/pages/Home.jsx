@@ -24,7 +24,7 @@ const agendas = [
     subtitle:
       "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
-    image: "./unhcr.png",
+    image: "./unhcr1.png",
     bgColor: "bg-[#991C1C]",
   },
   {
@@ -629,7 +629,7 @@ const Home = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div>w
       </section>
 
       {/* <section id='timeline'>
