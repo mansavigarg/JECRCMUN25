@@ -623,9 +623,9 @@ const Home = () => {
                 <p className="text-gray-500 text-sm mt-2">{agenda.subtitle}</p>
 
                 {/* Button */}
-                <button className="bottom-0 mt-4 px-5 py-2 bg-[#991C1C] text-white font-medium rounded-lg hover:bg-red-800 transition">
+                {/* <button className="bottom-0 mt-4 px-5 py-2 bg-[#991C1C] text-white font-medium rounded-lg hover:bg-red-800 transition">
                   Background Guide →
-                </button>
+                </button> */}
               </div>
             </motion.div>
           ))}
