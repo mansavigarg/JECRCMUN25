@@ -630,7 +630,7 @@ const Home = () => {
               </div>
             </motion.div>
           ))}
-        </div>w
+        </div>
       </section>
 
       {/* <section id='timeline'>
