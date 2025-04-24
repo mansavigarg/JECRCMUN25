@@ -13,6 +13,7 @@ import CountdownTimer from "../components/CountdownTimer";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
+import SponserCard from "../components/SponserCard.jsx"
 import { Link } from "react-router-dom";
 import { mun4, mun5, mun3 } from "../assets/index.js";
 
@@ -746,6 +747,7 @@ const Home = () => {
           </div>
         </div>
 
+
         {/* Floating Animation Elements */}
         <motion.div
           className="absolute top-1/3 left-0 w-24 h-24 bg-red-500 opacity-20 rounded-full blur-3xl"
@@ -759,6 +761,10 @@ const Home = () => {
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         ></motion.div>
       </section>
+
+      <div>
+        <SponserCard/>
+      </div>
 
       <div>
         <Footer />
