@@ -222,6 +222,10 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+
+
+  
   return (
     <div className="relative w-auto h-auto bg-white">
       {/* Navbar */}
