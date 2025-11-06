@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("April 26, 2025 09:00:00").getTime();
+    const targetDate = new Date(2025, 10, 18, 6, 0, 0).getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -78,7 +78,7 @@ const CountdownTimer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            JECRC MUN 2025
+            JECRC ZHS 2025
           </motion.h1>
           <motion.div
             className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
@@ -92,9 +92,9 @@ const CountdownTimer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Rajasthan’s largest MUN Conference with a network surpassing 25 lac,
-            engaging 350+ institutes and welcoming over 3500 delegates to the
-            ground of diplomacy.
+           Zero Hour Summit (ZHS) celebrates the art of debate, dialogue, and diplomacy.
+It brings together young leaders to express, engage, and evolve.
+Experience the spirit of ZHS 2025 – The 5th Edition.
           </motion.p>
         </div>
 

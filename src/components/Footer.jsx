@@ -84,10 +84,10 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-base md:text-lg">
-                  Sarthak Jain - 7728858711
+                  Rashi Gupta - 6378921450
                 </p>
                 <p className="font-medium text-base md:text-lg">
-                  Aditya Sharma - 9829368698
+                  Kartik Saxena - 8791498880
                 </p>
                 <p className="text-sm md:text-base">For information</p>
               </div>
