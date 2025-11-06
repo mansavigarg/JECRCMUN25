@@ -191,7 +191,7 @@ const Home = () => {
     /* Countdown */
   }
   useEffect(() => {
-    const targetDate = new Date("April 25, 2025 00:00:00").getTime();
+    const targetDate = new Date(2025, 10, 18, 6, 0, 0).getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

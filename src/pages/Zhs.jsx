@@ -250,9 +250,9 @@ const Zhs = () => {
 
                 <div className="mt-8 scroll-animate transition-all duration-700 delay-600">
                   <blockquote className="pl-4 border-l-4 border-orange-500 italic text-gray-600">
-                    Following three successful previous editions, the fourth
+                    Following four successful previous editions, the fifth
                     chapter of this enriching series was a resounding success in
-                    November 2024.
+                    November 2025.
                   </blockquote>
 
                   <div className="mt-8 flex justify-center">
@@ -277,7 +277,7 @@ const Zhs = () => {
               transition={{ duration: 0.5, delay: 0.7 }}
               className="bg-white p-6 rounded-xl shadow-lg text-center"
             >
-              <div className="text-red-800 text-4xl font-bold mb-2">13+</div>
+              <div className="text-red-800 text-4xl font-bold mb-2">14+</div>
               <div className="text-gray-600">Years of Excellence</div>
             </motion.div>
 
