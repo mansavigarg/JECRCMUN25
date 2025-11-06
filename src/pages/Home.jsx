@@ -457,12 +457,12 @@ const Home = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-6 justify-content">
                 <span className="text-[#991C1C]">Why Should You</span>
                 <br />
-                <span className="text-black">Join JECRC ZHS?</span>
+                <span className="text-black">Join JECRC MUN?</span>
               </h2>
 
               <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed justify-content">
                 <p>
-                  Participating in JECRC ZHS offers a unique opportunity for
+                  Participating in JECRC MUN offers a unique opportunity for
                   students to develop crucial skills and broaden their horizons.
                   Through diplomatic simulations, delegates hone negotiation,
                   public speaking, and research abilities while gaining insight
@@ -475,7 +475,7 @@ const Home = () => {
                   Moreover, we provide a platform for networking with
                   professionals in international relations and diplomacy, paving
                   the way for future academic and career opportunities. By
-                  joining JECRC ZHS, students embark on a transformative journey
+                  joining JECRC MUN, students embark on a transformative journey
                   towards personal growth and intellectual development.
                 </p>
               </div>
