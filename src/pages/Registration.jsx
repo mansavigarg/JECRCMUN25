@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const Registration = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  // Framer motion variants
+  // Framer motion variants (Unchanged)
   const backgroundElementVariants = {
     animate: (i) => ({
       y: [0, -20, 0, 20, 0],
@@ -21,7 +21,7 @@ const Registration = () => {
     }),
   };
 
-  // Simplified card variants with consistent scaling
+  // Simplified card variants with consistent scaling (Unchanged)
   const cardVariants = {
     default: {
       scale: 1,
@@ -47,13 +47,23 @@ const Registration = () => {
     },
   };
 
+  // New Agenda List
+  const agendas = [
+    "Gym Culture in Gen Z: Healthy Lifestyle or Obsession?",
+    "Gen Z Activism: Nepal’s Revolution vs. India’s Youth Awakening",
+    "India’s Athletic Dreams: A Work in Progress or a Distant Reality?",
+    "Identity or Absurdity: The Crisis of Genuine LGBTQ+ Representation",
+    "American Foreign Intervention: Quest for Peace or Pursuit of Power?",
+    "International Press: Reporters & Cinematography",
+  ];
+
   return (
     <div>
       <div>
         <Navbar />
       </div>
       <div className="min-h-screen bg-gradient-to-b from-[#ffffff] via-[#ffff] to-[#ffffff] py-16 px-4 relative overflow-hidden mt-12">
-        {/* Animated Background Elements */}
+        {/* Animated Background Elements (Unchanged) */}
         <div className="absolute inset-0 overflow-hidden opacity-20">
           {[...Array(20)].map((_, i) => (
             <motion.div
@@ -73,7 +83,9 @@ const Registration = () => {
           ))}
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-10 pb-20">
+          {" "}
+          {/* Added pb-20 for spacing */}
           <div className="text-center mb-16">
             <motion.h1
               className="text-5xl md:text-7xl font-bold text-[#991c1c] mb-6 tracking-tight"
@@ -81,7 +93,7 @@ const Registration = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Choose Your Role
+              ZERO HOUR SUMMIT 5.0
             </motion.h1>
             <motion.div
               className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
@@ -90,17 +102,18 @@ const Registration = () => {
               transition={{ duration: 1, delay: 0.5 }}
             ></motion.div>
             <motion.p
-              className="text-2xl font-medium text-[#000000] max-w-2xl mx-auto capitalize"
+              className="text-2xl font-medium text-[#000000] max-w-3xl mx-auto mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Select the role that best fits your profile
+              Get ready to bring your ideas, creativity, and debating spirit to
+              life!
             </motion.p>
           </div>
-
+          {/* Registration Cards */}
           <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
-            {/* Executive Board Card */}
+            {/* Individual Registration Card */}
             <motion.div
               className="w-full max-w-md"
               initial="default"
@@ -120,18 +133,16 @@ const Registration = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        JECRC MUN 2025
+                        ZHS 5.0
                       </span>
                       <h3 className="text-2xl font-bold text-white">
-                        Executive Board
+                        Individual Registration
                       </h3>
                     </div>
                     <div className="text-right">
-                      <p className="text-white/80 text-sm">
-                        {/* Delegation Fee */}
-                      </p>
+                      <p className="text-white/80 text-sm">Registration Fee</p>
                       <p className="text-4xl font-extrabold text-white">
-                        {/* ₹3000 */}
+                        ₹150
                       </p>
                     </div>
                   </div>
@@ -139,28 +150,27 @@ const Registration = () => {
 
                 {/* Card Content */}
                 <div className="p-8">
-                  <div className="mb-6">
-                    {/* Executive Board has no special details in the original code */}
+                  {/* --- UPDATED PRICE SECTION --- */}
+                  <div className="mb-6" style={{ minHeight: "80px" }}>
+                    {" "}
+                    {/* Added min-height for visual balance */}
+                    <div className="flex items-center mb-3">
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <p className="text-gray-700 font-bold">
+                        Fee: ₹150 per person
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="border-gray-200 pt-6 mb-6">
+                  <div className="border-t border-gray-200 pt-6 mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
-                      Committees :
+                      Agendas :
                     </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {[
-                        "UNSC",
-                        "ECOFIN",
-                        "UNHCR",
-                        "COPUOS",
-                        "AIPPM",
-                        "SICCC",
-                        "CBFC",
-                        "IP",
-                      ].map((committee, idx) => (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {agendas.map((agenda, idx) => (
                         <div key={idx} className="flex items-center">
                           <svg
-                            className="w-4 h-4 mr-2 text-[#991c1c]"
+                            className="w-4 h-4 mr-2 text-[#991c1c] flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -171,13 +181,13 @@ const Registration = () => {
                             ></path>
                           </svg>
                           <span className="text-gray-700 text-sm">
-                            {committee}
+                            {agenda}
                           </span>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSciZD1UVgm9Nuk2C-BeJ9iEFsiY0k8L0W1lkchmhKMAXqLxhA/viewform">
+                  <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
                       onClick={() =>
@@ -194,7 +204,7 @@ const Registration = () => {
               </div>
             </motion.div>
 
-            {/* Delegate Card */}
+            {/* Team Registration Card */}
             <motion.div
               className="w-full max-w-md"
               initial="default"
@@ -214,16 +224,16 @@ const Registration = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        JECRC MUN 2025
+                        ZHS 5.0
                       </span>
                       <h3 className="text-2xl font-bold text-white">
-                        Delegate
+                        Team Registration
                       </h3>
                     </div>
                     <div className="text-right">
-                      <p className="text-white/80 text-sm">Delegation Fee</p>
+                      <p className="text-white/80 text-sm">Regular Fee</p>
                       <p className="text-4xl font-extrabold text-white">
-                        ₹3000
+                        ₹400
                       </p>
                     </div>
                   </div>
@@ -231,38 +241,31 @@ const Registration = () => {
 
                 {/* Card Content */}
                 <div className="p-8">
-                  <div className="mb-6">
+                  {/* --- PRICE SECTION (BULLET STYLE) --- */}
+                  <div className="mb-6" style={{ minHeight: "80px" }}>
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
                       <p className="text-gray-700 font-bold">
-                        Priority Round 1 till 15th April: ₹ 2500/-
+                        Early Bird (till 12th Nov): ₹300/team
                       </p>
                     </div>
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
                       <p className="text-gray-700 font-bold">
-                        Priority Round 2: ₹ 2750/-
+                        Regular (from 13th Nov): ₹400/team
                       </p>
                     </div>
                   </div>
 
                   <div className="border-t border-gray-200 pt-6 mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
-                      Committees :
+                      Agendas :
                     </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {[
-                        "UNSC",
-                        "ECOFIN",
-                        "UNHCR",
-                        "COPUOS",
-                        "AIPPM",
-                        "SICCC",
-                        "CBFC",
-                      ].map((committee, idx) => (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {agendas.map((agenda, idx) => (
                         <div key={idx} className="flex items-center">
                           <svg
-                            className="w-4 h-4 mr-2 text-[#991c1c]"
+                            className="w-4 h-4 mr-2 text-[#991c1c] flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -273,110 +276,13 @@ const Registration = () => {
                             ></path>
                           </svg>
                           <span className="text-gray-700 text-sm">
-                            {committee}
+                            {agenda}
                           </span>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <a href="https://docs.google.com/forms/d/1C91naJzBI6XcewO0djrsnhsrDeb0TzalyMVWu12VOjY/viewform?edit_requested=true">
-                    <motion.button
-                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
-                      onClick={() =>
-                        fbq("trackCustom", "RegisterButtonClick")
-                      }
-                      variants={buttonVariants}
-                      initial="initial"
-                      whileHover="hover"
-                    >
-                      Register Now
-                    </motion.button>
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* International Press Card */}
-            <motion.div
-              className="w-full max-w-md"
-              initial="default"
-              animate={activeIndex === 2 ? "active" : "default"}
-              variants={cardVariants}
-              onHoverStart={() => setActiveIndex(2)}
-              onHoverEnd={() => setActiveIndex(null)}
-              layout
-            >
-              <div
-                className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
-                  activeIndex === 2 ? "shadow-[#991c1c]" : ""
-                }`}
-              >
-                {/* Card Header */}
-                <div className="p-4 bg-gradient-to-r from-[#b02626] to-[#991c1c]">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        JECRC MUN 2025
-                      </span>
-                      <h3 className="text-2xl font-bold text-white">
-                        International <br />
-                        Press
-                      </h3>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-white/80 text-sm">Delegation Fee</p>
-                      <p className="text-4xl font-extrabold text-white">
-                        ₹3000
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card Content */}
-                <div className="p-8">
-                  <div className="mb-6">
-                    <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700 font-bold">
-                        Priority Round 1 till 15th April: ₹ 2500/-
-                      </p>
-                    </div>
-                    <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
-                      <p className="text-gray-700 font-bold">
-                        Priority Round 2: ₹ 2750/-
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-gray-200 pt-6 mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">
-                      International Press:
-                    </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {["Reporter", "Photographer", "Caricaturist"].map(
-                        (committee, idx) => (
-                          <div key={idx} className="flex items-center">
-                            <svg
-                              className="w-4 h-4 mr-2 text-[#991c1c]"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clipRule="evenodd"
-                              ></path>
-                            </svg>
-                            <span className="text-gray-700 text-sm">
-                              {committee}
-                            </span>
-                          </div>
-                        )
-                      )}
-                    </div>
-                  </div>
-                  <a href="https://docs.google.com/forms/d/1ejeSyU65Cfc6Z5y-_haE2dhneVbzebc5rOwSsV8ZhnI/viewform?edit_requested=true">
+                  <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
                       onClick={() =>
@@ -394,7 +300,7 @@ const Registration = () => {
             </motion.div>
           </div>
 
-          {/* Bottom Wave */}
+          {/* Bottom Wave (Unchanged) */}
           <motion.div
             className="absolute bottom-0 left-0 right-0"
             initial={{ y: 100, opacity: 0 }}
