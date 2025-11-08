@@ -7,6 +7,7 @@ import { testimonial } from "../assets";
 import Agenda from "../components/Agenda";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from 'react-router-dom';
 
 const Zhs = () => {
   useEffect(() => {
@@ -256,6 +257,7 @@ const Zhs = () => {
                   </blockquote>
 
                   <div className="mt-8 flex justify-center">
+                    <Link to="/registration">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -263,7 +265,9 @@ const Zhs = () => {
                     >
                       Register Now!
                     </motion.button>
+                    </Link>
                   </div>
+
                 </div>
               </div>
             </motion.div>

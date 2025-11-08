@@ -101,7 +101,7 @@ const Registration = () => {
 
           <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
             {/* Executive Board Card */}
-            <motion.div
+            {/* <motion.div
               className="w-full max-w-md"
               initial="default"
               animate={activeIndex === 0 ? "active" : "default"}
@@ -114,9 +114,9 @@ const Registration = () => {
                 className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
                   activeIndex === 0 ? "shadow-[#991c1c]" : ""
                 }`}
-              >
+              > */}
                 {/* Card Header */}
-                <div className="p-8 bg-gradient-to-r from-[#991c1c] to-[#7a1717]">
+                {/* <div className="p-8 bg-gradient-to-r from-[#991c1c] to-[#7a1717]">
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
@@ -127,23 +127,23 @@ const Registration = () => {
                       </h3>
                     </div>
                     <div className="text-right">
-                      <p className="text-white/80 text-sm">
+                      <p className="text-white/80 text-sm"> */}
                         {/* Delegation Fee */}
-                      </p>
-                      <p className="text-4xl font-extrabold text-white">
+                      {/* </p> */}
+                      {/* <p className="text-4xl font-extrabold text-white"> */}
                         {/* ₹3000 */}
-                      </p>
+                      {/* </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Card Content */}
-                <div className="p-8">
-                  <div className="mb-6">
+                {/* <div className="p-8">
+                  <div className="mb-6"> */}
                     {/* Executive Board has no special details in the original code */}
-                  </div>
+                  {/* </div> */}
 
-                  <div className="border-gray-200 pt-6 mb-6">
+                  {/* <div className="border-gray-200 pt-6 mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
                       Committees :
                     </h4>
@@ -189,10 +189,10 @@ const Registration = () => {
                     >
                       Register Now
                     </motion.button>
-                  </a>
-                </div>
+                  </a> */}
+                {/* </div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Delegate Card */}
             <motion.div
@@ -214,7 +214,7 @@ const Registration = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        JECRC MUN 2025
+                        JECRC ZHS 2025
                       </span>
                       <h3 className="text-2xl font-bold text-white">
                         Delegate
@@ -223,7 +223,8 @@ const Registration = () => {
                     <div className="text-right">
                       <p className="text-white/80 text-sm">Delegation Fee</p>
                       <p className="text-4xl font-extrabold text-white">
-                        ₹3000
+                        ₹350 
+                      
                       </p>
                     </div>
                   </div>
@@ -279,7 +280,9 @@ const Registration = () => {
                       ))}
                     </div>
                   </div>
-                  <a href="https://docs.google.com/forms/d/1C91naJzBI6XcewO0djrsnhsrDeb0TzalyMVWu12VOjY/viewform?edit_requested=true">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeL8vHUsa0GC5n9B9iZPJ9UgKCwE_77z-UJKdOQmi_PMY1m4w/viewform?usp=publish-editor"
+                    target="_blank" 
+  rel="noopener noreferrer">
                     <motion.button
                       className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
                       onClick={() =>
@@ -297,7 +300,7 @@ const Registration = () => {
             </motion.div>
 
             {/* International Press Card */}
-            <motion.div
+            {/* <motion.div
               className="w-full max-w-md"
               initial="default"
               animate={activeIndex === 2 ? "active" : "default"}
@@ -310,9 +313,9 @@ const Registration = () => {
                 className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
                   activeIndex === 2 ? "shadow-[#991c1c]" : ""
                 }`}
-              >
-                {/* Card Header */}
-                <div className="p-4 bg-gradient-to-r from-[#b02626] to-[#991c1c]">
+              > */}
+                {/* Card Header  */}
+                {/* <div className="p-4 bg-gradient-to-r from-[#b02626] to-[#991c1c]">
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
@@ -330,10 +333,11 @@ const Registration = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
+
 
                 {/* Card Content */}
-                <div className="p-8">
+                {/* <div className="p-8">
                   <div className="mb-6">
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
@@ -391,7 +395,7 @@ const Registration = () => {
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           {/* Bottom Wave */}
