@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date(2025, 10, 18, 6, 0, 0).getTime();
+    const targetDate = new Date("April 18, 2026 00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -78,7 +78,7 @@ const CountdownTimer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            JECRC ZHS 2025
+            JECRC MUN 2026
           </motion.h1>
           <motion.div
             className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
@@ -92,9 +92,9 @@ const CountdownTimer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-           Zero Hour Summit (ZHS) celebrates the art of debate, dialogue, and diplomacy.
+           JECRC MUN celebrates the art of debate, dialogue, and diplomacy.
 It brings together young leaders to express, engage, and evolve.
-Experience the spirit of ZHS 2025 – The 5th Edition.
+Experience the spirit of JECRC MUN 2026 – The 15th Edition.
           </motion.p>
         </div>
 
@@ -190,7 +190,11 @@ Experience the spirit of ZHS 2025 – The 5th Edition.
           ))}
         </motion.div>
 
-        <Link to="/registration">
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
           {/* Register Button */}
           <motion.div
             className="mt-12 text-center"
@@ -222,7 +226,7 @@ Experience the spirit of ZHS 2025 – The 5th Edition.
               </motion.div>
             </motion.button>
           </motion.div>
-        </Link>
+        </a>
 
         {/* Animated footer line */}
         <motion.div
