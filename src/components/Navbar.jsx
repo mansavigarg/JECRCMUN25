@@ -216,14 +216,20 @@ const Navbar = () => {
         </div>
 
         {/* Register Button */}
-        <Link to="/registration">
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
           <button
             className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105"
-            onClick={() => fbq("trackCustom", "RegisterButtonClick")}
+            onClick={() => {
+              if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
+            }}
           >
             REGISTER NOW
           </button>
-        </Link>
+        </a>
 
         {/* Hamburger Menu */}
         <div className="sm:hidden">
@@ -358,14 +364,20 @@ const Navbar = () => {
               </Link>
 
               {/* Mobile Register Button */}
-              <Link to="/registration">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 <button
                   className="mt-4 w-full px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md"
-                  onClick={() => fbq("trackCustom", "RegisterButtonClick")}
+                  onClick={() => {
+                    if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
+                  }}
                 >
                   REGISTER NOW
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </Drawer>

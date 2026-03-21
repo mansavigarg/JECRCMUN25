@@ -247,13 +247,16 @@ const Home = () => {
 
   {/* Content Container */}
   <div className="flex flex-col items-center justify-center h-screen w-full px-2 sm:px-4 relative">
-    {/* Logo */}
-    <div className="flex items-center justify-center mb-4 z-20">
-      <img 
-        src="/JECRC.svg" 
-        alt="JECRC Logo" 
-        className="w-[50vw] xs:w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg opacity-100 transition-all duration-300 hover:opacity-100" 
-      />
+    {/* Logo replacement with text */}
+    <div className="flex flex-col items-center justify-center mb-8 z-20 text-center drop-shadow-lg">
+      <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] tracking-tighter">
+        <span className="text-[#991C1C] block drop-shadow-md">JECRC</span>
+        <span className="text-black block text-[1.2em] drop-shadow-md">MUN</span>
+        <span className="text-[#991C1C] block drop-shadow-md">2026</span>
+      </h1>
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-black uppercase mt-4 tracking-widest drop-shadow-md">
+        15th EDITION
+      </p>
     </div>
     
     {/* Priority Round Text */}
@@ -267,16 +270,20 @@ const Home = () => {
 
     {/* Register Now Button */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-20">
-      <Link to="/registration">
+      <a 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
         <button className="bg-white text-[#991C1C] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300"
-        onClick={() =>
-          fbq("trackCustom", "RegisterButtonClick")
-        }
+        onClick={() => {
+          if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
+        }}
         >
           
           Register Now
         </button>
-      </Link>
+      </a>
     </motion.div>
   </div>
 
