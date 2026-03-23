@@ -4,15 +4,16 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    number: 2500000,
+    number: 2600000,
     label: "Massive Outreach",
-    color: "text-red-700",
+    color: "text-[#5231A4]",
     format: "lac",
   },
-  { number: 3500, label: "Delegates", color: "text-black" },
-  { number: 100, label: "International Delegates", color: "text-blue-700" },
-  { number: 350, label: "Participating Institutes", color: "text-yellow-600" },
-  { number: 25, label: "States and UTs", color: "text-green-700" },
+  { number: 3800, label: "Delegates", color: "text-[#060807]" },
+  { number: 100, label: "International Delegates", suffix: "+", color: "text-[#5231A4]" },
+  { number: 22, label: "Countries", color: "text-[#5231A4]" },
+  { number: 360, label: "Participating Institutes", color: "text-[#5231A4]" },
+  { number: 25, label: "States and UTs", suffix: "+", color: "text-[#5231A4]" },
 ];
 
 const OutreachSection = () => {
@@ -45,7 +46,7 @@ const OutreachSection = () => {
     >
       <div className="max-w-7xl mx-auto text-center px-4">
         <motion.h2
-          className="text-5xl font- text-[#991C1C] mb-12"
+          className="text-5xl font- text-[#5231A4] mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -54,7 +55,7 @@ const OutreachSection = () => {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 w-full"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
@@ -80,12 +81,15 @@ const OutreachSection = () => {
                       <span>Lac</span>
                     </>
                   ) : (
-                    <CountUp
-                      start={0}
-                      end={stat.number}
-                      duration={3}
-                      separator=","
-                    />
+                    <>
+                      <CountUp
+                        start={0}
+                        end={stat.number}
+                        duration={3}
+                        separator=","
+                      />
+                      {stat.suffix && <span>{stat.suffix}</span>}
+                    </>
                   )
                 ) : (
                   "0"

@@ -5,7 +5,7 @@ const TeamSection = ({ teamData }) => {
   const teams = teamData || [];
 
   // Custom theme colors
-  const primaryColor = "#991C1C"; // Deep red
+  const primaryColor = "#5231A4"; // Deep purple
   const secondaryColor = "#ffffff"; // White
   const accentColor = "#060807"; // Near black
 

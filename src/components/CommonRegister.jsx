@@ -59,7 +59,7 @@ export default function CommonRegister() {
               height: `${particle.size}px`,
               left: `${particle.startX}%`,
               top: `${particle.startY}%`,
-              backgroundColor: particle.id % 2 === 0 ? "#b91c1c" : "#f97316",
+              backgroundColor: particle.id % 2 === 0 ? "#5231A4" : "#5231A4",
               animation: particlesActive
                 ? `moveContinuously ${particle.duration} infinite ${particle.direction} linear`
                 : "none",
@@ -80,7 +80,7 @@ export default function CommonRegister() {
             style={{
               width: `${circle.size}px`,
               height: `${circle.size}px`,
-              borderColor: circle.id % 2 === 0 ? "#b91c1c" : "#f97316",
+              borderColor: circle.id % 2 === 0 ? "#5231A4" : "#5231A4",
               left: "50%",
               top: "50%",
               marginLeft: `-${circle.size / 2}px`,
@@ -102,7 +102,7 @@ export default function CommonRegister() {
           isVisible ? "opacity-5 scale-100" : "opacity-0 scale-150"
         } pointer-events-none`}
       >
-        <div className="text-9xl font-bold tracking-wider text-red-800">
+        <div className="text-9xl font-bold tracking-wider text-[#5231A4]">
           JECRCMUN
         </div>
       </div>
@@ -117,10 +117,10 @@ export default function CommonRegister() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <span className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-500 px-9 py-3 rounded-full text-sm md:text-xl font-medium inline-flex items-center shadow-sm relative overflow-hidden group">
-              <span className="absolute inset-0 bg-gradient-to-r from-orange-200 to-orange-100 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
-              <span className="w-2 h-2 bg-orange-500 rounded-full mr-2 relative z-10"></span>
-              <span className="relative z-10">Join JECRC MUN 2025</span>
+            <span className="bg-gradient-to-r from-purple-100 to-purple-200 text-[#5231A4] px-9 py-3 rounded-full text-sm md:text-xl font-medium inline-flex items-center shadow-sm relative overflow-hidden group">
+              <span className="absolute inset-0 bg-gradient-to-r from-purple-200 to-purple-100 transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+              <span className="w-2 h-2 bg-[#5231A4] rounded-full mr-2 relative z-10"></span>
+              <span className="relative z-10">Join JECRC MUN 2026</span>
             </span>
           </div>
 
@@ -129,7 +129,7 @@ export default function CommonRegister() {
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold leading-tight">
               <div className="overflow-hidden">
                 <span
-                  className={`block text-red-800 transition-transform duration-1000 delay-300 transform ${
+                  className={`block text-[#5231A4] transition-transform duration-1000 delay-300 transform ${
                     isVisible ? "translate-y-0" : "translate-y-full"
                   }`}
                 >
@@ -138,23 +138,23 @@ export default function CommonRegister() {
               </div>
               <div className="overflow-hidden">
                 <span
-                  className={`block text-red-800 transition-transform duration-1000 delay-500 transform ${
+                  className={`block text-[#5231A4] transition-transform duration-1000 delay-500 transform ${
                     isVisible ? "translate-y-0" : "translate-y-full"
                   }`}
                 >
-                  14th Edition Of
+                  15th Edition Of
                 </span>
               </div>
               <div className="overflow-hidden relative">
                 <span
-                  className={`block text-orange-500 transition-transform duration-1000 delay-700 transform ${
+                  className={`block text-[#5231A4] transition-transform duration-1000 delay-700 transform ${
                     isVisible ? "translate-y-0" : "translate-y-full"
                   }`}
                 >
                   JECRCMUN
                 </span>
                 <span
-                  className={`absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-red-800 to-orange-500 transition-all duration-1000 delay-1200 transform origin-left ${
+                  className={`absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-[#5231A4] to-[#5231A4] transition-all duration-1000 delay-1200 transform origin-left ${
                     isVisible ? "scale-x-100" : "scale-x-0"
                   }`}
                 ></span>
@@ -172,13 +172,13 @@ export default function CommonRegister() {
           >
             Join a Legacy of Global Changemakers – More Than
             <span
-              className="font-semibold text-red-800 relative inline-block mx-1"
+              className="font-semibold text-[#5231A4] relative inline-block mx-1"
               onMouseEnter={() => setIsTextHovered(true)}
               onMouseLeave={() => setIsTextHovered(false)}
             >
-              300 Delegates
+              3800 Delegates
               <span
-                className={`absolute -bottom-0.5 left-0 w-full h-0.5 bg-red-800 transition-transform duration-300 ${
+                className={`absolute -bottom-0.5 left-0 w-full h-0.5 bg-[#5231A4] transition-transform duration-300 ${
                   isTextHovered ? "scale-x-100" : "scale-x-0"
                 }`}
               ></span>
@@ -198,13 +198,13 @@ export default function CommonRegister() {
             >
               <Link to="/registration">
                 <button
-                  className="bg-gradient-to-r from-orange-500 to-orange-400 text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative group overflow-hidden"
+                  className="bg-gradient-to-r from-[#5231A4] to-[#5231A4] text-white font-bold py-3 px-8 rounded-lg flex items-center space-x-2 shadow-lg transition-all duration-300 transform hover:-translate-y-1 relative group overflow-hidden"
                   onMouseEnter={() => setIsButtonHovered(true)}
                   onMouseLeave={() => setIsButtonHovered(false)}
                   onClick={() => fbq("trackCustom", "RegisterButtonClick")}
                 >
                   {/* Complete hover overlay that fully animates */}
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#5231A4] to-[#5231A4] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
 
                   {/* Button content */}
                   <span className="relative z-10">Register Now</span>
@@ -236,15 +236,15 @@ export default function CommonRegister() {
             }`}
           >
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <Calendar size={16} className="text-red-800 mr-2" />
-              <span className="text-gray-700">13+ Years of Excellence</span>
+              <Calendar size={16} className="text-[#5231A4] mr-2" />
+              <span className="text-gray-700">14+ Years of Excellence</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <Users size={16} className="text-orange-500 mr-2" />
-              <span className="text-gray-700">3500+ Delegates</span>
+              <Users size={16} className="text-[#5231A4] mr-2" />
+              <span className="text-gray-700">3800+ Delegates</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white bg-opacity-50 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <Globe size={16} className="text-red-800 mr-2" />
+              <Globe size={16} className="text-[#5231A4] mr-2" />
               <span className="text-gray-700">10+ Committees</span>
             </div>
           </div>

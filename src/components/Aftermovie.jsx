@@ -10,7 +10,7 @@ const AfterMovie = () => {
 
   // Updated color theme with light background
   const colors = {
-    primary: "#991C1C", // Primary accent color
+    primary: "#5231A4", // Primary accent color
     text: "#2A2A2A", // Text color for light background
     dark: "#060807", // Dark color for contrasts
     background: "#FFFFFF", // Light background color
@@ -105,7 +105,7 @@ const AfterMovie = () => {
     initial: { scale: 1 },
     hover: {
       scale: 1.05,
-      backgroundColor: "#B22323",
+      backgroundColor: "#5231A4",
       transition: { duration: 0.2 },
     },
     tap: { scale: 0.98 },
@@ -166,7 +166,7 @@ const AfterMovie = () => {
         >
             <span className=" px-6 py-2 rounded-full text-sm md:text-base font-medium inline-flex items-center shadow-lg border relative overflow-hidden group">
               <span className="absolute inset-0  transform -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
-              <span className="w-2 h-2 bg-red-600 rounded-full mr-2 relative z-10"></span>
+              <span className="w-2 h-2 bg-[#5231A4] rounded-full mr-2 relative z-10"></span>
               <span className="relative z-10">Join JECRC MUN 2025</span>
             </span>
         </motion.div> */}
@@ -275,7 +275,7 @@ const AfterMovie = () => {
                           boxShadow:
                             "0 10px 15px -3px rgba(153, 28, 28, 0.3), 0 4px 6px -2px rgba(153, 28, 28, 0.15)",
                         }}
-                        whileHover={{ scale: 1.1, backgroundColor: "#B22323" }}
+                        whileHover={{ scale: 1.1, backgroundColor: "#5231A4" }}
                         whileTap={{ scale: 0.95 }}
                         transition={{
                           type: "spring",

@@ -89,7 +89,7 @@ const ContactPage = () => {
       >
         <div className="text-center mb-6">
           <motion.h1
-            className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600"
+            className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#5231A4] to-[#5231A4]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -97,7 +97,7 @@ const ContactPage = () => {
             How Can We Help?
           </motion.h1>
           <motion.div
-            className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
+            className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -113,7 +113,7 @@ const ContactPage = () => {
         </div>
 
         {/* 
-      <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600   inline-block mb-10">
+      <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5231A4] to-[#5231A4]   inline-block mb-10">
               How Can We HELP?
             </h1> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-20 w-full max-w-7xl">
@@ -186,7 +186,7 @@ const ContactPage = () => {
             ></textarea>
             <button
               type="submit"
-              className="text-white py-3 rounded-md bg-gradient-to-r from-red-800 to-red-600 transition"
+              className="text-white py-3 rounded-md bg-gradient-to-r from-[#5231A4] to-[#5231A4] transition"
             >
               Send Message
             </button>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Card3DWave = ({
   member,
   cardColor = "#060807",
-  accentColor = "#991C1C",
+  accentColor = "#5231A4",
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -35,7 +35,7 @@ const Card3DWave = ({
               href={member.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-[#991C1C] transition-colors"
+              className="text-gray-600 hover:text-[#5231A4] transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

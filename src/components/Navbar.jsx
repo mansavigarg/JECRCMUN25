@@ -11,7 +11,7 @@ import {
   CircleUserRound,
   BookOpen,
 } from "lucide-react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/new-logo.png";
 import { Drawer, Collapse } from "@mui/material";
 import Button from "@mui/material/Button";
 
@@ -131,8 +131,8 @@ const Navbar = () => {
         <div className="flex-1 hidden sm:flex justify-center items-center text-md space-x-4 font-semibold relative">
           <Link
             to="/"
-            className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
-              isActive("/") ? "border-b-2 border-[#991C1C] text-[#991C1C]" : ""
+            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
+              isActive("/") ? "border-b-2 border-[#5231A4] text-[#5231A4]" : ""
             } font-semibold px-2`}
           >
             Home
@@ -146,9 +146,9 @@ const Navbar = () => {
             onMouseLeave={handleDropdownLeave}
           >
             <button
-              className={`pb-[0.2rem] flex items-center hover:text-[#991C1C] transition-colors duration-300 ${
+              className={`pb-[0.2rem] flex items-center hover:text-[#5231A4] transition-colors duration-300 ${
                 isActive("/aboutmun") || isActive("/aboutzhs")
-                  ? "border-b-2 border-[#991C1C] text-[#991C1C]"
+                  ? "border-b-2 border-[#5231A4] text-[#5231A4]"
                   : ""
               } font-semibold px-2`}
             >
@@ -168,13 +168,13 @@ const Navbar = () => {
             >
               <Link
                 to="/aboutmun"
-                className="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200 hover:text-[#991C1C]"
+                className="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200 hover:text-[#5231A4]"
               >
                 MUN Conference
               </Link>
               <Link
                 to="/aboutzhs"
-                className="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200 hover:text-[#991C1C]"
+                className="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200 hover:text-[#5231A4]"
               >
                 Zero Hour Summit
               </Link>
@@ -183,9 +183,9 @@ const Navbar = () => {
 
           <Link
             to="/team"
-            className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
+            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
               isActive("/team")
-                ? "border-b-2 border-[#991C1C] text-[#991C1C]"
+                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
                 : ""
             } font-semibold px-2`}
           >
@@ -194,9 +194,9 @@ const Navbar = () => {
 
           <Link
             to="/registration"
-            className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
+            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
               isActive("/registration")
-                ? "border-b-2 border-[#991C1C] text-[#991C1C]"
+                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
                 : ""
             } font-semibold px-2`}
           >
@@ -205,9 +205,9 @@ const Navbar = () => {
 
           <Link
             to="/contact"
-            className={`pb-[0.2rem] hover:text-[#991C1C] transition-colors duration-300 ${
+            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
               isActive("/contact")
-                ? "border-b-2 border-[#991C1C] text-[#991C1C]"
+                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
                 : ""
             } font-semibold px-2`}
           >
@@ -222,7 +222,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <button
-            className="px-6 py-2 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] md:block hidden hover:shadow-lg hover:scale-105"
+            className="px-6 py-2 bg-[#5231A4] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#5231A4] to-[#5231A4] hover:from-[#5231A4] hover:to-[#5231A4] md:block hidden hover:shadow-lg hover:scale-105"
             onClick={() => {
               if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
             }}
@@ -239,7 +239,7 @@ const Navbar = () => {
             className="focus:outline-none"
             aria-label="open drawer"
           >
-            <MenuIcon className="h-6 w-6 text-[#991C1C]" />
+            <MenuIcon className="h-6 w-6 text-[#5231A4]" />
           </Button>
         </div>
 
@@ -265,7 +265,7 @@ const Navbar = () => {
                     className="w-full h-full rounded-full"
                   />
                 </div>
-                <p className="text-xl font-semibold text-[#991C1C]">
+                <p className="text-xl font-semibold text-[#5231A4]">
                   JECRC MUN
                 </p>
               </div>
@@ -274,7 +274,7 @@ const Navbar = () => {
                 onClick={handleDrawerToggle}
                 className="focus:outline-none"
               >
-                <ChevronRight className="h-6 w-6 text-[#991C1C]" />
+                <ChevronRight className="h-6 w-6 text-[#5231A4]" />
               </Button>
             </div>
 
@@ -283,7 +283,7 @@ const Navbar = () => {
                 to="/"
                 onClick={handleDrawerToggle}
                 className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
-                  isActive("/") ? "text-[#991C1C]" : ""
+                  isActive("/") ? "text-[#5231A4]" : ""
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -297,7 +297,7 @@ const Navbar = () => {
                 onClick={() => setShowMobileDropdown(!showMobileDropdown)}
                 className={`p-2 flex items-center justify-between font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
                   isActive("/aboutmun") || isActive("/aboutzhs")
-                    ? "text-[#991C1C]"
+                    ? "text-[#5231A4]"
                     : ""
                 }`}
               >
@@ -320,7 +320,7 @@ const Navbar = () => {
                     to="/aboutmun"
                     onClick={handleDrawerToggle}
                     className={`block pl-10 py-2 text-md transition-colors duration-200 hover:bg-gray-100 ${
-                      isActive("/aboutmun") ? "text-[#991C1C]" : ""
+                      isActive("/aboutmun") ? "text-[#5231A4]" : ""
                     }`}
                   >
                     MUN Conference
@@ -329,7 +329,7 @@ const Navbar = () => {
                     to="/aboutzhs"
                     onClick={handleDrawerToggle}
                     className={`block pl-10 py-2 text-md transition-colors duration-200 hover:bg-gray-100 ${
-                      isActive("/aboutzhs") ? "text-[#991C1C]" : ""
+                      isActive("/aboutzhs") ? "text-[#5231A4]" : ""
                     }`}
                   >
                     Zero Hour Summit
@@ -341,7 +341,7 @@ const Navbar = () => {
                 to="/team"
                 onClick={handleDrawerToggle}
                 className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
-                  isActive("/team") ? "text-[#991C1C]" : ""
+                  isActive("/team") ? "text-[#5231A4]" : ""
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -354,7 +354,7 @@ const Navbar = () => {
                 to="/contact"
                 onClick={handleDrawerToggle}
                 className={`p-2 font-semibold text-lg transition-colors duration-200 rounded-md hover:bg-gray-100 ${
-                  isActive("/contact") ? "text-[#991C1C]" : ""
+                  isActive("/contact") ? "text-[#5231A4]" : ""
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -370,7 +370,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 <button
-                  className="mt-4 w-full px-6 py-3 bg-[#991C1C] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#991C1C] to-orange-700 hover:from-orange-700 hover:to-[#991C1C] shadow-md"
+                  className="mt-4 w-full px-6 py-3 bg-[#5231A4] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#5231A4] to-[#5231A4] hover:from-[#5231A4] hover:to-[#5231A4] shadow-md"
                   onClick={() => {
                     if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
                   }}

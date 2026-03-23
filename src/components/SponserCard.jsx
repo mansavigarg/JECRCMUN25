@@ -10,15 +10,15 @@ const SponsorCard = ({ imgsrc, name, tier }) => {
     switch (tier) {
       case "sustainability":
         return {
-          cardClass: "border-[#991C1C] shadow-xl",
-          nameClass: "text-2xl text-[#991C1C]",
-          badgeColor: "bg-[#991C1C]",
+          cardClass: "border-[#5231A4] shadow-xl",
+          nameClass: "text-2xl text-[#5231A4]",
+          badgeColor: "bg-[#5231A4]",
         };
       case "photo-sharing":
         return {
-          cardClass: "border-[#991C1C] border-opacity-70 shadow-lg",
-          nameClass: "text-xl text-[#991C1C]",
-          badgeColor: "bg-[#991C1C] bg-opacity-80",
+          cardClass: "border-[#5231A4] border-opacity-70 shadow-lg",
+          nameClass: "text-xl text-[#5231A4]",
+          badgeColor: "bg-[#5231A4] bg-opacity-80",
         };
       default:
         return {
@@ -119,7 +119,7 @@ const Sponsors = () => {
         className="mb-10 text-center max-w-2xl"
       >
          <motion.h2
-                 className="text-5xl font- text-[#991C1C] mb-12"
+                 className="text-5xl font- text-[#5231A4] mb-12"
                  initial={{ opacity: 0, y: 30 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 1 }}
@@ -141,7 +141,7 @@ const Sponsors = () => {
           className="w-full md:w-1/2"
         >
           <div className="mb-6 text-center">
-            <h3 className="text-2xl font-semibold text-center pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h3 className="text-2xl font-semibold text-center pb-2 border-b-2 border-[#5231A4] inline-block">
               Photo-Sharing Partner
             </h3>
           </div>
@@ -158,7 +158,7 @@ const Sponsors = () => {
           className="w-full md:w-1/2"
         >
           <div className="mb-6 text-center">
-            <h3 className="text-2xl font-semibold text-center pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h3 className="text-2xl font-semibold text-center pb-2 border-b-2 border-[#5231A4] inline-block">
               Sustainability Partner
             </h3>
           </div>
