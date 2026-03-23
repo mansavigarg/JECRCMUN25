@@ -16,13 +16,13 @@ const items = [
   },
   {
     title: "Registration Info",
-    desc1: "Sarthak Jain: +917728858711",
+    desc1: "Kunal Sain: +919571158592",
     desc2: "Email Address: mun@jecrc.ac.in",
     icon: Phone,
   },
   {
     title: "MUN Conference Schedule",
-    desc1: "26th - 27th April",
+    desc1: "18th - 19th April",
     desc2: "from 7:30 AM to 6 PM.",
     icon: Mail,
   },

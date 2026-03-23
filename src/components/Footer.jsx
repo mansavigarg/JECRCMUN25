@@ -87,7 +87,9 @@ export default function Footer() {
                   Sarthak Jain - 7728858711
                 </p>
                 <p className="font-medium text-base md:text-lg">
-                  Aditya Sharma - 9829368698
+
+                  Kunal Sain: 9571158592
+
                 </p>
                 <p className="text-sm md:text-base">For information</p>
               </div>

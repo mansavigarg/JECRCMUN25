@@ -212,30 +212,23 @@ const Mun = () => {
               <div className="text-gray-700 space-y-5">
                 <div className="scroll-animate transition-all duration-700">
                   <p className="text-lg leading-relaxed">
-                    Pioneering the MUN culture in Jaipur, JECRC MUN was
-                    established in 2012 with a visionary mission to cultivate
-                    future leaders through diplomatic dialogue. As the city's
-                    first academic institution to host a MUN conference, we
-                    embraced the profound responsibility of creating a platform
-                    where young minds could hone their skills in international
-                    relations, public speaking, and critical thinking. Under the
-                    esteemed guidance of Shri Kulbhushan Kothari, our founding
-                    patron, we have since transformed this ambition into a
-                    remarkable legacy.
+                    Unorthodox to the MUN culture in Jaipur, JECRC MUN was established in 2012 with a clear vision, 
+i.e. to nurture future leaders through meaningful dialogue and diplomacy. As the city’s first 
+academic institution to host a Model United Nations conference, we took on the responsibility of 
+creating a platform where young minds could develop skills in international relations, public 
+speaking, and critical thinking. With the guidance of our founding patron, Shri Kulbhushan Kothari, 
+this vision has steadily grown into a strong and inspiring legacy.
                   </p>
                 </div>
 
                 <div className="scroll-animate transition-all duration-700 delay-200">
                   <p className="text-lg leading-relaxed">
-                    Over thirteen transformative years, JECRC MUN has grown
-                    exponentially, emerging as one of Rajasthan's largest and
-                    most prestigious debating forums. Having empowered over
-                    3,500 delegates across 13 successful editions, our
-                    conference has consistently pushed boundaries - even
-                    adapting seamlessly to virtual platforms during the pandemic
-                    to keep the spirit of diplomacy alive. This resilience
-                    underscores our commitment to fostering intellectual growth
-                    regardless of circumstances.
+                  Over 14 incredible years, JECRC MUN has evolved into one of Rajasthan’s most respected and large
+scale debating platforms. Now celebrating its 15th edition, the conference has empowered more 
+than 3,500 delegates, consistently growing in impact and reach. Even during challenging times like 
+the pandemic, we adapted to virtual formats to ensure that the spirit of debate and diplomacy 
+continued. This journey reflects our commitment to learning, growth, and creating opportunities no 
+matter the circumstances.
                   </p>
                 </div>
 

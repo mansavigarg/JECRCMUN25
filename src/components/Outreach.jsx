@@ -4,14 +4,14 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    number: 2500000,
+    number: 2600000,
     label: "Massive Outreach",
     color: "text-red-700",
     format: "lac",
   },
-  { number: 3500, label: "Delegates", color: "text-black" },
+  { number: 3800, label: "Delegates", color: "text-black" },
   { number: 100, label: "International Delegates", color: "text-blue-700" },
-  { number: 350, label: "Participating Institutes", color: "text-yellow-600" },
+  { number: 360, label: "Participating Institutes", color: "text-yellow-600" },
   { number: 25, label: "States and UTs", color: "text-green-700" },
 ];
 
@@ -80,12 +80,17 @@ const OutreachSection = () => {
                       <span>Lac</span>
                     </>
                   ) : (
-                    <CountUp
-                      start={0}
-                      end={stat.number}
-                      duration={3}
-                      separator=","
-                    />
+                    <>
+                      <CountUp
+                        start={0}
+                        end={stat.number}
+                        duration={3}
+                        separator=","
+                      />
+                      {stat.label === "International Delegates" && <span>+</span>}
+                      {stat.label === "States and UTs" && <span>+</span>}
+
+                    </>
                   )
                 ) : (
                   "0"

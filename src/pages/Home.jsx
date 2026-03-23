@@ -457,26 +457,23 @@ const Home = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-6 justify-content">
                 <span className="text-[#991C1C]">Why Should You</span>
                 <br />
-                <span className="text-black">Join JECRC MUN?</span>
+                <span className="text-black">Participate JECRC MUN?</span>
               </h2>
 
               <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed justify-content">
                 <p>
-                  Participating in JECRC MUN offers a unique opportunity for
-                  students to develop crucial skills and broaden their horizons.
-                  Through diplomatic simulations, delegates hone negotiation,
-                  public speaking, and research abilities while gaining insight
-                  into pressing global issues. Engaging with peers from diverse
-                  backgrounds fosters cultural awareness and empathy, while
-                  leadership roles nurture decision-making and conflict
-                  resolution skills.
+                  Participating in JECRC MUN offers students a valuable opportunity to develop essential skills while 
+gaining a deeper understanding of global affairs. Through diplomatic simulations, delegates enhance 
+their abilities in negotiation, public speaking, research, and critical thinking while exploring 
+important international issues and the functioning of real-world diplomacy. Interacting with 
+participants from diverse backgrounds fosters cultural awareness, collaboration, and empathy, while 
+leadership roles help build confidence, strengthen decision-making, and improve conflict-resolution 
+skills. 
                 </p>
                 <p>
-                  Moreover, we provide a platform for networking with
-                  professionals in international relations and diplomacy, paving
-                  the way for future academic and career opportunities. By
-                  joining JECRC MUN, students embark on a transformative journey
-                  towards personal growth and intellectual development.
+                   Overall, JECRC MUN provides a platform for networking with individuals interested in 
+international relations and diplomacy, encouraging personal growth, global awareness, and 
+intellectual development.
                 </p>
               </div>
             </motion.div>
