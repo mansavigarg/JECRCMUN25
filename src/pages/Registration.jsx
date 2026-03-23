@@ -68,7 +68,7 @@ const Registration = () => {
           {[...Array(20)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute rounded-full bg-[#991c1c]"
+              className="absolute rounded-full bg-[#5231A4]"
               custom={i}
               variants={backgroundElementVariants}
               animate="animate"
@@ -88,7 +88,7 @@ const Registration = () => {
           {/* Added pb-20 for spacing */}
           <div className="text-center mb-16">
             <motion.h1
-              className="text-5xl md:text-7xl font-bold text-[#991c1c] mb-6 tracking-tight"
+              className="text-5xl md:text-7xl font-bold text-[#5231A4] mb-6 tracking-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -96,7 +96,7 @@ const Registration = () => {
               ZERO HOUR SUMMIT 5.0
             </motion.h1>
             <motion.div
-              className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
+              className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
               initial={{ width: 0 }}
               animate={{ width: 96 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -125,11 +125,11 @@ const Registration = () => {
             >
               <div
                 className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
-                  activeIndex === 0 ? "shadow-[#991c1c]" : ""
+                  activeIndex === 0 ? "shadow-[#5231A4]" : ""
                 }`}
               >
                 {/* Card Header */}
-                <div className="p-8 bg-gradient-to-r from-[#991c1c] to-[#7a1717]">
+                <div className="p-8 bg-gradient-to-r from-[#5231A4] to-[#5231A4]">
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
@@ -155,7 +155,7 @@ const Registration = () => {
                     {" "}
                     {/* Added min-height for visual balance */}
                     <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
                       <p className="text-gray-700 font-bold">
                         Fee: ₹150 per person
                       </p>
@@ -170,7 +170,7 @@ const Registration = () => {
                       {agendas.map((agenda, idx) => (
                         <div key={idx} className="flex items-center">
                           <svg
-                            className="w-4 h-4 mr-2 text-[#991c1c] flex-shrink-0"
+                            className="w-4 h-4 mr-2 text-[#5231A4] flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -189,7 +189,7 @@ const Registration = () => {
                   </div>
                   <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
                     <motion.button
-                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#5231A4]"
                       onClick={() =>
                         fbq("trackCustom", "RegisterButtonClick")
                       }
@@ -216,11 +216,11 @@ const Registration = () => {
             >
               <div
                 className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
-                  activeIndex === 1 ? "shadow-[#991c1c]" : ""
+                  activeIndex === 1 ? "shadow-[#5231A4]" : ""
                 }`}
               >
                 {/* Card Header */}
-                <div className="p-8 bg-gradient-to-r from-[#7a1717] to-[#b02626]">
+                <div className="p-8 bg-gradient-to-r from-[#5231A4] to-[#5231A4]">
                   <div className="flex justify-between items-start">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
@@ -244,13 +244,13 @@ const Registration = () => {
                   {/* --- PRICE SECTION (BULLET STYLE) --- */}
                   <div className="mb-6" style={{ minHeight: "80px" }}>
                     <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
                       <p className="text-gray-700 font-bold">
                         Early Bird (till 12th Nov): ₹300/team
                       </p>
                     </div>
                     <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#991c1c]"></div>
+                      <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
                       <p className="text-gray-700 font-bold">
                         Regular (from 13th Nov): ₹400/team
                       </p>
@@ -265,7 +265,7 @@ const Registration = () => {
                       {agendas.map((agenda, idx) => (
                         <div key={idx} className="flex items-center">
                           <svg
-                            className="w-4 h-4 mr-2 text-[#991c1c] flex-shrink-0"
+                            className="w-4 h-4 mr-2 text-[#5231A4] flex-shrink-0"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -284,7 +284,7 @@ const Registration = () => {
                   </div>
                   <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
                     <motion.button
-                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#991c1c]"
+                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#5231A4]"
                       onClick={() =>
                         fbq("trackCustom", "RegisterButtonClick")
                       }

@@ -28,7 +28,7 @@ const Agenda = () => {
         "The State Of Opposition In India: Incompetence Or Suppression In A Polarized Political Landscape?",
       image:
         "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
-      color: "bg-amber-600",
+      color: "bg-[#5231A4]",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Agenda = () => {
         "Legalizing Marijuana In India: A Medicinal Boon Or A Gateway Drug?",
       image:
         "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
-      color: "bg-amber-600",
+      color: "bg-[#5231A4]",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Agenda = () => {
         "Cyber Warfare: A Necessary Defense Tool Or A Threat To Global Peace And Security?",
       image:
         "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
-      color: "bg-amber-600",
+      color: "bg-[#5231A4]",
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Agenda = () => {
         "Men's Cricket Dominance In India: Fair Focus Or Neglecting Other Sports?",
       image:
         "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
-      color: "bg-amber-600",
+      color: "bg-[#5231A4]",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const Agenda = () => {
         "Investing As A Student: Financial Security Or Risky Drain Of Limited Earnings?",
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
-      color: "bg-amber-600",
+      color: "bg-[#5231A4]",
     },
   ];
 
@@ -99,8 +99,8 @@ const Agenda = () => {
               AGENDAS
             </span>
             <span className="relative z-10">
-              <span className="text-red-800">Our </span>
-              <span className="text-amber-500">AGENDAS</span>
+              <span className="text-[#5231A4]">Our </span>
+              <span className="text-[#5231A4]">AGENDAS</span>
             </span>
           </h1>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
@@ -147,7 +147,7 @@ const Agenda = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleAgendaClick(agenda.id)}
-                  className={`bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center w-full mt-4`}
+                  className={`bg-[#5231A4] hover:bg-[#5231A4] text-white px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center w-full mt-4`}
                 >
                   Background Guide
                   <svg
@@ -199,7 +199,7 @@ const Agenda = () => {
         >
           <a
             href="#"
-            className="inline-block bg-red-800 hover:bg-red-900 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-[#5231A4] hover:bg-[#5231A4] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Explore All Agendas
           </a>
@@ -222,7 +222,7 @@ const Agenda = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-8 right-8 bg-amber-500 text-white p-3 rounded-full shadow-lg hover:bg-amber-600 transition-colors duration-300"
+        className="fixed bottom-8 right-8 bg-[#5231A4] text-white p-3 rounded-full shadow-lg hover:bg-[#5231A4] transition-colors duration-300"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
