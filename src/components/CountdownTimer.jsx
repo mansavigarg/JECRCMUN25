@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("April 26, 2025 09:00:00").getTime();
+    const targetDate = new Date("April 18, 2026 00:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -49,7 +49,7 @@ const CountdownTimer = () => {
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-0 left-0 w-64 h-64 bg-red-800 rounded-full opacity-5"
+          className="absolute top-0 left-0 w-64 h-64 bg-[#5231A4] rounded-full opacity-5"
           animate={{
             x: [0, 100, 0],
             y: [0, 50, 0],
@@ -58,7 +58,7 @@ const CountdownTimer = () => {
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute bottom-0 right-0 w-96 h-96 bg-red-700 rounded-full opacity-5"
+          className="absolute bottom-0 right-0 w-96 h-96 bg-[#5231A4] rounded-full opacity-5"
           animate={{
             x: [0, -150, 0],
             y: [0, -100, 0],
@@ -73,15 +73,15 @@ const CountdownTimer = () => {
 
         <div className="text-center mb-16">
           <motion.h1
-            className="text-5xl md:text-7xl font-extrabold tracking-tight text-[#991c1c] mb-6"
+            className="text-5xl md:text-7xl font-extrabold tracking-tight text-[#5231A4] mb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            JECRC MUN 2025
+            JECRC MUN 2026
           </motion.h1>
           <motion.div
-            className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
+            className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -92,9 +92,9 @@ const CountdownTimer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Rajasthan’s largest MUN Conference with a network surpassing 25 lac,
-            engaging 350+ institutes and welcoming over 3500 delegates to the
-            ground of diplomacy.
+           JECRC MUN celebrates the art of debate, dialogue, and diplomacy.
+It brings together young leaders to express, engage, and evolve.
+Experience the spirit of JECRC MUN 2026 – The 15th Edition.
           </motion.p>
         </div>
 
@@ -119,7 +119,7 @@ const CountdownTimer = () => {
                 {/* Background animation when hovered */}
                 {hoveredIndex === index && (
                   <motion.div
-                    className="absolute inset-0 bg-red-700 rounded-2xl -z-10"
+                    className="absolute inset-0 bg-[#5231A4] rounded-2xl -z-10"
                     initial={{ scale: 0.7, opacity: 0 }}
                     animate={{ scale: 1.1, opacity: 1 }}
                     exit={{ scale: 0.7, opacity: 0 }}
@@ -128,12 +128,12 @@ const CountdownTimer = () => {
                 )}
 
                 <motion.div
-                  className="bg-red-800 rounded-2xl shadow-xl h-36 w-36 md:h-44 md:w-44 flex flex-col items-center justify-center overflow-hidden"
+                  className="bg-[#5231A4] rounded-2xl shadow-xl h-36 w-36 md:h-44 md:w-44 flex flex-col items-center justify-center overflow-hidden"
                   animate={hoveredIndex === index ? { y: -5 } : { y: 0 }}
                 >
                   {/* Pulsing circle behind number */}
                   {/* <motion.div 
-                    className="absolute w-20 h-20 bg-red-600 rounded-full opacity-30"
+                    className="absolute w-20 h-20 bg-[#5231A4] rounded-full opacity-30"
                     animate={{ 
                       scale: [1, 1.3, 1],
                     }}
@@ -172,7 +172,7 @@ const CountdownTimer = () => {
               {/* Divider */}
               {index < countdownUnits.length - 1 && (
                 <motion.div
-                  className="text-red-800 font-bold text-2xl hidden md:block"
+                  className="text-[#5231A4] font-bold text-2xl hidden md:block"
                   animate={{
                     opacity: [0.5, 1, 0.5],
                     scale: [0.9, 1.1, 0.9],
@@ -190,7 +190,11 @@ const CountdownTimer = () => {
           ))}
         </motion.div>
 
-        <Link to="/registration">
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
           {/* Register Button */}
           <motion.div
             className="mt-12 text-center"
@@ -199,12 +203,12 @@ const CountdownTimer = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <motion.button
-              className="bg-red-800 text-white px-10 py-4 rounded-xl font-bold text-xl tracking-wide shadow-lg flex items-center justify-center mx-auto gap-3"
+              className="bg-[#5231A4] text-white px-10 py-4 rounded-xl font-bold text-xl tracking-wide shadow-lg flex items-center justify-center mx-auto gap-3"
               onClick={() => fbq('trackCustom', 'RegisterButtonClick')}
               whileHover={{
                 scale: 1.05,
-                backgroundColor: "#991b1b",
-                boxShadow: "0 10px 25px -5px rgba(153, 27, 27, 0.4)",
+                backgroundColor: "#5231A4",
+                boxShadow: "0 10px 25px -5px rgba(82, 49, 164, 0.4)",
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -222,11 +226,11 @@ const CountdownTimer = () => {
               </motion.div>
             </motion.button>
           </motion.div>
-        </Link>
+        </a>
 
         {/* Animated footer line */}
         <motion.div
-          className="h-1 bg-red-800 max-w-lg mx-auto mt-16 rounded-full"
+          className="h-1 bg-[#5231A4] max-w-lg mx-auto mt-16 rounded-full"
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           transition={{ duration: 1.5, delay: 1 }}

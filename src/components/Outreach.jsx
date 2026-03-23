@@ -6,7 +6,7 @@ const stats = [
   {
     number: 2600000,
     label: "Massive Outreach",
-    color: "text-red-700",
+    color: "text-[#5231A4]",
     format: "lac",
   },
   { number: 3800, label: "Delegates", color: "text-black" },
@@ -45,7 +45,7 @@ const OutreachSection = () => {
     >
       <div className="max-w-7xl mx-auto text-center px-4">
         <motion.h2
-          className="text-5xl font- text-[#991C1C] mb-12"
+          className="text-5xl font- text-[#5231A4] mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -54,7 +54,7 @@ const OutreachSection = () => {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-5 gap-6 w-full"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 w-full"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}

@@ -90,7 +90,7 @@ const GallaryZhs = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600 mb-2"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5231A4] to-[#5231A4] mb-2"
         >
           Beautiful Snapshots Of Our Last
         </motion.h2>

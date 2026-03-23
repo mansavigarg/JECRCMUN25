@@ -138,7 +138,7 @@ const Sponsors = () => {
     <div className="relative my-20 min-h-screen p-6 flex flex-col items-center bg-white">
       {/* Background design element */}
       <div className="absolute top-0 right-0 w-1/3 h-screen bg-gradient-to-b from-white to-gray-100 -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-t from-[#991C1C] to-transparent opacity-10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-t from-[#5231A4] to-transparent opacity-10 rounded-full blur-3xl -z-10"></div>
 
       {/* Hero section */}
       <motion.div
@@ -148,7 +148,7 @@ const Sponsors = () => {
         className="mb-16 text-center max-w-2xl"
       >
         <h1 className="text-5xl font-bold mb-4 text-[#060807]">
-          OUR <span className="text-[#991C1C]">SPONSORS</span>
+          OUR <span className="text-[#5231A4]">SPONSORS</span>
         </h1>
         <p className="text-gray-700 text-lg">
           We're grateful to these amazing organizations for their continued
@@ -166,7 +166,7 @@ const Sponsors = () => {
             onClick={() => setActiveTab(tab)}
             className={`px-6 py-2 rounded-full capitalize font-medium transition-all ${
               activeTab === tab
-                ? "bg-[#991C1C] text-white shadow-lg"
+                ? "bg-[#5231A4] text-white shadow-lg"
                 : "bg-gray-200 text-[#060807] hover:bg-gray-300"
             }`}
           >
@@ -183,7 +183,7 @@ const Sponsors = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#5231A4] inline-block">
               Title Sponsors
             </h2>
             <motion.div
@@ -220,7 +220,7 @@ const Sponsors = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#5231A4] inline-block">
               Powered By
             </h2>
             <motion.div
@@ -253,7 +253,7 @@ const Sponsors = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#5231A4] inline-block">
               Gold Sponsors
             </h2>
             <motion.div
@@ -286,7 +286,7 @@ const Sponsors = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#991C1C] inline-block">
+            <h2 className="text-3xl font-bold text-center mb-8 pb-2 border-b-2 border-[#5231A4] inline-block">
               Silver Sponsors
             </h2>
             <motion.div

@@ -26,7 +26,7 @@ const agendas = [
       "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
     tag: "UNHCR",
     image: "./unhcr1.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title: "Deliberation on the ongoing crisis in Syria",
@@ -34,7 +34,7 @@ const agendas = [
       "Evaluating the current regime versus the opposition for long-term stability and peace.",
     tag: "UNSC",
     image: "/unsc.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title: "The Global Economic Impact of U.S. Unilateral Trade Policies",
@@ -42,7 +42,7 @@ const agendas = [
       "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
     tag: "ECOFIN",
     image: "/ecofin.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title:
@@ -51,14 +51,14 @@ const agendas = [
       "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
     tag: "COPUOS",
     image: "/copous.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title: "Balancing religious gatherings with civic responsibilities",
     subtitle: "Seeking harmony between steadfast faithful devotion and the responsibility to promote the welfare of society.",
     tag: "AIPPM",
     image: "/aippm.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title: "Analyzing the events of the 2002 Godhra incident",
@@ -66,7 +66,7 @@ const agendas = [
       "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
     tag: "SICCC",
     image: "/siccc.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title:
@@ -74,7 +74,7 @@ const agendas = [
     subtitle: "A star-kid monopoly or a broader industry challenge?",
     tag: "CBFC",
     image: "/cbfc.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
   {
     title: "Media Roles in Documenting and Analyzing Committee Proceedings.",
@@ -82,7 +82,7 @@ const agendas = [
       "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative.",
     tag: "IP",
     image: "/IP.png",
-    bgColor: "bg-[#991C1C]",
+    bgColor: "bg-[#5231A4]",
   },
 ];
 
@@ -191,7 +191,7 @@ const Home = () => {
     /* Countdown */
   }
   useEffect(() => {
-    const targetDate = new Date("April 25, 2025 00:00:00").getTime();
+    const targetDate = new Date(2025, 10, 18, 6, 0, 0).getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -242,24 +242,27 @@ const Home = () => {
     >
       <source src="/video/Short.webm" type="video/webm" />
     </video>
-    <div className="absolute inset-0 bg-gradient-to-b from-[#991C1C]/90 to-white/20 z-10"></div>
+    <div className="absolute inset-0 bg-gradient-to-b from-[#5231A4]/90 to-white/20 z-10"></div>
   </div>
 
   {/* Content Container */}
   <div className="flex flex-col items-center justify-center h-screen w-full px-2 sm:px-4 relative">
-    {/* Logo */}
-    <div className="flex items-center justify-center mb-4 z-20">
-      <img 
-        src="/JECRC.svg" 
-        alt="JECRC Logo" 
-        className="w-[50vw] xs:w-[60vw] sm:w-[50vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg opacity-100 transition-all duration-300 hover:opacity-100" 
-      />
+    {/* Logo replacement with text */}
+    <div className="flex flex-col items-center justify-center mb-8 z-20 text-center drop-shadow-lg">
+      <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] tracking-tighter">
+        <span className="text-[#5231A4] block drop-shadow-md">JECRC</span>
+        <span className="text-black block text-[1.2em] drop-shadow-md">MUN</span>
+        <span className="text-[#5231A4] block drop-shadow-md">2026</span>
+      </h1>
+      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-black uppercase mt-4 tracking-widest drop-shadow-md">
+        15th EDITION
+      </p>
     </div>
     
     {/* Priority Round Text */}
     {/* <div className="text-center mb-1 z-20">
       <p className="text-white font-bold text-lg md:text-xl ">
-        <span className="bg-[#991C1C]/100 text-white px-4 py-1 rounded-md">
+        <span className="bg-[#5231A4]/100 text-white px-4 py-1 rounded-md">
           Priority Round 1 till 15th April: ₹ 2500/-
         </span>
       </p>
@@ -267,16 +270,20 @@ const Home = () => {
 
     {/* Register Now Button */}
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="z-20">
-      <Link to="/registration">
-        <button className="bg-white text-[#991C1C] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300"
-        onClick={() =>
-          fbq("trackCustom", "RegisterButtonClick")
-        }
+      <a 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdIf8D5fG8sKkgDPfVKaF81co8KC6ZRXOuud1Yakh4C2j-7NQ/viewform?usp=dialog" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <button className="bg-white text-[#5231A4] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300"
+        onClick={() => {
+          if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
+        }}
         >
           
           Register Now
         </button>
-      </Link>
+      </a>
     </motion.div>
   </div>
 
@@ -294,7 +301,7 @@ const Home = () => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-3 md:p-4 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
+        className="p-3 md:p-4 bg-[#5231A4] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
         whileHover={{ scale: 1.2, rotate: 5 }}
         whileTap={{ scale: 0.9 }}
         transition={{ type: "spring", stiffness: 300 }}
@@ -318,7 +325,7 @@ const Home = () => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 bg-[#991C1C] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
+        className="p-2 bg-[#5231A4] rounded-md shadow-md flex items-center justify-center cursor-pointer hover:bg-opacity-80"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
@@ -327,7 +334,7 @@ const Home = () => {
     ))}
     <Link to="/faqs">
       <motion.button
-        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#5231A4] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
         whileHover={{ scale: 1.15, y: -3 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -336,7 +343,7 @@ const Home = () => {
     </Link>
 
     {/* <motion.button
-      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#5231A4] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
       whileHover={{ scale: 1.15, y: -3 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => {
@@ -353,7 +360,7 @@ const Home = () => {
     {/* FAQs Button */}
     <Link to="/faqs">
       <motion.button
-        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+        className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#5231A4] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
         whileHover={{ scale: 1.15, y: -3 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -363,7 +370,7 @@ const Home = () => {
 
     {/* itinerary Button */}
     {/* <motion.button
-      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#991C1C] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
+      className="relative flex items-center justify-center px-3 py-2 md:px-4 md:py-3 text-sm md:text-lg font-semibold bg-[#5231A4] text-white rounded-xl shadow-lg backdrop-blur-lg bg-opacity-90 transition-all hover:bg-opacity-100 hover:shadow-2xl"
       whileHover={{ scale: 1.15, y: -3 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => {
@@ -437,7 +444,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#991C1C] mb-2">
+                    <h3 className="text-xl font-bold text-[#5231A4] mb-2">
                       {card.title}
                     </h3>
                     <p className="text-gray-600">{card.desc}</p>
@@ -455,9 +462,9 @@ const Home = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <h2 className="text-3xl md:text-5xl font-bold mb-6 justify-content">
-                <span className="text-[#991C1C]">Why Should You</span>
+                <span className="text-[#5231A4]">Why Should You</span>
                 <br />
-                <span className="text-black">Participate JECRC MUN?</span>
+                <span className="text-black">Participate in JECRC MUN?</span>
               </h2>
 
               <div className="text-base md:text-md text-gray-700 space-y-4 leading-relaxed justify-content">
@@ -490,7 +497,7 @@ intellectual development.
         <div className="md:w-5/12 text-left space-y-6">
           {/* Heading with Mobile-Centered, Desktop-Left Text Alignment */}
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center md:text-left">
-            <span className="text-[#991C1C]">About</span>
+            <span className="text-[#5231A4]">About</span>
             <br />
             <span className="text-black">JECRC MUN</span>
           </h2>
@@ -522,7 +529,7 @@ intellectual development.
           <div className="flex justify-center md:justify-start">
             <Link to="/aboutmun">
               <motion.button
-                className="mt-6 px-6 py-3 bg-red-700 text-white font-medium rounded-lg shadow-md hover:bg-red-800 hover:scale-105 transform transition-all duration-300 ease-in-out"
+                className="mt-6 px-6 py-3 bg-[#5231A4] text-white font-medium rounded-lg shadow-md hover:bg-[#5231A4] hover:scale-105 transform transition-all duration-300 ease-in-out"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
@@ -579,7 +586,7 @@ intellectual development.
         {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-5xl font text-gray-900 relative inline-block">
-            Our <span className="text-[#991C1C] drop-shadow-lg">Agendas</span>
+            Our <span className="text-[#5231A4] drop-shadow-lg">Agendas</span>
           </h2>
           <p className="text-gray-500 text-xl mt-5">
             Explore our latest Model UN topics.
@@ -621,7 +628,7 @@ intellectual development.
                 <p className="text-gray-500 text-sm mt-2">{agenda.subtitle}</p>
 
                 {/* Button */}
-                {/* <button className="bottom-0 mt-4 px-5 py-2 bg-[#991C1C] text-white font-medium rounded-lg hover:bg-red-800 transition">
+                {/* <button className="bottom-0 mt-4 px-5 py-2 bg-[#5231A4] text-white font-medium rounded-lg hover:bg-red-800 transition">
                   Background Guide →
                 </button> */}
               </div>
@@ -650,7 +657,7 @@ intellectual development.
           <p className="text-lg md:text-2xl text-black font tracking-wide">
             Meet Our Experts
           </p>
-          <h2 className="text-4xl md:text-5xl font text-[#991C1C] mt-3 leading-tight">
+          <h2 className="text-4xl md:text-5xl font text-[#5231A4] mt-3 leading-tight">
             Featured <span className="text-black">Speakers</span>
           </h2>
         </motion.div>
@@ -698,7 +705,7 @@ intellectual development.
             transition={{ duration: 0.8 }}
           >
             What People Say About{" "}
-            <span className="text-[#991C1C]">JECRC MUN</span>
+            <span className="text-[#5231A4]">JECRC MUN</span>
           </motion.h2>
 
           {/* Testimonials Grid */}
@@ -706,7 +713,7 @@ intellectual development.
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
-                className="relative bg-white text-gray-700 rounded-2xl p-8 shadow-lg border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:border-red-500 flex flex-col h-full"
+                className="relative bg-white text-gray-700 rounded-2xl p-8 shadow-lg border border-gray-200 transform transition-all duration-500 hover:scale-105 hover:shadow-xl hover:border-[#5231A4] flex flex-col h-full"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -734,7 +741,7 @@ intellectual development.
 
                 {/* User Info - Fixed at Bottom */}
                 <div className="mt-auto pt-6">
-                  <h3 className="text-xl font-semibold text-red-800">
+                  <h3 className="text-xl font-semibold text-[#5231A4]">
                     {testimonial.name}
                   </h3>
                   <p className="text-gray-500 text-sm">{testimonial.role}</p>
@@ -747,13 +754,13 @@ intellectual development.
 
         {/* Floating Animation Elements */}
         <motion.div
-          className="absolute top-1/3 left-0 w-24 h-24 bg-red-500 opacity-20 rounded-full blur-3xl"
+          className="absolute top-1/3 left-0 w-24 h-24 bg-[#5231A4] opacity-20 rounded-full blur-3xl"
           animate={{ x: [0, 30, -30, 0], y: [0, 20, -20, 0] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         ></motion.div>
 
         <motion.div
-          className="absolute bottom-10 right-0 w-16 h-16 bg-blue-500 opacity-20 rounded-full blur-3xl"
+          className="absolute bottom-10 right-0 w-16 h-16 bg-[#5231A4] opacity-20 rounded-full blur-3xl"
           animate={{ x: [0, -30, 30, 0], y: [0, -20, 20, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         ></motion.div>

@@ -21,10 +21,10 @@ function Team() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#991C1C]/80 to-white/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#5231A4]/80 to-white/50"></div>
           <div className="text-center mb-16 relative z-10">
             <motion.h1
-              className="text-5xl md:text-7xl font-bold text-[#991c1c] mb-6 tracking-tight"
+              className="text-5xl md:text-7xl font-bold text-[#5231A4] mb-6 tracking-tight"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ function Team() {
               JECRC MUN
             </motion.h1>
             <motion.div
-              className="h-1 w-24 bg-[#991c1c] mx-auto mb-6"
+              className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
               initial={{ width: 0 }}
               animate={{ width: 96 }}
               transition={{ duration: 1, delay: 0.5 }}
