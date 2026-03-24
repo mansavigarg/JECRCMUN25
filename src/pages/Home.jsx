@@ -24,49 +24,49 @@ const agendas = [
     title: "Humanitarian Corridors in Modern Asymmetric Warfare",
     subtitle: "Evaluating the efficacy of peacekeeping mandates on the ground.",
     tag: "UNSC",
-    image: "/unsc.png",
+    image: "/agenda-unsc.jpg",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "Strengthening refugee self-reliance",
     subtitle: "Transitioning from humanitarian aid to economic inclusion and livelihood security in host nations.",
     tag: "UNHCR",
-    image: "./unhcr1.png",
+    image: "/agenda-unhcr.png",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "Women-Led Revolutions and Global Change",
     subtitle: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
     tag: "UNCSW",
-    image: "/IP.png",
+    image: "/agenda-uncsw.jpg",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "Combating the Global Illicit Arms Trade",
     subtitle: "Strengthening regulatory frameworks and dismantling black market networks.",
     tag: "UNODC",
-    image: "/ecofin.png",
+    image: "/agenda-unodc.jpg",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "Corporate Laws (Amendment) Bill, 2026",
     subtitle: "Deliberation on decriminalizing offences and enhancing the ease of doing business in India.",
     tag: "LOK SABHA",
-    image: "/aippm.png",
+    image: "/agenda-loksabha.jpg",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "Artificial Intelligence and the Creative Economy",
     subtitle: "Navigating authorship, ethical ownership, and the value of human expression.",
     tag: "SAMVAD",
-    image: "/cbfc.png",
+    image: "/agenda-samvad.jpg",
     bgColor: "bg-[#5231A4]",
   },
   {
     title: "The 2008 Mumbai Attacks",
     subtitle: "Analyzing intelligence failures, crisis management protocols, and the evolution of counter-terrorism frameworks.",
     tag: "HCC",
-    image: "/siccc.png",
+    image: "/agenda-hcc.jpg",
     bgColor: "bg-[#5231A4]",
   },
 ];
@@ -589,7 +589,7 @@ const Home = () => {
         </div>
 
         {/* Agendas Grid */}
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
           {agendas.map((agenda, index) => (
             <motion.div
               key={index}
@@ -597,7 +597,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="relative bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition"
+              className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition ${index < 4 ? 'lg:col-span-3' : 'lg:col-span-4'}`}
             >
               {/* Image */}
               <div className="h-48 overflow-hidden">

@@ -26,7 +26,7 @@ const Agenda = () => {
       committee: "United Nations Security Council (UNSC)",
       title: "Humanitarian Corridors in Modern Asymmetric Warfare",
       subheading: "Evaluating the efficacy of peacekeeping mandates on the ground.",
-      image: "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
+      image: "/agenda-unsc.jpg",
       color: "bg-[#5231A4]",
     },
     {
@@ -34,7 +34,7 @@ const Agenda = () => {
       committee: "United Nations High Commissioner for Refugees (UNHCR)",
       title: "Strengthening refugee self-reliance",
       subheading: "Transitioning from humanitarian aid to economic inclusion and livelihood security in host nations.",
-      image: "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
+      image: "/agenda-unhcr.png",
       color: "bg-[#5231A4]",
     },
     {
@@ -42,7 +42,7 @@ const Agenda = () => {
       committee: "United Nations Commission on the Status of Women (UNCSW)",
       title: "Women-Led Revolutions and Global Change",
       subheading: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
+      image: "/agenda-uncsw.jpg",
       color: "bg-[#5231A4]",
     },
     {
@@ -50,7 +50,7 @@ const Agenda = () => {
       committee: "United Nations Office on Drugs and Crime (UNODC)",
       title: "Combating the Global Illicit Arms Trade",
       subheading: "Strengthening regulatory frameworks and dismantling black market networks.",
-      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
+      image: "/agenda-unodc.jpg",
       color: "bg-[#5231A4]",
     },
     {
@@ -58,7 +58,7 @@ const Agenda = () => {
       committee: "Lok Sabha",
       title: "Corporate Laws (Amendment) Bill, 2026",
       subheading: "Deliberation on decriminalizing offences and enhancing the ease of doing business in India.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+      image: "/agenda-loksabha.jpg",
       color: "bg-[#5231A4]",
     },
     {
@@ -66,7 +66,7 @@ const Agenda = () => {
       committee: "Summit on Artistic Management, Valuation, and AI Discourse",
       title: "Artificial Intelligence and the Creative Economy",
       subheading: "Navigating authorship, ethical ownership, and the value of human expression.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
+      image: "/agenda-samvad.jpg",
       color: "bg-[#5231A4]",
     },
     {
@@ -74,7 +74,7 @@ const Agenda = () => {
       committee: "Historic Crisis Committee",
       title: "The 2008 Mumbai Attacks",
       subheading: "Analyzing intelligence failures, crisis management protocols, and the evolution of counter-terrorism frameworks.",
-      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
+      image: "/agenda-hcc.jpg",
       color: "bg-[#5231A4]",
     },
   ];
@@ -125,14 +125,14 @@ const Agenda = () => {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8"
         >
-          {agendas.map((agenda) => (
+          {agendas.map((agenda, index) => (
             <motion.div
               key={agenda.id}
               variants={fadeIn}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform"
+              className={`bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform ${index < 4 ? 'lg:col-span-3' : 'lg:col-span-4'}`}
             >
               <div className="relative overflow-hidden h-64">
                 <div
