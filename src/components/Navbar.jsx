@@ -131,11 +131,14 @@ const Navbar = () => {
         <div className="flex-1 hidden sm:flex justify-center items-center text-md space-x-4 font-semibold relative">
           <Link
             to="/"
-            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
-              isActive("/") ? "border-b-2 border-[#5231A4] text-[#5231A4]" : ""
-            } font-semibold px-2`}
+            className={`relative pb-1 group font-semibold px-2 transition-all duration-300 active:scale-95 ${
+              isActive("/") ? "text-[#5231A4]" : "text-gray-800 hover:text-[#5231A4]"
+            }`}
           >
             Home
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#5231A4] transition-transform duration-300 origin-left ${
+              isActive("/") ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+            }`}></span>
           </Link>
 
           {/* Events Dropdown */}
@@ -146,18 +149,21 @@ const Navbar = () => {
             onMouseLeave={handleDropdownLeave}
           >
             <button
-              className={`pb-[0.2rem] flex items-center hover:text-[#5231A4] transition-colors duration-300 ${
+              className={`relative pb-1 flex items-center group font-semibold px-2 transition-all duration-300 active:scale-95 ${
                 isActive("/aboutmun") || isActive("/aboutzhs")
-                  ? "border-b-2 border-[#5231A4] text-[#5231A4]"
-                  : ""
+                  ? "text-[#5231A4]"
+                  : "text-gray-800 hover:text-[#5231A4]"
               } font-semibold px-2`}
             >
               Events
               <ChevronDown
-                className={`ml-2 h-5 w-5 transition-transform duration-300 ease-in-out ${
-                  showDropdown ? "rotate-180" : ""
+                className={`ml-1 h-5 w-5 transition-transform duration-300 ease-in-out ${
+                  showDropdown ? "rotate-180 text-[#5231A4]" : ""
                 }`}
               />
+              <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#5231A4] transition-transform duration-300 origin-left ${
+                isActive("/aboutmun") || isActive("/aboutzhs") ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+              }`}></span>
             </button>
             <div
               className={`absolute left-0 mt-1 w-48 bg-white shadow-lg rounded-md border overflow-hidden transition-all duration-300 ease-in-out ${
@@ -183,35 +189,38 @@ const Navbar = () => {
 
           <Link
             to="/team"
-            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
-              isActive("/team")
-                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
-                : ""
-            } font-semibold px-2`}
+            className={`relative pb-1 group font-semibold px-2 transition-all duration-300 active:scale-95 ${
+              isActive("/team") ? "text-[#5231A4]" : "text-gray-800 hover:text-[#5231A4]"
+            }`}
           >
             Team
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#5231A4] transition-transform duration-300 origin-left ${
+              isActive("/team") ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+            }`}></span>
           </Link>
 
           <Link
             to="/registration"
-            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
-              isActive("/registration")
-                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
-                : ""
-            } font-semibold px-2`}
+            className={`relative pb-1 group font-semibold px-2 transition-all duration-300 active:scale-95 ${
+              isActive("/registration") ? "text-[#5231A4]" : "text-gray-800 hover:text-[#5231A4]"
+            }`}
           >
             Registration
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#5231A4] transition-transform duration-300 origin-left ${
+              isActive("/registration") ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+            }`}></span>
           </Link>
 
           <Link
             to="/contact"
-            className={`pb-[0.2rem] hover:text-[#5231A4] transition-colors duration-300 ${
-              isActive("/contact")
-                ? "border-b-2 border-[#5231A4] text-[#5231A4]"
-                : ""
-            } font-semibold px-2`}
+            className={`relative pb-1 group font-semibold px-2 transition-all duration-300 active:scale-95 ${
+              isActive("/contact") ? "text-[#5231A4]" : "text-gray-800 hover:text-[#5231A4]"
+            }`}
           >
             Contact Us
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#5231A4] transition-transform duration-300 origin-left ${
+              isActive("/contact") ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+            }`}></span>
           </Link>
         </div>
 
@@ -222,7 +231,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <button
-            className="px-6 py-2 bg-[#5231A4] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#5231A4] to-[#5231A4] hover:from-[#5231A4] hover:to-[#5231A4] md:block hidden hover:shadow-lg hover:scale-105"
+            className="px-6 py-2 rounded-lg font-semibold transition-all duration-500 ease-in-out bg-[#5231A4]/10 backdrop-blur-md border border-[#5231A4]/20 text-[#5231A4] md:block hidden hover:shadow-[0_8px_32px_0_rgba(82,49,164,0.15)] hover:scale-105 hover:bg-[#5231A4]/20"
             onClick={() => {
               if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
             }}
@@ -370,7 +379,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 <button
-                  className="mt-4 w-full px-6 py-3 bg-[#5231A4] rounded-lg text-white font-semibold transition-all duration-500 ease-in-out bg-gradient-to-r from-[#5231A4] to-[#5231A4] hover:from-[#5231A4] hover:to-[#5231A4] shadow-md"
+                  className="mt-4 w-full px-6 py-3 rounded-lg font-semibold transition-all duration-500 ease-in-out bg-[#5231A4]/10 backdrop-blur-md border border-[#5231A4]/20 text-[#5231A4] shadow-md hover:bg-[#5231A4]/20"
                   onClick={() => {
                     if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
                   }}

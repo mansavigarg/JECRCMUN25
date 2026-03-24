@@ -98,7 +98,7 @@ const Gallary = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-orange-500"
+          className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black"
         >
           JECRCMUN
         </motion.h1>
@@ -106,7 +106,7 @@ const Gallary = () => {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="w-24 h-1 bg-orange-500 mx-auto mt-6"
+          className="w-24 h-1 bg-black mx-auto mt-6"
         />
       </div>
 

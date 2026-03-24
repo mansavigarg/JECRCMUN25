@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Clock, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -141,23 +141,21 @@ Experience the spirit of JECRC MUN 2026 – The 15th Edition.
                   /> */}
 
                   {/* Value */}
-                  <motion.div
-                    className="text-5xl md:text-6xl font-bold text-white relative z-10"
-                    animate={
-                      hoveredIndex === index
-                        ? { scale: 1.1, y: -5 }
-                        : {
-                            scale: [1, 1.03, 1],
-                            transition: {
-                              duration: 2,
-                              repeat: Infinity,
-                              ease: "easeInOut",
-                            },
-                          }
-                    }
-                  >
-                    {unit.value}
-                  </motion.div>
+                  <div className="relative h-20 w-full flex items-center justify-center z-10" style={{ perspective: "400px" }}>
+                    <AnimatePresence mode="popLayout" initial={false}>
+                      <motion.div
+                        key={unit.value}
+                        initial={{ rotateX: -90, y: -20, opacity: 0 }}
+                        animate={{ rotateX: 0, y: 0, opacity: 1 }}
+                        exit={{ rotateX: 90, y: 20, opacity: 0 }}
+                        transition={{ duration: 0.5, type: "spring", bounce: 0.25 }}
+                        className="absolute text-5xl md:text-7xl font-bold text-white flex items-center justify-center"
+                        style={{ transformOrigin: "center center" }}
+                      >
+                        {unit.value}
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
 
                   {/* Label */}
                   <motion.div

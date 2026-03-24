@@ -13,7 +13,7 @@ import CountdownTimer from "../components/CountdownTimer";
 import Footer from "../components/Footer.jsx";
 import AfterMovie from "../components/Aftermovie.jsx";
 import MunTimeline from "../components/Timeline.jsx";
-import SponserCard from "../components/SponserCard.jsx"
+// import SponserCard from "../components/SponserCard.jsx"
 import { Link } from "react-router-dom";
 import { mun4, mun5, mun3 } from "../assets/index.js";
 
@@ -21,67 +21,52 @@ const images = ["/bg1.jpg", "/bg 2.jpg", "/bg3.jpg"];
 
 const agendas = [
   {
-    title: "Addressing the global humanitarian crisis",
-    subtitle:
-      "Strategies for ceasefire negotiations, hostage release, civilian protection, and famine relief.",
-    tag: "UNHCR",
-    image: "./unhcr1.png",
-    bgColor: "bg-[#5231A4]",
-  },
-  {
-    title: "Deliberation on the ongoing crisis in Syria",
-    subtitle:
-      "Evaluating the current regime versus the opposition for long-term stability and peace.",
+    title: "Humanitarian Corridors in Modern Asymmetric Warfare",
+    subtitle: "Evaluating the efficacy of peacekeeping mandates on the ground.",
     tag: "UNSC",
     image: "/unsc.png",
     bgColor: "bg-[#5231A4]",
   },
   {
-    title: "The Global Economic Impact of U.S. Unilateral Trade Policies",
-    subtitle:
-      "A Critical Analysis of Financial Repercussions and Shifting Global Trade Dynamics",
-    tag: "ECOFIN",
+    title: "Strengthening refugee self-reliance",
+    subtitle: "Transitioning from humanitarian aid to economic inclusion and livelihood security in host nations.",
+    tag: "UNHCR",
+    image: "./unhcr1.png",
+    bgColor: "bg-[#5231A4]",
+  },
+  {
+    title: "Women-Led Revolutions and Global Change",
+    subtitle: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
+    tag: "UNCSW",
+    image: "/IP.png",
+    bgColor: "bg-[#5231A4]",
+  },
+  {
+    title: "Combating the Global Illicit Arms Trade",
+    subtitle: "Strengthening regulatory frameworks and dismantling black market networks.",
+    tag: "UNODC",
     image: "/ecofin.png",
     bgColor: "bg-[#5231A4]",
   },
   {
-    title:
-      "Governing Space Colonization and Resource Utilization in the New Space Race",
-    subtitle:
-      "Exploring Legal, Ethical, and Strategic Frameworks for a Sustainable and Equitable Space Future",
-    tag: "COPUOS",
-    image: "/copous.png",
-    bgColor: "bg-[#5231A4]",
-  },
-  {
-    title: "Balancing religious gatherings with civic responsibilities",
-    subtitle: "Seeking harmony between steadfast faithful devotion and the responsibility to promote the welfare of society.",
-    tag: "AIPPM",
+    title: "Corporate Laws (Amendment) Bill, 2026",
+    subtitle: "Deliberation on decriminalizing offences and enhancing the ease of doing business in India.",
+    tag: "LOK SABHA",
     image: "/aippm.png",
     bgColor: "bg-[#5231A4]",
   },
   {
-    title: "Analyzing the events of the 2002 Godhra incident",
-    subtitle:
-      "Examining its causes, consequences, and the role of governance, law enforcement, and communal harmony in crisis management.",
-    tag: "SICCC",
-    image: "/siccc.png",
-    bgColor: "bg-[#5231A4]",
-  },
-  {
-    title:
-      "Assessing the influence of nepotism and creative stagnation in Bollywood",
-    subtitle: "A star-kid monopoly or a broader industry challenge?",
-    tag: "CBFC",
+    title: "Artificial Intelligence and the Creative Economy",
+    subtitle: "Navigating authorship, ethical ownership, and the value of human expression.",
+    tag: "SAMVAD",
     image: "/cbfc.png",
     bgColor: "bg-[#5231A4]",
   },
   {
-    title: "Media Roles in Documenting and Analyzing Committee Proceedings.",
-    subtitle:
-      "Integrating Reporting, Photography, and Caricature to Capture the Essence of Deliberative.",
-    tag: "IP",
-    image: "/IP.png",
+    title: "The 2008 Mumbai Attacks",
+    subtitle: "Analyzing intelligence failures, crisis management protocols, and the evolution of counter-terrorism frameworks.",
+    tag: "HCC",
+    image: "/siccc.png",
     bgColor: "bg-[#5231A4]",
   },
 ];
@@ -242,21 +227,26 @@ const Home = () => {
     >
       <source src="/video/Short.webm" type="video/webm" />
     </video>
-    <div className="absolute inset-0 bg-gradient-to-b from-[#5231A4]/90 to-white/20 z-10"></div>
+    {/* Top Gradient */}
+    <div className="absolute inset-0 bg-gradient-to-b from-[#5231A4]/70 via-[#5231A4]/20 to-transparent z-10 pointer-events-none"></div>
+    {/* Bottom Gradient */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-[#5231A4]/20 to-transparent z-10 pointer-events-none"></div>
   </div>
 
   {/* Content Container */}
   <div className="flex flex-col items-center justify-center h-screen w-full px-2 sm:px-4 relative">
-    {/* Logo replacement with text */}
-    <div className="flex flex-col items-center justify-center mb-8 z-20 text-center drop-shadow-lg">
-      <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] tracking-tighter">
-        <span className="text-[#5231A4] block drop-shadow-md">JECRC</span>
-        <span className="text-black block text-[1.2em] drop-shadow-md">MUN</span>
-        <span className="text-[#5231A4] block drop-shadow-md">2026</span>
+    {/* Logo replacement text scaled via em units to match reference logo width proportions */}
+    <div className="flex flex-col items-center justify-center mb-8 z-20 text-center drop-shadow-lg w-full px-2">
+      <h1 className="text-[3rem] sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.8] tracking-tighter flex flex-col items-center w-full">
+        <span className="text-white block drop-shadow-md" style={{ fontSize: "1em" }}>JECRC</span>
+        <span className="text-black block drop-shadow-md" style={{ fontSize: "1.65em", marginTop: "-0.02em" }}>MUN</span>
+        <span className="text-white block drop-shadow-md tracking-tight" style={{ fontSize: "1.25em", marginTop: "-0.02em" }}>2026</span>
       </h1>
-      <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-black uppercase mt-4 tracking-widest drop-shadow-md">
-        15th EDITION
-      </p>
+      <div className="font-black text-white uppercase mt-1 sm:mt-2 tracking-widest drop-shadow-md text-center flex justify-center items-start text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem]">
+        <span>15</span>
+        <span className="lowercase relative top-0 sm:top-[2px] text-[0.6em] ml-[2px] mr-[6px]">th</span>
+        <span>EDITION</span>
+      </div>
     </div>
     
     {/* Priority Round Text */}
@@ -275,7 +265,7 @@ const Home = () => {
         target="_blank" 
         rel="noopener noreferrer"
       >
-        <button className="bg-white text-[#5231A4] text-xl font-bold py-2 px-10  rounded-lg shadow-lg transition-all duration-300"
+        <button className="bg-white/20 backdrop-blur-md border border-white/30 text-white text-xl font-bold py-3 px-10 rounded-xl shadow-[0_8px_32px_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:bg-white/30 hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.4)]"
         onClick={() => {
           if (typeof fbq === 'function') fbq("trackCustom", "RegisterButtonClick");
         }}
@@ -771,9 +761,9 @@ const Home = () => {
         ></motion.div>
       </section>
 
-      <div>
+      {/* <div>
         <SponserCard/>
-      </div>
+      </div> */}
 
       <div>
         <Footer />
