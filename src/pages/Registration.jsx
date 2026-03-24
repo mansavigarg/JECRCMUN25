@@ -49,12 +49,13 @@ const Registration = () => {
 
   // New Agenda List
   const agendas = [
-    "Gym Culture in Gen Z: Healthy Lifestyle or Obsession?",
-    "Gen Z Activism: Nepal’s Revolution vs. India’s Youth Awakening",
-    "India’s Athletic Dreams: A Work in Progress or a Distant Reality?",
-    "Identity or Absurdity: The Crisis of Genuine LGBTQ+ Representation",
-    "American Foreign Intervention: Quest for Peace or Pursuit of Power?",
-    "International Press: Reporters & Cinematography",
+    "UNSC: Assessing how effective humanitarian corridors and peacekeeping mandates are in modern asymmetric warfare.",
+    "UNHCR: Exploring ways to shift refugees from aid dependency to sustainable economic self-reliance in host countries.",
+    "UNCSW: Analyzing the global influence of women-led revolutions on policies, social structures, and feminist movements.",
+    "UNODC: Tackling the global illicit arms trade through stronger regulations and disruption of black market networks.",
+    "Lok Sabha: Debating corporate law reforms to decriminalize offences and improve ease of doing business in India.",
+    "Summit on Artistic Management, Valuation, and AI Discourse: Examining the impact of AI on creativity, authorship, ethics, and the value of human expression.",
+    "Historic Crisis Committee: Reviewing the 2008 Mumbai attacks to understand intelligence gaps and improve counter-terrorism strategies."
   ];
 
   return (
@@ -93,7 +94,7 @@ const Registration = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              ZERO HOUR SUMMIT 5.0
+              JECRC MUN 2026
             </motion.h1>
             <motion.div
               className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
@@ -113,9 +114,9 @@ const Registration = () => {
           </div>
           {/* Registration Cards */}
           <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-16">
-            {/* Individual Registration Card */}
+            {/* MUN Delegate Registration Card */}
             <motion.div
-              className="w-full max-w-md"
+              className="w-full max-w-2xl"
               initial="default"
               animate={activeIndex === 0 ? "active" : "default"}
               variants={cardVariants}
@@ -129,48 +130,45 @@ const Registration = () => {
                 }`}
               >
                 {/* Card Header */}
-                <div className="p-8 bg-gradient-to-r from-[#5231A4] to-[#5231A4]">
-                  <div className="flex justify-between items-start">
+                <div className="p-6 bg-gradient-to-r from-[#5231A4] to-[#5231A4]">
+                  <div className="flex justify-between items-start flex-col sm:flex-row gap-4">
                     <div>
                       <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        ZHS 5.0
+                        JECRC MUN
                       </span>
-                      <h3 className="text-2xl font-bold text-white">
-                        Individual Registration
+                      <h3 className="text-2xl md:text-3xl font-bold text-white">
+                        Participate as a MUN Delegate
                       </h3>
                     </div>
-                    <div className="text-right">
+                    <div className="text-left sm:text-right">
                       <p className="text-white/80 text-sm">Registration Fee</p>
                       <p className="text-4xl font-extrabold text-white">
-                        ₹150
+                        ₹2400
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Card Content */}
-                <div className="p-8">
-                  {/* --- UPDATED PRICE SECTION --- */}
-                  <div className="mb-6" style={{ minHeight: "80px" }}>
-                    {" "}
-                    {/* Added min-height for visual balance */}
+                <div className="p-6">
+                  <div className="mb-4">
                     <div className="flex items-center mb-3">
                       <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
                       <p className="text-gray-700 font-bold">
-                        Fee: ₹150 per person
+                        Fee: ₹2400 per person
                       </p>
                     </div>
                   </div>
 
-                  <div className="border-t border-gray-200 pt-6 mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">
+                  <div className="border-t border-gray-200 pt-4 mb-6">
+                    <h4 className="font-semibold text-gray-900 mb-3 text-lg">
                       Agendas :
                     </h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 gap-2">
                       {agendas.map((agenda, idx) => (
-                        <div key={idx} className="flex items-center">
+                        <div key={idx} className="flex items-start">
                           <svg
-                            className="w-4 h-4 mr-2 text-[#5231A4] flex-shrink-0"
+                            className="w-5 h-5 mr-3 text-[#5231A4] flex-shrink-0 mt-0.5"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -180,8 +178,9 @@ const Registration = () => {
                               clipRule="evenodd"
                             ></path>
                           </svg>
-                          <span className="text-gray-700 text-sm">
-                            {agenda}
+                          <span className="text-gray-700 text-xs md:text-sm leading-snug">
+                            <span className="font-bold">{agenda.split(': ')[0]}: </span>
+                            {agenda.split(': ')[1]}
                           </span>
                         </div>
                       ))}
@@ -189,102 +188,7 @@ const Registration = () => {
                   </div>
                   <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
                     <motion.button
-                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#5231A4]"
-                      onClick={() =>
-                        fbq("trackCustom", "RegisterButtonClick")
-                      }
-                      variants={buttonVariants}
-                      initial="initial"
-                      whileHover="hover"
-                    >
-                      Register Now
-                    </motion.button>
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Team Registration Card */}
-            <motion.div
-              className="w-full max-w-md"
-              initial="default"
-              animate={activeIndex === 1 ? "active" : "default"}
-              variants={cardVariants}
-              onHoverStart={() => setActiveIndex(1)}
-              onHoverEnd={() => setActiveIndex(null)}
-              layout
-            >
-              <div
-                className={`rounded-xl overflow-hidden shadow-2xl bg-white ${
-                  activeIndex === 1 ? "shadow-[#5231A4]" : ""
-                }`}
-              >
-                {/* Card Header */}
-                <div className="p-8 bg-gradient-to-r from-[#5231A4] to-[#5231A4]">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm mb-4">
-                        ZHS 5.0
-                      </span>
-                      <h3 className="text-2xl font-bold text-white">
-                        Team Registration
-                      </h3>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-white/80 text-sm">Regular Fee</p>
-                      <p className="text-4xl font-extrabold text-white">
-                        ₹400
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card Content */}
-                <div className="p-8">
-                  {/* --- PRICE SECTION (BULLET STYLE) --- */}
-                  <div className="mb-6" style={{ minHeight: "80px" }}>
-                    <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
-                      <p className="text-gray-700 font-bold">
-                        Early Bird (till 12th Nov): ₹300/team
-                      </p>
-                    </div>
-                    <div className="flex items-center mb-3">
-                      <div className="w-2 h-2 rounded-full mr-2 bg-[#5231A4]"></div>
-                      <p className="text-gray-700 font-bold">
-                        Regular (from 13th Nov): ₹400/team
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-gray-200 pt-6 mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">
-                      Agendas :
-                    </h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                      {agendas.map((agenda, idx) => (
-                        <div key={idx} className="flex items-center">
-                          <svg
-                            className="w-4 h-4 mr-2 text-[#5231A4] flex-shrink-0"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span className="text-gray-700 text-sm">
-                            {agenda}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <a href="https://forms.gle/JnU2JW7UD5fVs2G1A">
-                    <motion.button
-                      className="w-full py-3 px-6 rounded-lg font-bold text-white bg-[#b02626] hover:bg-[#5231A4]"
+                      className="w-full py-4 px-6 rounded-lg font-bold text-lg text-white bg-[#5231A4] hover:bg-black"
                       onClick={() =>
                         fbq("trackCustom", "RegisterButtonClick")
                       }

@@ -23,47 +23,58 @@ const Agenda = () => {
   const agendas = [
     {
       id: 1,
-      committee: "Indian Committee",
-      title:
-        "The State Of Opposition In India: Incompetence Or Suppression In A Polarized Political Landscape?",
-      image:
-        "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
+      committee: "United Nations Security Council (UNSC)",
+      title: "Humanitarian Corridors in Modern Asymmetric Warfare",
+      subheading: "Evaluating the efficacy of peacekeeping mandates on the ground.",
+      image: "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
       color: "bg-[#5231A4]",
     },
     {
       id: 2,
-      committee: "Indian Committee 2",
-      title:
-        "Legalizing Marijuana In India: A Medicinal Boon Or A Gateway Drug?",
-      image:
-        "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
+      committee: "United Nations High Commissioner for Refugees (UNHCR)",
+      title: "Strengthening refugee self-reliance",
+      subheading: "Transitioning from humanitarian aid to economic inclusion and livelihood security in host nations.",
+      image: "https://images.unsplash.com/photo-1603033156166-2ae22eb2b7e2?q=80&w=1964",
       color: "bg-[#5231A4]",
     },
     {
       id: 3,
-      committee: "UN Committee",
-      title:
-        "Cyber Warfare: A Necessary Defense Tool Or A Threat To Global Peace And Security?",
-      image:
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
+      committee: "United Nations Commission on the Status of Women (UNCSW)",
+      title: "Women-Led Revolutions and Global Change",
+      subheading: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
       color: "bg-[#5231A4]",
     },
     {
       id: 4,
-      committee: "Fun Committee",
-      title:
-        "Men's Cricket Dominance In India: Fair Focus Or Neglecting Other Sports?",
-      image:
-        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
+      committee: "United Nations Office on Drugs and Crime (UNODC)",
+      title: "Combating the Global Illicit Arms Trade",
+      subheading: "Strengthening regulatory frameworks and dismantling black market networks.",
+      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
       color: "bg-[#5231A4]",
     },
     {
       id: 5,
-      committee: "Ecofin Committee",
-      title:
-        "Investing As A Student: Financial Security Or Risky Drain Of Limited Earnings?",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+      committee: "Lok Sabha",
+      title: "Corporate Laws (Amendment) Bill, 2026",
+      subheading: "Deliberation on decriminalizing offences and enhancing the ease of doing business in India.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+      color: "bg-[#5231A4]",
+    },
+    {
+      id: 6,
+      committee: "Summit on Artistic Management, Valuation, and AI Discourse",
+      title: "Artificial Intelligence and the Creative Economy",
+      subheading: "Navigating authorship, ethical ownership, and the value of human expression.",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070",
+      color: "bg-[#5231A4]",
+    },
+    {
+      id: 7,
+      committee: "Historic Crisis Committee",
+      title: "The 2008 Mumbai Attacks",
+      subheading: "Analyzing intelligence failures, crisis management protocols, and the evolution of counter-terrorism frameworks.",
+      image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1494",
       color: "bg-[#5231A4]",
     },
   ];
@@ -179,9 +190,7 @@ const Agenda = () => {
                       Background Information:
                     </h4>
                     <p className="text-gray-700">
-                      This agenda explores critical perspectives and debates
-                      surrounding {agenda.title.toLowerCase()}. Join us for an
-                      in-depth discussion on this important topic.
+                      {agenda.subheading}
                     </p>
                   </div>
                 </motion.div>
