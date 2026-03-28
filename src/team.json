@@ -79,10 +79,9 @@
     {
       "title": "Graphic Designing Team",
       "members": [
-        { "name": "Khushi Kabra", "designation": "Designing Head", "image": "/TeamImages/khushi kabra_graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/khushikabra23/", "instagram": "https://www.instagram.com/frankgreen" },
-        { "name": "Vranda Toshniwal", "designation": "Designing Head", "image": "/TeamImages/Vranda Toshniwal _Graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/vranda-toshniwal-40100325a/", "instagram": "https://www.instagram.com/gracelee" },
-        { "name": "Mahi Jain", "designation": "Designing Head", "image": "/TeamImages/MAHI JAIN_graphic designing.jpg", "linkedin": "https://www.linkedin.com/in/mahi-jain3131/", "instagram": "https://www.instagram.com/hankblue" },
-        { "name": "MUskan Tikkiwal", "designation": "USG Designing", "image": "/TeamImages/muskan_gd (1).jpeg", "linkedin": "https://www.linkedin.com/in/muskan-tikkiwal-34ba98260/", "instagram": "https://www.instagram.com/hankblue" }
+        { "name": "Nandini Verma", "designation": "Designing Head", "image": "/TeamImages/nandini_verma_gd.jpg", "linkedin": "", "instagram": "" },
+        { "name": "Muskan Tikkiwal", "designation": "Designing Head", "image": "/TeamImages/muskan_tikkiwal_gd.jpg", "linkedin": "https://www.linkedin.com/in/muskan-tikkiwal-34ba98260/", "instagram": "" },
+        { "name": "Jay Kumar Jajoo", "designation": "USG Designing", "image": "/TeamImages/jay_kumar_jajoo_gd.jpg", "linkedin": "", "instagram": "" }
 
       ]
     },

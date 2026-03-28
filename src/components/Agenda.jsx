@@ -42,7 +42,7 @@ const Agenda = () => {
       committee: "United Nations Commission on the Status of Women (UNCSW)",
       title: "Women-Led Revolutions and Global Change",
       subheading: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
-      image: "/agenda-uncsw.jpg",
+      image: "/agenda-uncsw.png",
       color: "bg-[#5231A4]",
     },
     {
