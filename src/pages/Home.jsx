@@ -38,7 +38,7 @@ const agendas = [
     title: "Women-Led Revolutions and Global Change",
     subtitle: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
     tag: "UNCSW",
-    image: "/agenda-uncsw.jpg",
+    image: "/agenda-uncsw.png",
     bgColor: "bg-[#5231A4]",
   },
   {
