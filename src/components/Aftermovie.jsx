@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const AfterMovie = () => {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
-  const [activeTab, setActiveTab] = useState("JECRCMUN2024");
+  const [activeTab, setActiveTab] = useState("JECRCMUN2025");
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Updated color theme with light background
@@ -18,21 +18,23 @@ const AfterMovie = () => {
     border: "#DDDDDD", // Border color
   };
 
-  // Event data with video sources added
+  // Event data with video sources added  
   const events = {
-    JECRCMUN2024: {
-      title: "JECRC MUN 2024",
+    JECRCMUN2025: {
+      title: "JECRC MUN 2025",
       subtitle: "A Preview Of Diplomatic Excellence",
       tagline: "EMPOWERING DELIBERATIONS",
       description: "SHAPING THE WORLD",
-      thumbnailAlt: "JECRC MUN 2024 Aftermovie Thumbnail",
+      thumbnailAlt: "JECRC MUN 2025 Aftermovie Thumbnail",
       infoText:
         "Join us for the prestigious Model United Nations conference and be part of the global change-makers community.",
-      videoSrc: "/video/munclips.mp4",
+      videoSrc: "/video/JECRC MUN 2025.mp4",
       thumbnailSrc: "/templates/ReelTemplate.png",
+      isHtmlThumbnail: true,
+      htmlBg: "from-[#e4d5b7] to-[#c7b299]",
     },
     ZHS: {
-      title: "ZERO HOUR SUMMIT 4.0",
+      title: "ZERO HOUR SUMMIT 5.0",
       subtitle: "AFTERMOVIE",
       tagline: "GLOBAL PERSPECTIVES",
       description: "INNOVATIVE SOLUTIONS",
@@ -41,6 +43,11 @@ const AfterMovie = () => {
         "Experience the convergence of international diplomacy and innovative problem-solving in this landmark event.",
       videoSrc: "/video/zhsclips.mp4",
       thumbnailSrc: "/templates/ZHS.png",
+      isHtmlThumbnail: true,
+      htmlBg: "from-white to-gray-50",
+      htmlText: "ZERO HOUR",
+      htmlSubtext: "SUMMIT",
+      htmlHighlight: "5.0",
     },
     VicharVimarsh: {
       title: "VICHAR VIMARSH",
@@ -258,16 +265,43 @@ const AfterMovie = () => {
                   />
                 ) : (
                   <>
-                    <img
-                      src={events[activeTab].thumbnailSrc}
-                      alt={events[activeTab].thumbnailAlt}
-                      className="w-full h-full object-cover"
-                    />
+                    {events[activeTab].isHtmlThumbnail ? (
+                      activeTab === "JECRCMUN2025" ? (
+                        <div className={`w-full h-full bg-gradient-to-br ${events[activeTab].htmlBg} flex flex-col items-center justify-center`}>
+                          <h1 className="text-7xl md:text-[9rem] font-bold text-black leading-[0.85] tracking-tighter text-center">
+                            JECRC<br/>
+                            <span className="text-[#a53e20]">MUN</span><br/>
+                            2025
+                          </h1>
+                          <div className="absolute bottom-6 right-6 z-10">
+                            <h2 className="text-3xl md:text-5xl font-extrabold text-black">14<span className="text-lg md:text-2xl align-top font-bold">th</span> EDITION</h2>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className={`w-full h-full bg-gradient-to-b ${events[activeTab].htmlBg} flex flex-col items-center justify-center relative overflow-hidden`}>
+                           {/* Decorative logo-like circles */}
+                           <div className="absolute w-64 h-64 border-4 border-[#5231A4]/10 rounded-full animate-spin-slow"></div>
+                           <div className="absolute w-48 h-48 border-4 border-[#5231A4]/20 rounded-full border-t-transparent animate-spin-slow" style={{ animationDirection: 'reverse' }}></div>
+                           
+                           <h1 className="text-5xl md:text-7xl font-bold text-[#5231A4] leading-tight text-center z-10 uppercase tracking-widest drop-shadow-sm">
+                             {events[activeTab].htmlText}<br/>
+                             {events[activeTab].htmlSubtext}<br/>
+                             <span className="text-[#5231A4] text-7xl md:text-9xl tracking-tighter drop-shadow-md">{events[activeTab].htmlHighlight}</span>
+                           </h1>
+                        </div>
+                      )
+                    ) : (
+                      <img
+                        src={events[activeTab].thumbnailSrc}
+                        alt={events[activeTab].thumbnailAlt}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
                     {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-20"></div>
 
                     {/* Play button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="absolute inset-0 flex items-center justify-center z-50">
                       <motion.div
                         className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full flex items-center justify-center cursor-pointer"
                         style={{
