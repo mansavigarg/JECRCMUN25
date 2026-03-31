@@ -52,7 +52,7 @@ const Registration = () => {
     "UNSC: Assessing how effective humanitarian corridors and peacekeeping mandates are in modern asymmetric warfare.",
     "UNHCR: Exploring ways to shift refugees from aid dependency to sustainable economic self-reliance in host countries.",
     "UNCSW: Analyzing the global influence of women-led revolutions on policies, social structures, and feminist movements.",
-    "UNODC: Tackling the global illicit arms trade through stronger regulations and disruption of black market networks.",
+    "UNGA (DISEC): Tackling the global illicit arms trade through stronger regulations and disruption of black market networks.",
     "Lok Sabha: Debating corporate law reforms to decriminalize offences and improve ease of doing business in India.",
     "Summit on Artistic Management, Valuation, and AI Discourse: Examining the impact of AI on creativity, authorship, ethics, and the value of human expression.",
     "Historic Crisis Committee: Reviewing the 2008 Mumbai attacks to understand intelligence gaps and improve counter-terrorism strategies."
