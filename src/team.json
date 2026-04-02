@@ -12,7 +12,7 @@
       "members": [   
         { "name": "Rashi Gupta", "designation": "Secretary General", "image": "/TeamImages/Rashi Gupta (Secretary General).jpg", "linkedin": "https://www.linkedin.com/in/rashigupta-ap?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Asmita Goyal", "designation": "Deputy Secretary General", "image": "/TeamImages/Asmita Goyal (Deputy Secretary General).jpg", "linkedin": "https://www.linkedin.com/in/asmita-goyal-dg?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/yashsoni" },
-        { "name": "Kartik Saxena", "designation": "OC President", "image": "/TeamImages/Kartik Saxena (Organizing committee President).jpeg", "linkedin": "https://www.linkedin.com/in/kartiksaxena9/", "instagram": "https://www.instagram.com/yashsoni" },
+        { "name": "Kartik Saxena", "designation": "OC President", "image": "/TeamImages/Kartik Saxena (Organizing committee President).jpeg", "objectPosition": "top", "linkedin": "https://www.linkedin.com/in/kartiksaxena9/", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Yash Kumar Vaishnav", "designation": "Director General", "image": "/TeamImages/yash.jpg", "linkedin": "https://www.linkedin.com/in/yash-kumar-vaishnav?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Antriksh Bajak", "designation": "Joint Secretary", "image": "/TeamImages/antriksh.jpg", "linkedin": "https://www.linkedin.com/in/antriksh-bajak-612745256/n", "instagram": "https://www.instagram.com/yashsoni" },
         { "name": "Harshit Somawat", "designation": "Deputy Directory General", "image": "/TeamImages/Dy. Director General-Harshit Somawat.jpg", "linkedin": "https://www.linkedin.com/in/harshit-somawat-30192a273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/yashsoni" },
@@ -44,7 +44,7 @@
       "title": "Sponsorship Team",
       "members": [
        { "name": "Virendra Singh Rathore", "designation": "Sponsorship Head", "image": "/TeamImages/Virendra Singh Rathore_Content.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
-        { "name": "Sakshi Jain", "designation": "USG Sponsorship", "image": "/TeamImages/SakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/eveblack" }
+        { "name": "Sakshi Jain", "designation": "USG Sponsorship", "image": "/TeamImages/sakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/eveblack" }
 
       ]
     },
@@ -86,7 +86,7 @@
        { "name": "Virendra Singh Rathore", "designation": "Content Head", "image": "/TeamImages/Virendra Singh Rathore_Content.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Tanvi Prakash Shrivastava", "designation": "Content Head", "image": "/TeamImages/TanviPrakashShrivastava _Content.jpg", "linkedin": "https://www.linkedin.com/in/tanvi-prakash-shrivastava-6a985b293/", "instagram": "https://www.instagram.com/davidlee" },
  { "name": "Yashasvi Rathore", "designation": "USG Content", "image": "/TeamImages/Yashasvipurohit.webp", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" },
-        { "name": "Sakshi Jain", "designation": "USG Content", "image": "/TeamImages/SakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/davidlee" },
+        { "name": "Sakshi Jain", "designation": "USG Content", "image": "/TeamImages/sakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Shruti Gaur", "designation": "USG Content", "image": "/TeamImages/shruti.jpg", "linkedin": "https://www.linkedin.com/in/shrutigaur0508?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Raj Rajeshwar Singh Hada", "designation": "USG Content", "image": "/TeamImages/raj.jpeg", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Anjali Sharma", "designation": "USG Content", "image": "/TeamImages/anjali.webp", "linkedin": "https://www.linkedin.com/in/anjali-sharma-09b39a327?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" }

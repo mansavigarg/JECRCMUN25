@@ -41,7 +41,7 @@ const AfterMovie = () => {
       thumbnailAlt: "Zero Hour Summit Aftermovie Thumbnail",
       infoText:
         "Experience the convergence of international diplomacy and innovative problem-solving in this landmark event.",
-      videoSrc: "/video/zhsclips.mp4",
+      videoSrc: "/video/ZHS.mp4",
       thumbnailSrc: "/templates/ZHS.png",
       isHtmlThumbnail: true,
       htmlBg: "from-white to-gray-50",

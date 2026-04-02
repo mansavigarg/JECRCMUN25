@@ -41,6 +41,7 @@ const TeamSection = ({ teamData }) => {
                       src={member.image}
                       alt={`${member.name}`}
                       className="w-full h-60 object-cover"
+                      style={{ objectPosition: member.objectPosition || "center" }}
                     />
                   </div>
 
