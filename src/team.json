@@ -25,17 +25,15 @@
     {
       "title": "Technical Team",
       "members": [
-        { "name": "Vishnu dixit", "designation": "Technical Head", "image": "/TeamImages/vishnu.jpg", "linkedin": "https://www.linkedin.com/in/vishnu-dixit-b3815729a/", "instagram": "https://www.instagram.com/davidlee" },
-          { "name": "Avi Maheshwari", "designation": "Technical Head", "image": "/TeamImages/Avi Maheshwari USG.jpg", "linkedin": "https://www.linkedin.com/in/avimaheshwari04/", "instagram": "https://www.instagram.com/charliebrown" },
-        { "name": "Vanshika Jain", "designation": "USG Technical", "image": "/TeamImages/vanshikajain.jpg", "linkedin": "https://www.linkedin.com/in/vanshika-jain30?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", "instagram": "https://www.instagram.com/davidlee" }
+        { "name": "Vishnu dixit", "designation": "Technical Head", "image": "/TeamImages/vishnu.jpg", "linkedin": "https://www.linkedin.com/in/vishnu-dixit-b3815729a/", "instagram": "https://www.instagram.com/davidlee" }
 
     ]
     },
     {
       "title": "Graphic Designing Team",
       "members": [
-        { "name": "Nandini Verma", "designation": "Designing Head", "image": "/TeamImages/nandini_verma_gd.jpg", "linkedin": "", "instagram": "" },
         { "name": "Muskan Tikkiwal", "designation": "Designing Head", "image": "/TeamImages/muskan_tikkiwal_gd.jpg", "linkedin": "https://www.linkedin.com/in/muskan-tikkiwal-34ba98260/", "instagram": "" },
+        { "name": "Nandini Verma", "designation": "Designing Head", "image": "/TeamImages/nandini_verma_gd.jpg", "linkedin": "", "instagram": "" },
         { "name": "Jay Kumar Jajoo", "designation": "USG Designing", "image": "/TeamImages/jay_kumar_jajoo_gd.jpg", "linkedin": "", "instagram": "" }
 
       ]
@@ -43,7 +41,7 @@
     {
       "title": "Sponsorship Team",
       "members": [
-       { "name": "Virendra Singh Rathore", "designation": "Sponsorship Head", "image": "/TeamImages/Virendra Singh Rathore_Content.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Virendra Singh Rathore", "designation": "Sponsorship Head", "image": "/TeamImages/virendra_new.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Sakshi Jain", "designation": "USG Sponsorship", "image": "/TeamImages/sakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/eveblack" }
 
       ]
@@ -64,7 +62,6 @@
         { "name": "Nimay Sharma", "designation": "USG Outreach", "image": "/TeamImages/NimaySharma.jpg", "linkedin": "https://www.linkedin.com/in/nimay-sharma-70a300307?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/alicejohnson" },
         { "name": "Jyotiraditya Rathore ", "designation": "USG Outreach", "image": "/TeamImages/JyotiradityaRathore.jpg", "linkedin": "https://www.linkedin.com/in/jyotiraditya-rathore-806691335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/alicejohnson" },
         { "name": "Gautam Kumar Roy ", "designation": "USG Outreach", "image": "/TeamImages/Gautamroy.jpg", "linkedin": "http://www.linkedin.com/in/gautam-kumar-roy-88b7b0304", "instagram": "https://www.instagram.com/alicejohnson" },
-        { "name": "Diya Gurjar ", "designation": "USG Outreach", "image": "/TeamImages/diya.jpg", "linkedin": "", "instagram": "https://www.instagram.com/alicejohnson" },
         { "name": "Piyush Sethi ", "designation": "USG Outreach", "image": "/TeamImages/PiyushSethi.png", "linkedin": "https://www.linkedin.com/in/piyush-verma-656851341?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/alicejohnson" }
     ]
     },
@@ -74,7 +71,6 @@
        { "name": "Rakshit Gupta ", "designation": "Cinematography head", "image": "/TeamImages/RakshitGupta.jpeg", "linkedin": "https://www.linkedin.com/in/rakshitgupta1/", "instagram": "https://www.instagram.com/davidlee" },
        { "name": "Rishab ", "designation": "Cinematography head", "image": "/TeamImages/Rishabh.jpg", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" },
        { "name": "Daksh Mehta  ", "designation": "USG Cinematography", "image": "/TeamImages/Daksh Mehta.png", "linkedin": "https://www.linkedin.com/in/daksh-mehta-303975232/", "instagram": "https://www.instagram.com/davidlee" },
-       { "name": "Labhya Bhardwaj ", "designation": "USG Cinematography", "image": "/TeamImages/labhya.jpeg", "linkedin": "https://www.linkedin.com/in/labhya-bhardwaj-83b714343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/davidlee" },
        { "name": "Kavya Kishor Jain  ", "designation": "USG Cinematography", "image": "/TeamImages/Kavya Jain.jpeg", "linkedin": "https://www.linkedin.com/in/kavya-jain-7a9861325/", "instagram": "https://www.instagram.com/davidlee" },
        { "name": "Harsh ", "designation": "USG Cinematography", "image": "/TeamImages/harsh .jpg", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" }
     ]
@@ -83,13 +79,12 @@
     {
       "title": "Content Writing",
       "members": [
-       { "name": "Virendra Singh Rathore", "designation": "Content Head", "image": "/TeamImages/Virendra Singh Rathore_Content.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
+       { "name": "Virendra Singh Rathore", "designation": "Content Head", "image": "/TeamImages/virendra_new.jpg", "linkedin": "https://www.linkedin.com/in/virendrasinghrathore14?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Tanvi Prakash Shrivastava", "designation": "Content Head", "image": "/TeamImages/TanviPrakashShrivastava _Content.jpg", "linkedin": "https://www.linkedin.com/in/tanvi-prakash-shrivastava-6a985b293/", "instagram": "https://www.instagram.com/davidlee" },
  { "name": "Yashasvi Rathore", "designation": "USG Content", "image": "/TeamImages/Yashasvipurohit.webp", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" },
-        { "name": "Sakshi Jain", "designation": "USG Content", "image": "/TeamImages/sakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/davidlee" },
+        { "name": "Sakshi Jain", "designation": "USG Content", "image": "/TeamImages/sakshiJain.jpg", "linkedin": "https://www.linkedin.com/in/sakshi-jain-73bb93317?utm_source=share_via&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Shruti Gaur", "designation": "USG Content", "image": "/TeamImages/shruti.jpg", "linkedin": "https://www.linkedin.com/in/shrutigaur0508?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" },
-        { "name": "Raj Rajeshwar Singh Hada", "designation": "USG Content", "image": "/TeamImages/raj.jpeg", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" },
-        { "name": "Anjali Sharma", "designation": "USG Content", "image": "/TeamImages/anjali.webp", "linkedin": "https://www.linkedin.com/in/anjali-sharma-09b39a327?utm_source=share_via&utm_content=profile&utm_medium=member_android", "instagram": "https://www.instagram.com/davidlee" }
+        { "name": "Raj Rajeshwar Singh Hada", "designation": "USG Content", "image": "/TeamImages/raj.jpeg", "linkedin": "", "instagram": "https://www.instagram.com/davidlee" }
 
 
 
@@ -100,7 +95,6 @@
     {
       "title": "Delegate Affairs Team",
       "members": [
-        { "name": "Pranshu Jajoo", "designation": "USG DA", "image": "/TeamImages/Pranshujajoo_outreach.jpg", "linkedin": "https://www.linkedin.com/in/pranshu-jajoo-84a4a8292/", "instagram": "https://www.instagram.com/davidlee" },
         { "name": "Nimanshi Singh", "designation": "USG DA", "image": "/TeamImages/Nimanshisingh.JPG", "linkedin": "https://www.linkedin.com/in/nimanshi-singh-7b2343329/", "instagram": "https://www.instagram.com/hankblue" },
         { "name": "Deepankar Tankha", "designation": "USG DA", "image": "/TeamImages/DeepankarTankha.jpg", "linkedin": "", "instagram": "https://www.instagram.com/hankblue" }
 
