@@ -14,7 +14,7 @@ const CountdownTimer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("April 18, 2026 00:00:00").getTime();
+    const targetDate = new Date("2026-10-15T08:30:00+05:30").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -78,7 +78,7 @@ const CountdownTimer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            JECRC MUN 2026
+            Zero Hour Submit 2026
           </motion.h1>
           <motion.div
             className="h-1 w-24 bg-[#5231A4] mx-auto mb-6"
@@ -94,7 +94,7 @@ const CountdownTimer = () => {
           >
            JECRC MUN celebrates the art of debate, dialogue, and diplomacy.
 It brings together young leaders to express, engage, and evolve.
-Experience the spirit of JECRC MUN 2026 – The 15th Edition.
+Experience the spirit of Zero Hour Submit 2026  – The 6th Edition.
           </motion.p>
         </div>
 
