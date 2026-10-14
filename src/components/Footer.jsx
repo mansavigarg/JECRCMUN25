@@ -24,7 +24,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2B165E] text-white pt-8 md:pt-16">
+    <footer className="bg-primary-dark text-white pt-8 md:pt-16">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 mb-8">
           {/* Left Section */}
@@ -84,10 +84,10 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-medium text-base md:text-lg">
-                  Rashi Gupta - 6378921450
+                  Virendra Singh Rathore - 8118809628
                 </p>
                 <p className="font-medium text-base md:text-lg">
-                  Kartik Saxena - 8791498880
+                  Kunal Sain - 9571158592
                 </p>
                 <p className="text-sm md:text-base">For information</p>
               </div>

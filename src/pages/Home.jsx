@@ -33,9 +33,9 @@ const agendas = [
 
     tag: "UN COMMITTEE 1",
 
-    image: "/agenda-unsc.jpg",
+    image: "/Agenda1.jpg",
 
-    bgColor: "bg-[#5231A4]",
+    bgColor: "bg-[#0C2C5E]",
 
   },
 
@@ -47,7 +47,7 @@ const agendas = [
 
     tag: "UN COMMITTEE 2",
 
-    image: "/agenda-unhcr.png",
+    image: "/Agenda2.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -61,7 +61,7 @@ const agendas = [
 
     tag: "SPECIAL COMMITTEE 1",
 
-    image: "/agenda-uncsw.png",
+    image: "/Agenda3.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -75,7 +75,7 @@ const agendas = [
 
     tag: "SPECIAL COMMITTEE 2",
 
-    image: "/agenda-unodc.jpg",
+    image: "/Agenda4.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -89,7 +89,7 @@ const agendas = [
 
     tag: "INDIAN COMMITTEE 1",
 
-    image: "/agenda-loksabha.jpg",
+    image: "/Agenda5.webp",
 
     bgColor: "bg-[#5231A4]",
 
@@ -103,7 +103,7 @@ const agendas = [
 
     tag: "INDIAN COMMITTEE 2",
 
-    image: "/agenda-samvad.jpg",
+    image: "/Agenda6.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -117,7 +117,7 @@ const agendas = [
 
     tag: "INDIAN COMMITTEE 3",
 
-    image: "/agenda-hcc.jpg",
+    image: "/Agenda7.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -131,7 +131,7 @@ const agendas = [
 
     tag: "PRESS",
 
-    image: "/agenda-samvad.jpg",
+    image: "/Agenda8.jpg",
 
     bgColor: "bg-[#5231A4]",
 
@@ -931,7 +931,7 @@ const Home = () => {
 
         {/* Agendas Grid */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {agendas.map((agenda, index) => (
 
@@ -947,7 +947,7 @@ const Home = () => {
 
               whileHover={{ scale: 1.05 }}
 
-              className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition ${index < 4 ? 'lg:col-span-3' : 'lg:col-span-4'}`}
+              className="relative bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition"
 
             >
 
@@ -977,8 +977,7 @@ const Home = () => {
 
                 <span
 
-                  className={`absolute top-3 right-3 font-semibold text-white px-3 py-1 rounded-xl ${agenda.bgColor}`}
-
+                  className={`absolute top-3 right-3 font-semibold text-[#E5B63F] px-3 py-1 rounded-xl border border-[#E9DCC3] ${agenda.bgColor}`}
                 >
 
                   {agenda.tag}

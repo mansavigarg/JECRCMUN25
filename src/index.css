@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
 /* Poppins Font Faces */
+
+/* Theme: Zero Hour Summit (navy / royal blue / gold) */
+@theme {
+  --color-primary: #0B1B45;
+  --color-primary-dark: #06112E;
+  --color-secondary: #2B5CD6;
+  --color-accent: #F6B73C;
+  --color-cream: #EBDDBA;
+  --color-surface: #EEF2FB;
+  --color-alert: #C8302B;
+  --color-accent-dark: #D99A1F;
+}
+
+/* Poppins Font Faces */
+/* ...keep all your @font-face blocks exactly as they are... */
+
+
 @font-face {
   font-family: 'Poppins';
   src: url('/fonts/Poppins-Light.ttf') format('truetype');
@@ -72,6 +89,8 @@
 
 html, body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-cream);
 }
 
 /* Animations */
