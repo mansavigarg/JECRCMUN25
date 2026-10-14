@@ -20,61 +20,69 @@ const Agenda = () => {
     },
   };
 
-  const agendas = [
+    const agendas = [
     {
       id: 1,
-      committee: "United Nations Security Council (UNSC)",
-      title: "Humanitarian Corridors in Modern Asymmetric Warfare",
-      subheading: "Evaluating the efficacy of peacekeeping mandates on the ground.",
+      committee: "UN COMMITTEE 1",
+      title: "The Return of Trade Wars",
+      subheading: "Protection of National Interests or a Threat to Globalisation?",
       image: "/agenda-unsc.jpg",
       color: "bg-[#5231A4]",
     },
     {
       id: 2,
-      committee: "United Nations High Commissioner for Refugees (UNHCR)",
-      title: "Strengthening refugee self-reliance",
-      subheading: "Transitioning from humanitarian aid to economic inclusion and livelihood security in host nations.",
+      committee: "UN COMMITTEE 2",
+      title: 'The "Protect Her" Paradox',
+      subheading: "Individual Burden or Society's Responsibility?",
       image: "/agenda-unhcr.png",
       color: "bg-[#5231A4]",
     },
     {
       id: 3,
-      committee: "United Nations Commission on the Status of Women (UNCSW)",
-      title: "Women-Led Revolutions and Global Change",
-      subheading: "Evaluating the global impact of women-led revolutions on systemic policy, social hierarchies, and transnational feminist mobilization.",
+      committee: "SPECIAL COMMITTEE 1",
+      title: "The Trojan War",
+      subheading: "A War of Honour or a War of Deception?",
       image: "/agenda-uncsw.png",
       color: "bg-[#5231A4]",
     },
     {
       id: 4,
-      committee: "United Nations Office on Drugs and Crime (UNODC)",
-      title: "Combating the Global Illicit Arms Trade",
-      subheading: "Strengthening regulatory frameworks and dismantling black market networks.",
+      committee: "SPECIAL COMMITTEE 2",
+      title: "Stan Culture: Community or Obsession?",
+      subheading: "Does modern fandom create belonging or fuel unhealthy obsession?",
       image: "/agenda-unodc.jpg",
       color: "bg-[#5231A4]",
     },
     {
       id: 5,
-      committee: "Lok Sabha",
-      title: "Corporate Laws (Amendment) Bill, 2026",
-      subheading: "Deliberation on decriminalizing offences and enhancing the ease of doing business in India.",
+      committee: "INDIAN COMMITTEE 1",
+      title: "The Concept of Cockroach Janta Party",
+      subheading: "Genuine Public Dissent or Performative Protest?",
       image: "/agenda-loksabha.jpg",
       color: "bg-[#5231A4]",
     },
     {
       id: 6,
-      committee: "Summit on Artistic Management, Valuation, and AI Discourse",
-      title: "Artificial Intelligence and the Creative Economy",
-      subheading: "Navigating authorship, ethical ownership, and the value of human expression.",
+      committee: "INDIAN COMMITTEE 2",
+      title: "Hosting the Commonwealth Games 2030",
+      subheading: "A Global Opportunity or an Unnecessary Economic Burden?",
       image: "/agenda-samvad.jpg",
       color: "bg-[#5231A4]",
     },
     {
       id: 7,
-      committee: "Historic Crisis Committee",
-      title: "The 2008 Mumbai Attacks",
-      subheading: "Analyzing intelligence failures, crisis management protocols, and the evolution of counter-terrorism frameworks.",
+      committee: "INDIAN COMMITTEE 3",
+      title: "Freedom of Expression vs Threshold of Tolerance",
+      subheading: "Should Free Expression Have Limits?",
       image: "/agenda-hcc.jpg",
+      color: "bg-[#5231A4]",
+    },
+    {
+      id: 8,
+      committee: "INTERNATIONAL PRESS",
+      title: "International Press",
+      subheading: "Reporters, Caricaturists and Photographers",
+      image: "/agenda-samvad.jpg",
       color: "bg-[#5231A4]",
     },
   ];
@@ -115,8 +123,8 @@ const Agenda = () => {
             </span>
           </h1>
           <p className="text-gray-700 max-w-3xl mx-auto text-lg">
-            Explore our comprehensive agendas spanning critical issues in
-            politics, health, international relations, sports, and finance.
+            Explore eight thought-provoking committees tackling global affairs,
+social issues, history, pop culture, Indian politics, and freedom of expression.
           </p>
         </motion.div>
 
@@ -135,9 +143,7 @@ const Agenda = () => {
               className={`bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform ${index < 4 ? 'lg:col-span-3' : 'lg:col-span-4'}`}
             >
               <div className="relative overflow-hidden h-64">
-                <div
-                  className={`absolute top-4 left-4 ${agenda.color} text-white px-4 py-1 rounded-full z-10 font-semibold shadow-md`}
-                >
+                <div className={`absolute top-4 left-4 ${agenda.color} text-white px-4 py-1 rounded-full z-10 font-semibold shadow-md`}>
                   {agenda.committee}
                 </div>
                 <motion.img
@@ -190,7 +196,7 @@ const Agenda = () => {
                       Background Information:
                     </h4>
                     <p className="text-gray-700">
-                      {agenda.subheading}
+                      {agenda.subtitle}
                     </p>
                   </div>
                 </motion.div>
